@@ -15,8 +15,6 @@
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
-/* data konteineris (su skaičiais) startas */
-/* data konteineris (su skaičiais) pabaiga */
 /* baltas fonas konteineris startas */
 /* data konteineris (su skaičiais) startas */
 /* data konteineris (su skaičiais) pabaiga */
