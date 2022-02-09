@@ -26,6 +26,9 @@ Design: https://www.themelooks.biz/demo/hostpack/html/preview/index.html
 ## Authors
 
 Aleksas Neniškis: [Github](https://github.com/aneniskis)
+
 Anton Sokolkin: [Github](https://github.com/ASreiros)
+
 Bogdan Bylinski: [Github](https://github.com/BogdanBylinski)
+
 Karolina Šalnaitė: [Github](https://github.com/SaKarolina)
