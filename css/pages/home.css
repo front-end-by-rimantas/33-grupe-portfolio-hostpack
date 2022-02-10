@@ -79,7 +79,7 @@
     border-radius: 30px;
     width:145px;
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .freetrial:hover{
@@ -90,7 +90,34 @@ background-color: var(--secondary-color);
 /* header pabaiga */
 .hero-content{
     display: block;
+    color: var(--secondary-color);
    }
+.hostingfreedom{
+   font-size: 55px;
+   padding-right: 300px; 
+}
+
+.spananimation{
+ color:#00C3FF;
+}
+
+.spanmoney{
+    font-size: 60px;
+    position: relative;
+}
+
+.spanmoney::after{
+    content: url(../../img/header/header-red-line.png);
+    position:absolute;
+    bottom: -40px;
+    left: 0;
+}
+
+.hostingfreedomtext{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
 /* hero pabaiga */
 /* search conteineris startas */
 /* search conteineris pabaiga */
