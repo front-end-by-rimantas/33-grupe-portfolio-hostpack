@@ -119,6 +119,28 @@
 /* clients conteineris startas */
 /* clients conteineris pabaiga */
 /* get latest blog konteineris startas */
+.container.blog-bg{
+    background-color: var(--color-light);
+}
+.container.blog-bg .sekcija2{
+    background-color: #fff;
+}
+@media(min-width: 991px){
+.row .sekcija1 img{
+    width: 100%;
+}
+.row .blog1{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+}
+@media(max-width: 990px){
+    .row .sekcija1 img{
+        width: 100%;
+    }
+}
 /* get latest blog konteineris pabaiga */
 /* footer startas  */
 /* footer pabaiga */
