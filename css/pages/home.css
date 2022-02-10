@@ -11,8 +11,86 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* hero startas */
+.hero{
+    background: rgb(29,15,155);
+    background: linear-gradient(90deg, rgba(29,15,155,1) 0%, rgba(0,195,255,1) 100%);
+    padding: 0;  
+}
 /* header startas */
+
+.navline{
+    padding: 0; 
+    background-color: transparent;
+}
+
+
+.headerc-r{
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+.toplogo{
+    width:220px;
+}
+
+.linkcontainer{
+    font-size: 1.45em;
+    margin-top: 22px;
+}
+
+.linkname{
+    display:inline;
+    text-transform: capitalize;
+    padding: 0 5px;
+}
+
+.linkname::after{
+    font-family: "FontAwesome";
+    margin-left: 2px;
+    content: "\f107";
+    
+}
+
+.linkthree{
+    text-transform: uppercase;
+}
+
+.linkthree:after{
+    display: none;
+}
+
+
+.navhouse{
+    align-self: center;
+    text-align: center;
+    font-size: 21px;
+    padding: 17px;
+}
+.freetriallink{
+    margin-top: 11px;
+    text-decoration: none;
+}
+
+.freetrial{
+   text-transform: uppercase;
+    padding: 13px 28px;
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 30px;
+    width:145px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.freetrial:hover{
+background-color: var(--secondary-color);
+     color: var(--primary-color);
+ }
+
 /* header pabaiga */
+.hero-content{
+    display: block;
+   }
 /* hero pabaiga */
 /* search conteineris startas */
 /* search conteineris pabaiga */
