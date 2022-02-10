@@ -149,6 +149,50 @@ background-color: var(--secondary-color);
 /* data konteineris (su skaičiais) pabaiga */
 /* baltas fonas konteineris pabaiga */
 /* melinas konteinris su 8 kvadratais startas */
+
+.container-ourBest {
+    background-color: var(--primary-color);
+    background-image: url(../../img/services/services-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.content-ourBest {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.title-ourBest {
+    background-color: transparent;
+    font-size: 50px;
+    margin: -9px 0px 25px;
+}
+.txt-ourBest {
+    background-color: transparent;
+    font-size: 17px;
+}
+.container .row.bottom-ourBest {
+    background-color: transparent;
+}
+.row > .block-ourBest{
+    margin: 0;
+    padding: 80px 15px;
+}
+.block-ourBest {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.block-ourBest:hover {
+    background-color: rgba(255,255,255,.1);
+} 
+.bottom-ourBest a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 /* melinas konteinris su 8 kvadratais pabaiga */
 /* baltas conteineris su 4 sekcijom startas */
 /* baltas conteineris su 4 sekcijom pabaiga */
