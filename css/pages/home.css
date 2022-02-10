@@ -15,9 +15,47 @@
 /* header pabaiga */
 /* hero pabaiga */
 /* search conteineris startas */
-/* one click conteineris startas */
-/* one click conteineris pabaiga */
 /* search conteineris pabaiga */
+/* one click conteineris startas */
+.container.one-click{
+ 
+    background-image: url(../../img/one-click-install/one_click_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.container> .row.bendras{
+    
+    margin-bottom: 0px;
+}
+.container > .row > .pirmas {
+    color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Lato,sans-serif;
+    font-size: 2em;
+}
+.container > .row > .antras{
+    color: #666;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: center;
+    
+    
+}
+.container > .row > .img.col12 > img {
+    width: 100%;
+    margin-top: -1em;
+}
+@media (max-width: 481px){
+    .container > .row > .pirmas {
+        font-size: 1.5em;
+    }
+}
+/* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
@@ -27,6 +65,50 @@
 /* data konteineris (su skaičiais) pabaiga */
 /* baltas fonas konteineris pabaiga */
 /* melinas konteinris su 8 kvadratais startas */
+
+.container-ourBest {
+    background-color: var(--primary-color);
+    background-image: url(../../img/services/services-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.content-ourBest {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.title-ourBest {
+    background-color: transparent;
+    font-size: 50px;
+    margin: -9px 0px 25px;
+}
+.txt-ourBest {
+    background-color: transparent;
+    font-size: 17px;
+}
+.container .row.bottom-ourBest {
+    background-color: transparent;
+}
+.row > .block-ourBest{
+    margin: 0;
+    padding: 80px 15px;
+}
+.block-ourBest {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.block-ourBest:hover {
+    background-color: rgba(255,255,255,.1);
+} 
+.bottom-ourBest a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 /* melinas konteinris su 8 kvadratais pabaiga */
 /* baltas conteineris su 4 sekcijom startas */
 /* baltas conteineris su 4 sekcijom pabaiga */
