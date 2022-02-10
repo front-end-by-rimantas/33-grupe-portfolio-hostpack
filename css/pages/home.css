@@ -79,7 +79,7 @@
     border-radius: 30px;
     width:145px;
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .freetrial:hover{
@@ -89,8 +89,49 @@ background-color: var(--secondary-color);
 
 /* header pabaiga */
 .hero-content{
-    display: block;
+    display: inline-block;
+    color: var(--secondary-color);
+    margin-top: 200px;
    }
+.hostingfreedom{
+   font-size: 55px;
+}
+
+.spananimation{
+ color:#00C3FF;
+}
+
+.spanmoney{
+    font-size: 60px;
+    position: relative;
+}
+
+.spanmoney::after{
+    content: url(../../img/header/header-red-line.png);
+    position:absolute; 
+    bottom: -40px;
+    left: 0;
+}
+
+.hostingfreedomtext{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn-hdr{
+    text-transform: uppercase;
+}
+
+.blueboximg{
+width:70%;
+text-align: center;
+margin-left: 15%;
+}
+
+.ausys{
+width: 100   
+}
 /* hero pabaiga */
 /* search conteineris startas */
 /* search conteineris pabaiga */
