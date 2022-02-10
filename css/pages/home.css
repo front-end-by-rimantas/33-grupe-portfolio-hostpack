@@ -11,7 +11,91 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* hero startas */
+.hero{
+    background: rgb(29,15,155);
+    background: linear-gradient(90deg, rgba(29,15,155,1) 0%, rgba(0,195,255,1) 100%);
+    padding: 0;  
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
 /* header startas */
+.navline{
+    padding: 0;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.headerc-r{
+    padding: 0;
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    float:none;
+}
+
+.toplogo{
+    width:180px;
+    height: 55px;
+}
+
+.linkcontainer{
+    font-size: 20px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+}
+
+.linkname{
+    display:inline;
+    text-transform: capitalize;
+    padding: 0 5px;
+}
+
+.linkname::after{
+    font-family: "FontAwesome";
+    content: "\f107";
+    
+}
+
+.linkthree{
+    text-transform: uppercase;
+}
+
+.linkthree:after{
+    display: none;
+}
+
+
+.navhouse{
+    align-self: center;
+    text-align: center;
+    font-size: 21px;
+    padding: 17px;
+}
+.freetriallink{
+    text-decoration: none;
+}
+
+.freetrial{
+   text-transform: uppercase;
+    padding: 13px 28px;
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 30px;
+    width:126px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.freetrial:hover{
+background-color: var(--secondary-color);
+     color: var(--primary-color);
+ }
+
 /* header pabaiga */
 /* hero pabaiga */
 /* search conteineris startas */
