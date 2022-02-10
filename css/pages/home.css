@@ -15,9 +15,47 @@
 /* header pabaiga */
 /* hero pabaiga */
 /* search conteineris startas */
-/* one click conteineris startas */
-/* one click conteineris pabaiga */
 /* search conteineris pabaiga */
+/* one click conteineris startas */
+.container.one-click{
+ 
+    background-image: url(../../img/one-click-install/one_click_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.container> .row.bendras{
+    
+    margin-bottom: 0px;
+}
+.container > .row > .pirmas {
+    color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Lato,sans-serif;
+    font-size: 2em;
+}
+.container > .row > .antras{
+    color: #666;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: center;
+    
+    
+}
+.container > .row > .img.col12 > img {
+    width: 100%;
+    margin-top: -1em;
+}
+@media (max-width: 481px){
+    .container > .row > .pirmas {
+        font-size: 1.5em;
+    }
+}
+/* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
