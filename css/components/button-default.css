@@ -1,0 +1,20 @@
+.btn-default-buw{
+    text-transform: uppercase;
+    padding: 1.2em 1.4em;
+    color: var(--secondary-color);
+    border: var(--color-bluelight) solid 0px;
+    background-color: var(--color-bluelight);
+    border-radius: 2em;
+    width:100%;
+    font-size: 16px;
+    margin-top: 0px;
+    display: inline;
+ }
+
+ .btn-default-buw > .kamuolis{
+     padding:1em;
+     line-height: 1em;
+     border-radius: 50%;
+     display: inline;
+     background-color: var(--secondary-color);
+ }
