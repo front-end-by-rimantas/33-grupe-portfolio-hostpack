@@ -212,6 +212,7 @@ width: 100%;
     margin: 0;
     padding: 80px 15px;
 }
+
 .block-ourBest {
     background-color: transparent;
     display: flex;
@@ -285,8 +286,65 @@ width: 100%;
 
 }
 /* baltas conteineris su 4 sekcijom pabaiga */
+
 /* melinas su serciu konteineris startas */
+
+.container-subscribe {
+    background-color: var(--primary-color);
+    background-image: url(../../img/search-bar/search-bar.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-subscribe {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.txt-subscribe {
+    font-family: Lato,sans-serif;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: transparent;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.input-subscribe {
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 7px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3em;
+}
+
+.place-subscribe {
+    position: relative;
+    border-style: none;
+    border-radius: 3em;
+    width: 60%;
+    padding: 10px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--color-gray);
+}
+
+*:focus {
+    outline: none;
+}
+
+.input-subscribe button {
+    width: 40%;
+    position: relative;
+}
+
 /* melinas su serciu konteineris pabaiga */
+
 /* Zemelapis startas */
 /* Zemelapis pabaiga */
 /* clients conteineris startas */
