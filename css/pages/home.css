@@ -232,8 +232,35 @@ width: 100%;
 /* melinas konteinris su 8 kvadratais pabaiga */
 /* baltas conteineris su 4 sekcijom startas */
 /* baltas conteineris su 4 sekcijom pabaiga */
+
 /* melinas su serciu konteineris startas */
+
+.container-subscribe {
+    background-color: var(--primary-color);
+    background-image: url(../../img/search-bar/search-bar.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-subscribe {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.txt-subscribe {
+    font-family: Lato,sans-serif;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: transparent;
+    font-size: 48px;
+}
+
+.input-subscribe {
+
+}
+
 /* melinas su serciu konteineris pabaiga */
+
 /* Zemelapis startas */
 /* Zemelapis pabaiga */
 /* clients conteineris startas */
