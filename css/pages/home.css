@@ -177,6 +177,14 @@ width: 100%;
 }
 /* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
+/* .hosting-plan  .antras > p{
+    text-align: center; */
+table, thead, tbody, th, tr, td{
+    border: 2px solid #000 ;
+    width: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
