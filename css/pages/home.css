@@ -231,6 +231,38 @@ width: 100
 
 /* melinas konteinris su 8 kvadratais pabaiga */
 /* baltas conteineris su 4 sekcijom startas */
+
+.container .server-1 >img {
+    height: auto;
+    width: 100%;
+}
+.container .server-content > h2{
+    color: var(--color-dark);
+    font-family: Lato;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.container .server-row p {
+    font-size: 17px;
+    line-height: 1.5em;
+    color: var(--color-gray);
+}
+.container .server-row .server-border {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-graylight);
+}
+.container .server-column {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.container .server-img {
+    height: 50px;
+    width: 50px;
+}
+.container .server-content .server-btn{
+    margin-top: 30px;
+}
 /* baltas conteineris su 4 sekcijom pabaiga */
 /* melinas su serciu konteineris startas */
 /* melinas su serciu konteineris pabaiga */
