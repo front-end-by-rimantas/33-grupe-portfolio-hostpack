@@ -241,12 +241,15 @@ width: 100%;
     font-family: Lato;
     font-size: 38px;
     margin-bottom: 20px;
+    font-family: 'Lato';
 }
 .container .server-row p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.5em;
     color: var(--color-gray);
+    font-family: "Open Sans";
 }
+
 .container .server-row .server-border {
     padding-bottom: 20px;
     border-bottom: 1px solid var(--color-graylight);
@@ -262,6 +265,24 @@ width: 100%;
 }
 .container .server-content .server-btn{
     margin-top: 30px;
+}
+.server-row .hopstack-btn {
+    width: 45%;
+    margin-top: 30px;
+}
+.server-row .hopstack-btn p {
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+@media(max-width: 991px){
+    .container .server-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .server-row .hopstack-btn{
+        width: 35%;
+    }
+
 }
 /* baltas conteineris su 4 sekcijom pabaiga */
 /* melinas su serciu konteineris startas */
@@ -354,12 +375,14 @@ width: 100%;
     color: var(--secondary-color);
     font-size: 30px;
     margin-bottom: 25px;
+    font-family: "Lato";
 }
 .row-list .title-second {
     color: var(--secondary-color);
     margin-top: 25px;
     font-size: 28px;
     margin-bottom: 25px;
+    font-family: "Lato";
     
 }
 .first-bottom .cards > a{
@@ -371,7 +394,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 16px;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: capitalize;
     justify-content: left;
 }
@@ -380,9 +403,10 @@ width: 100%;
     color: var( --color-bluelight);
 }
 .row-list .list-date  {
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--color-bluelight);
+    font-family: "Open Sans",sans-serif;
     
 }
 .circle {
@@ -419,7 +443,8 @@ width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 13px;
-
+    font-family:Lato,sans-serif;
+    
 }
 .row-list .update-try:hover {
     color: var(--secondary-color)
@@ -442,6 +467,7 @@ width: 100%;
 .row .footer-text a {
     text-decoration: none;
     color: var(--color-bluelight);
+    font-family: "Open Sans",sans-serif;
 }
 
 .bottom-line {
@@ -463,8 +489,6 @@ width: 100%;
     background-image: url(/img/footer/footer.png);
     background-position:top;
     background-size: cover;
-    opacity: 1;
-    z-index: 10;
 }
 @media (max-width:991px){
     .last-line {
@@ -506,7 +530,7 @@ width: 100%;
     color: var(--color-bluelight);
 }
 .row-list .phone .icon {
-    font-size: 18px;
+    font-size: 19px;
 }
 .first-bottom > p {
     color:var(--secondary-color);
