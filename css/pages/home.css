@@ -4,10 +4,10 @@
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
-@import '../3rd-party/font.css'
+@import '../3rd-party/font.css';
 
 /* components */
-@import '../components/button.css';
+@import '../components/button-default.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -131,7 +131,7 @@ margin-left: 15%;
 }
 
 .ausys{
-width: 100   
+width: 100%;   
 }
 /* hero pabaiga */
 /* search conteineris startas */
@@ -472,6 +472,11 @@ width: 100
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .last-line {
+        text-align: left;
     }
 }
 .row-list .logo-hopstack {
