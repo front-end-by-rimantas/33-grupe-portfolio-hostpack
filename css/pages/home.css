@@ -216,6 +216,32 @@ table  {
 th{
     border: 1px solid #eaeaea;
     background-color: #fff;
+    font-size: 24px;
+    color: #000;
+}
+.price-head{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.price-head .plan{
+    display: block;
+    /* margin-bottom: 14px; */
+}
+span.price{
+    font-family: Lato;
+    color: var(--color-bluelight);
+    font-size: 48px;
+}
+.price sup{
+    font-size: 18px;
+    font-family: Open Sans, sans-serif;
+}
+.price span{
+    text-align: bottom;
+    font-size: Open Sans;
+    font-size: 18px;
+    line-height: 4.5;
 }
 td{
     border-top: 1px solid #eaeaea;
@@ -228,12 +254,7 @@ td{
     border-bottom: 1px solid #eaeaea;
     background-color: #fff;
 }
-/* tfoot {
-    border-bottom: 1px solid red;
-
-} */
-.pricing-table th:first-of-type
- {
+.pricing-table th:first-of-type {
     background-color: transparent ;
     border: none;
     text-align: left;
@@ -241,26 +262,23 @@ td{
     border-bottom: none;
     font-family: Lato;
     font-size: 1em;
-    /* width: 14%; */
-
-    
 }
-.col{
+.col {
     width: 100%;
     max-width: 100%;
 }
-.table-responsive{
+.table-responsive {
     overflow-x: auto; 
 }
-table td, table th{
+table td, table th {
     padding: 20px 15px;
     vertical-align: middle;
 }
-table td {
-    /* width: 29%; */
-}
 .pricing-table thead th, .pricing-table thead td {
     padding: 41px 15px 35px;
+}
+.row.apacia p{
+    color: var(--color-graytext);
 }
 .row.apacia a {
     text-decoration: none;
@@ -270,7 +288,14 @@ table td {
 .row.apacia img{
     margin-right: 5px;
     text-decoration: none;
-    vertical-align:text-bottom;
+    vertical-align: text-bottom;
+}
+@media (max-width: 991px){
+.price span{
+    line-height: 2.5;
+    }
+span.price {
+    font-size: 28px;
 }
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
