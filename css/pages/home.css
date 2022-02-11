@@ -180,10 +180,32 @@ width: 100%;
 /* .hosting-plan  .antras > p{
     text-align: center; */
 table, thead, tbody, th, tr, td{
-    border: 2px solid #000 ;
-    width: auto;
+    border: 1px solid #000 ;
     border-collapse: collapse;
     text-align: center;
+}
+.col{
+    width: 100%;
+}
+table td, table th{
+    padding: 20px 15px;
+    vertical-align: middle;
+}
+table td {
+    width: 33%;
+}
+.pricing-table thead th, .pricing-table thead td {
+    padding: 41px 15px 35px;
+}
+.row.apacia a {
+    text-decoration: none;
+    color: #58c0f9;
+    
+}
+.row.apacia img{
+    margin-right: 5px;
+    text-decoration: none;
+    vertical-align:text-bottom;
 }
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
