@@ -293,9 +293,10 @@ table td, table th {
 @media (max-width: 991px){
 .price span{
     line-height: 2.5;
-    }
+}
 span.price {
     font-size: 28px;
+}
 }
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
