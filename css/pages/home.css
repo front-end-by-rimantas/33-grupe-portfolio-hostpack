@@ -151,14 +151,14 @@ width: 100%;
     margin-bottom: 0px;
 }
 .container > .row > .pirmas {
-    color: #111;
+    color: #fff;
     margin-bottom: 25px;
     text-align: center;
     font-family: Lato,sans-serif;
     font-size: 2em;
 }
 .container > .row > .antras{
-    color: #666;
+    color: #fff;
     font-family: Open Sans, sans-serif;
     letter-spacing: 1px;
     line-height: 1.8;
@@ -179,6 +179,8 @@ width: 100%;
 /* hosting (melynas konteineris) startas */
 
 .container.hosting-plan{
+    font-family: Lato;
+    color: var(--color-graytext);
     position: relative;
     background-color: transparent;
 }
@@ -189,17 +191,19 @@ width: 100%;
     background-size: cover;
     z-index: -1;
     width: 100%;
-    height: 450px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: 100px;
    
     
 }
 table  {
-    
+    text-align: center;
     background-color: transparent;
     border-collapse: collapse;
+    width: 100%;
    
 }    
 
@@ -233,14 +237,17 @@ td{
     background-color: transparent ;
     border: none;
     text-align: left;
-    color:red;
+    color: var(--color-graytext);
     border-bottom: none;
+    font-family: Lato;
+    font-size: 1em;
+    /* width: 14%; */
 
     
 }
 .col{
     width: 100%;
-    
+    max-width: 100%;
 }
 .table-responsive{
     overflow-x: auto; 
@@ -250,7 +257,7 @@ table td, table th{
     vertical-align: middle;
 }
 table td {
-    width: 33%;
+    /* width: 29%; */
 }
 .pricing-table thead th, .pricing-table thead td {
     padding: 41px 15px 35px;
