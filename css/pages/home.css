@@ -39,4 +39,182 @@
 /* get latest blog konteineris startas */
 /* get latest blog konteineris pabaiga */
 /* footer startas  */
+
+.footer-cont {
+    padding: 0;
+}
+.row-list{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+.list-pg >.no-mark {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.row-list >.title-first {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.row-list .title-second {
+    color: var(--secondary-color);
+    margin-top: 25px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    
+}
+.first-bottom .cards > a{
+    margin: 0;
+}
+.row-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    font-size: 15px;
+    text-transform: capitalize;
+    justify-content: left;
+}
+.row-list a:hover {
+    text-decoration: none;
+    color: var( --color-bluelight);
+}
+.row-list .list-date  {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-bluelight);
+    
+}
+.circle {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+}
+.row-list .update{
+    align-self: center;
+    font-size: 12px;
+    background-color: var(--color-red);
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 1px 10px 1px 10px;
+}
+.row-list .update-try{
+    align-self: center;
+    font-size: 12px;
+    background-color: var(--color-bluelight);
+    text-transform: uppercase;
+    border-radius: 25px;
+    padding: 1px 10px 1px 10px;
+}
+.row-list .circle {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+.list-news {
+    display: flex;
+    flex-direction: row;
+    background-color: #102D6975;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 13px;
+
+}
+.row-list .update-try:hover {
+    color: var(--secondary-color)
+}
+.row-list .update:hover {
+    color: var(--secondary-color)
+}
+
+.row-list .a-title {
+    margin-bottom: 30px;
+    text-transform: none;
+    font-size: 20px;
+}
+.row .footer-text {
+    color: var(--secondary-color);
+    line-height: 25px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.row .footer-text a {
+    text-decoration: none;
+    color: var(--color-bluelight);
+}
+
+.bottom-line {
+    border-top: 1px solid var(--color-darkblue);
+    padding-top: 30px;
+}
+.row .footer-cer {
+    background-image: url(/img/footer/certificate.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+}
+.content-foot {
+    padding-bottom: 25px;
+}
+.footer-back {
+    background-image: url(/img/footer/footer.png);
+    background-position:top;
+    background-size: cover;
+    opacity: 1;
+    z-index: 10;
+}
+@media (max-width:991px){
+    .last-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.row-list .logo-hopstack {
+    width: 70%;
+}
+.row-list .cards img {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.row-list .pages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: left;
+}
+.row-list .phone {
+    display: flex;
+    justify-content:left ;
+    flex-direction: row;
+    text-align: center;
+    color: var(--secondary-color);
+    gap: 20px;
+    align-content: center;
+    margin-bottom: 35px;
+}
+.row-list .phone:hover{
+    color: var(--color-bluelight);
+}
+.row-list .phone .icon {
+    font-size: 18px;
+}
+.first-bottom > p {
+    color:var(--secondary-color);
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.first-bottom .copy {
+    margin-top: 20px;
+    font-size: 14px;
+}
 /* footer pabaiga */
