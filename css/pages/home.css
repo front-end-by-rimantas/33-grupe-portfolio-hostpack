@@ -441,6 +441,11 @@ width: 100
         text-align: center;
     }
 }
+@media (max-width:576px) {
+    .last-line {
+        text-align: left;
+    }
+}
 .row-list .logo-hopstack {
     width: 70%;
 }
