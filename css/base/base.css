@@ -7,8 +7,7 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' sans-serif;
 }
 
 :root {
@@ -29,4 +28,6 @@ body {
     --color-light: #f8f9fa;
     --color-dark: #212529;
     --color-darkblue: #344F87;
+    --color-graylight: #DEE2E6;
+    --color-graytext: #666;
 }

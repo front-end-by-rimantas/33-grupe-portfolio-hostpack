@@ -189,6 +189,133 @@ width: 100%;
 }
 /* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
+.hosting-plan h1{
+    color: #fff;
+}
+.hosting-plan p {
+    color: #fff;
+}
+
+.container.hosting-plan{
+    font-family: Lato;
+    color: var(--color-graytext);
+    position: relative;
+    background-color: transparent;
+}
+.container> .row.bendras::after{
+    content: '';
+    background-image: url(../../img/hosting-plans/hosting-plans.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+   
+    
+}
+table  {
+    text-align: center;
+    background-color: transparent;
+    border-collapse: collapse;
+    width: 100%;
+   
+}    
+
+ thead{
+    /* border: 1px solid red ; */
+    border-collapse: collapse;
+    text-align: center;
+    background-color: transparent;
+}
+th{
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    font-size: 24px;
+    color: #000;
+}
+.price-head{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.price-head .plan{
+    display: block;
+    /* margin-bottom: 14px; */
+}
+span.price{
+    font-family: Lato;
+    color: var(--color-bluelight);
+    font-size: 48px;
+}
+.price sup{
+    font-size: 18px;
+    font-family: Open Sans, sans-serif;
+}
+.price span{
+    text-align: bottom;
+    font-size: Open Sans;
+    font-size: 18px;
+    line-height: 4.5;
+}
+td{
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    background-color: #fff;
+}
+
+td{ 
+    border-left: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+}
+.pricing-table th:first-of-type {
+    background-color: transparent ;
+    border: none;
+    text-align: left;
+    color: var(--color-graytext);
+    border-bottom: none;
+    font-family: Lato;
+    font-size: 1em;
+}
+.col {
+    width: 100%;
+    max-width: 100%;
+}
+.table-responsive {
+    overflow-x: auto; 
+}
+table td, table th {
+    padding: 20px 15px;
+    vertical-align: middle;
+}
+.pricing-table thead th, .pricing-table thead td {
+    padding: 41px 15px 35px;
+}
+.row.apacia p{
+    color: var(--color-graytext);
+}
+.row.apacia a {
+    text-decoration: none;
+    color: #58c0f9;
+    
+}
+.row.apacia img{
+    margin-right: 5px;
+    text-decoration: none;
+    vertical-align: text-bottom;
+}
+@media (max-width: 991px){
+.price span{
+    line-height: 2.5;
+}
+span.price {
+    font-size: 28px;
+}
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
@@ -224,6 +351,7 @@ width: 100%;
     margin: 0;
     padding: 80px 15px;
 }
+
 .block-ourBest {
     background-color: transparent;
     display: flex;
@@ -243,9 +371,119 @@ width: 100%;
 
 /* melinas konteinris su 8 kvadratais pabaiga */
 /* baltas conteineris su 4 sekcijom startas */
+
+.container .server-1 >img {
+    height: auto;
+    width: 100%;
+}
+.container .server-content > h2{
+    color: var(--color-dark);
+    font-family: Lato;
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+}
+.container .server-row p {
+    font-size: 15px;
+    line-height: 1.5em;
+    color: var(--color-gray);
+    font-family: "Open Sans";
+}
+
+.container .server-row .server-border {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-graylight);
+}
+.container .server-column {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.container .server-img {
+    height: 50px;
+    width: 50px;
+}
+.container .server-content .server-btn{
+    margin-top: 30px;
+}
+.server-row .hopstack-btn {
+    width: 45%;
+    margin-top: 30px;
+}
+.server-row .hopstack-btn p {
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+@media(max-width: 991px){
+    .container .server-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .server-row .hopstack-btn{
+        width: 35%;
+    }
+
+}
 /* baltas conteineris su 4 sekcijom pabaiga */
+
 /* melinas su serciu konteineris startas */
+
+.container-subscribe {
+    background-color: var(--primary-color);
+    background-image: url(../../img/search-bar/search-bar.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-subscribe {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.txt-subscribe {
+    font-family: Lato,sans-serif;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: transparent;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.input-subscribe {
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 7px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3em;
+}
+
+.place-subscribe {
+    position: relative;
+    border-style: none;
+    border-radius: 3em;
+    width: 60%;
+    padding: 10px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--color-gray);
+}
+
+*:focus {
+    outline: none;
+}
+
+.input-subscribe button {
+    width: 40%;
+    position: relative;
+}
+
 /* melinas su serciu konteineris pabaiga */
+
 /* Zemelapis startas */
 /* Zemelapis pabaiga */
 /* clients conteineris startas */
@@ -334,12 +572,14 @@ width: 100%;
     color: var(--secondary-color);
     font-size: 30px;
     margin-bottom: 25px;
+    font-family: "Lato";
 }
 .row-list .title-second {
     color: var(--secondary-color);
     margin-top: 25px;
     font-size: 28px;
     margin-bottom: 25px;
+    font-family: "Lato";
     
 }
 .first-bottom .cards > a{
@@ -351,7 +591,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 16px;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: capitalize;
     justify-content: left;
 }
@@ -360,9 +600,10 @@ width: 100%;
     color: var( --color-bluelight);
 }
 .row-list .list-date  {
-    font-size: 10px;
+    font-size: 11px;
     text-transform: uppercase;
     color: var(--color-bluelight);
+    font-family: "Open Sans",sans-serif;
     
 }
 .circle {
@@ -399,7 +640,8 @@ width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 13px;
-
+    font-family:Lato,sans-serif;
+    
 }
 .row-list .update-try:hover {
     color: var(--secondary-color)
@@ -422,6 +664,7 @@ width: 100%;
 .row .footer-text a {
     text-decoration: none;
     color: var(--color-bluelight);
+    font-family: "Open Sans",sans-serif;
 }
 
 .bottom-line {
@@ -443,8 +686,6 @@ width: 100%;
     background-image: url(/img/footer/footer.png);
     background-position:top;
     background-size: cover;
-    opacity: 1;
-    z-index: 10;
 }
 @media (max-width:991px){
     .last-line {
@@ -452,6 +693,11 @@ width: 100%;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .last-line {
+        text-align: left;
     }
 }
 .row-list .logo-hopstack {
@@ -481,7 +727,7 @@ width: 100%;
     color: var(--color-bluelight);
 }
 .row-list .phone .icon {
-    font-size: 18px;
+    font-size: 19px;
 }
 .first-bottom > p {
     color:var(--secondary-color);
