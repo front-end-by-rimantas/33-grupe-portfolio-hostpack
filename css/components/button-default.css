@@ -1,82 +1,119 @@
 /* Mygtukas melynas, pasiverčia baltu */
-.btn-default-buw{
+.btn-default-buw {
     text-transform: uppercase;
     padding: 0.4em 0.4em;
     color: var(--secondary-color);
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width:100%;
-    font-family: "Open sans";
+    width: 12.5em;
+    font-family: 'Open sans';
     font-weight: bold;
     font-size: 18px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+}
 
- .btn-textw {
-     margin-left: 2em;
- }
+.btn-textw {
+    margin-left: 2em;
+}
 
- .kamuolisw{
-     padding:1em;
-     line-height: 1em;
-     border-radius: 50%;
-     background-color: var(--secondary-color);
- }
+.kamuolisw {
+    padding: 1em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
 
- .btn-default-buw:hover{
+.btn-default-buw:hover {
     color: var(--color-bluelight);
     border: var(--secondary-color) solid 0px;
     background-color: var(--secondary-color);
- }
+}
 
- .btn-default-buw:hover > .kamuolisw{
+.btn-default-buw:hover > .kamuolisw {
     background-color: var(--color-bluelight);
- }
+}
 
- .btn-default-buw:hover > .kamuolisw > .strelew{
+.btn-default-buw:hover > .kamuolisw > .strelew {
     filter: brightness(0) invert(1);
- }
+}
 
 /* Mygtukas melynas, pasiverčia juodu */
 
-.btn-default-bub{
+
+.btn-default-bub {
     text-transform: uppercase;
     padding: 0.4em 0.4em;
     color: var(--secondary-color);
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width:100%;
-    font-family: "Open sans";
+    width: 100%;
+    font-family: 'Open sans';
     font-weight: bold;
     font-size: 18px;
     margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
+}
 
- .btn-textb {
-     margin-left: 2em;
- }
+.btn-textb {
+    margin-left: 2em;
+}
 
- .kamuolisb{
-     padding:1em;
-     line-height: 1em;
-     border-radius: 50%;
-     background-color: var(--secondary-color);
- }
+.kamuolisb {
+    padding: 1em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
 
- .btn-default-bub:hover{
+.btn-default-bub:hover {
     border: var(--color-black) solid 0px;
     background-color: var(--color-black);
- }
+}
 
-
- .btn-default-bub:hover > .kamuolisb > .streleb{
+.btn-default-bub:hover > .kamuolisb > .streleb {
     filter: brightness(0);
- }
+}
+
+/* Play mygtukas */
+
+.btn-hdr {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.btn-hdr-txt {
+   color: var(--secondary-color);
+   font-family: 'Open sans';
+   font-weight: bold;
+   font-size: 18px;
+   margin-left: 0.7em;
+   width:200px;
+   text-align: left;
+   text-decoration: none;
+}
+
+.play {
+    padding: 1.5em;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    position: relative;
+    animation-name: halo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+  
+

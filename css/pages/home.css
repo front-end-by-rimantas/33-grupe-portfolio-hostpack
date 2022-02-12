@@ -120,8 +120,15 @@ background-color: var(--secondary-color);
     margin-bottom: 40px;
 }
 
-.btn-hdr{
-    text-transform: uppercase;
+.hero-btn-right{
+margin-left: 30px;
+}
+
+@media (max-width: 575px){
+    .hero-btn-right{
+        margin-left: 0px;
+        margin-top: 50px;
+        }
 }
 
 .blueboximg{
