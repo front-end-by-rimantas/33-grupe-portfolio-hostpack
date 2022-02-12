@@ -115,20 +115,21 @@
 
 .play-container{    
 position:relative;
+z-index: 3;
 }
 
 .play-container::after{
     content: "";
+    z-index: -1;
     position: absolute;
-    right:-50%;
-    top:-50%;
-    border: 40px solid rgb(255, 255, 255,0.8);
-    width: 1px;
-    height: 1px;
+    right:0px;
+    top:0px;
+   background-color: white;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    transform-origin: center 0;
     animation-name: halo;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -137,15 +138,19 @@ position:relative;
 
 @keyframes halo{
 
-10%{
-    border: 50px solid rgb(255, 255, 255,0.8);  
-}
-
-50%{
-    border: 55px solid rgb(255, 255, 255,0.6);   
-}
-
-100%{
-    border: 60px solid rgb(255, 255, 255,0.4);  
-}
-}
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.4);
+        opacity: 0;
+      }
+    }
