@@ -97,7 +97,7 @@
    font-family: 'Open sans';
    font-weight: bold;
    font-size: 18px;
-   margin-left: 0.7em;
+   margin-left: 13px;
    width:200px;
    text-align: left;
    text-decoration: none;
@@ -106,14 +106,46 @@
 .play {
     padding: 1.5em;
     width: 60px;
+    height:60px;
     border-radius: 50%;
     background-color: var(--secondary-color);
-    position: relative;
-    animation-name: halo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
 }
   
 
+
+.play-container{    
+position:relative;
+}
+
+.play-container::after{
+    content: "";
+    position: absolute;
+    right:-50%;
+    top:-50%;
+    border: 40px solid rgb(255, 255, 255,0.8);
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    transform-origin: center 0;
+    animation-name: halo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes halo{
+
+10%{
+    border: 50px solid rgb(255, 255, 255,0.8);  
+}
+
+50%{
+    border: 55px solid rgb(255, 255, 255,0.6);   
+}
+
+100%{
+    border: 60px solid rgb(255, 255, 255,0.4);  
+}
+}

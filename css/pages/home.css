@@ -124,6 +124,11 @@ background-color: var(--secondary-color);
 margin-left: 30px;
 }
 
+.hero-btn-right-link{
+    margin-top: 5px;
+    text-decoration: none;
+}
+
 @media (max-width: 575px){
     .hero-btn-right{
         margin-left: 0px;
