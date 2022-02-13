@@ -569,6 +569,10 @@ span.price {
     color: var(--secondary-color);
     font-size: 15px;
 }
+.server-row  a {
+    text-decoration: none;
+}
+
 @media (max-width: 991px) {
     .container .server-reverse {
         display: flex;
@@ -576,6 +580,31 @@ span.price {
     }
     .server-row .hopstack-btn {
         width: 35%;
+    }
+}
+@media (max-width: 1199px) {
+    .server-row .hopstack-btn {
+        width: 53%;
+    }
+}
+@media (max-width: 991px) {
+    .server-row .hopstack-btn {
+        width: 35%;
+    }
+}
+@media (max-width: 767px) {
+    .server-row .hopstack-btn {
+        width: 45%;
+    }
+}
+@media (max-width: 575px) {
+    .server-row .hopstack-btn {
+       width: 45%;
+    }
+}
+@media (max-width: 510px) {
+    .server-row .hopstack-btn {
+       width: auto;
     }
 }
 /* baltas conteineris su 4 sekcijom pabaiga */
@@ -1041,7 +1070,7 @@ span.price {
     gap: 30px;
     justify-content: left;
 }
-.row-list .phone {
+.row-list .phone > a {
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -1055,7 +1084,10 @@ span.price {
     color: var(--color-bluelight);
 }
 .row-list .phone .icon {
-    font-size: 19px;
+    font-size: 18px;
+}
+.row-list .phone > a:hover {
+    color: var(--color-bluelight);
 }
 .first-bottom > p {
     color: var(--secondary-color);
