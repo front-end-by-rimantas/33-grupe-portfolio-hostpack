@@ -147,9 +147,9 @@
 }
 
 .blueboximg {
-    width: 70%;
+    /* width: 70%; */
     text-align: center;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 
 .ausys {
@@ -555,6 +555,10 @@ span.price {
 
 .map-link:visited {
     color: #000;
+}
+
+.map-link:visited:hover {
+    color: var(--color-bluelight);
 }
 
 .map-map {
