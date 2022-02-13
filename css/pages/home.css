@@ -219,11 +219,11 @@ width: 100%;
     background-size: cover;
     z-index: -1;
     width: 100%;
-    height: 200px;
+    height: 450px;
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 100px;
+    padding-top: 60px;
    
     
 }
@@ -246,6 +246,7 @@ th{
     background-color: #fff;
     font-size: 24px;
     color: #000;
+    white-space: nowrap;
 }
 .price-head{
     display: inline-block;
@@ -319,12 +320,25 @@ table td, table th {
     vertical-align: text-bottom;
 }
 @media (max-width: 991px){
+ .container> .row.bendras::after{
+   
+    padding-top: 40px;
+       
+ }
+
 .price span{
     line-height: 2.5;
 }
 span.price {
     font-size: 28px;
 }
+}
+@media (max-width: 767px){
+    .container> .row.bendras::after{
+      
+       padding-top: 20px;
+          
+    }
 }
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
