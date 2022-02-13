@@ -157,8 +157,93 @@
     width: 100%;
 }
 /* hero pabaiga */
+
 /* search conteineris startas */
+.container-search {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-search {
+    background-color: var(--secondary-color);
+    margin-top: -100px;
+    width: 80%;
+    border-radius: 8px;
+    padding: 70px 15px 50px;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+}
+.miniMain-search {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.input-search {
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 7px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3em;
+}
+
+.place-search {
+    position: relative;
+    border-style: none;
+    border-radius: 3em;
+    width: 60%;
+    padding: 10px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.input-search button {
+    width: 35%;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.list-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    list-style: none;
+    margin-top: 45px;
+}
+
+.price-search {
+    text-align: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    color: var(--color-gray);
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.price-search:hover {
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+}
+
+@media (max-with) {
+
+}
+
 /* search conteineris pabaiga */
+
 /* one click conteineris startas */
 .container.one-click {
     background-image: url(../../img/one-click-install/one_click_bg.png);
@@ -402,12 +487,16 @@ span.price {
 }
 .title-ourBest {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 48px;
     margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
 }
 .txt-ourBest {
     background-color: transparent;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
 }
 .container .row.bottom-ourBest {
     background-color: transparent;
@@ -415,6 +504,19 @@ span.price {
 .row > .block-ourBest {
     margin: 0;
     padding: 80px 15px;
+    width: 25%;
+}
+
+@media (max-width: 991px) {
+    .row > .block-ourBest {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .row > .block-ourBest {
+        width: 100%;
+    }
 }
 
 .block-ourBest {
@@ -423,15 +525,19 @@ span.price {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 23px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .block-ourBest:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .bottom-ourBest a {
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 
 /* melinas konteinris su 8 kvadratais pabaiga */
@@ -534,6 +640,10 @@ span.price {
     top: -94px;
     right: 9%;
     background-color: transparent;
+}
+
+.container .img-subscribe {
+    margin: 0;
 }
 
 .content-subscribe {
