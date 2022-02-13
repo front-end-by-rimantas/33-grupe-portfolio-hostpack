@@ -1,7 +1,7 @@
 /* Mygtukas melynas, pasiverčia baltu */
 .btn-default-buw {
     text-transform: uppercase;
-    padding: 0.4em 0.4em;
+    padding: 0.3em 0.4em;
     color: var(--secondary-color);
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
 }
 
 .btn-textw {
@@ -39,6 +40,7 @@
 
 .btn-default-buw:hover > .kamuolisw > .strelew {
     filter: brightness(0) invert(1);
+    transition: 0.3s;
 }
 
 /* Mygtukas melynas, pasiverčia juodu */
@@ -46,7 +48,7 @@
 
 .btn-default-bub {
     text-transform: uppercase;
-    padding: 0.4em 0.4em;
+    padding: 0.3em 0.4em;
     color: var(--secondary-color);
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
@@ -59,6 +61,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
 }
 
 .btn-textb {
@@ -79,6 +82,62 @@
 
 .btn-default-bub:hover > .kamuolisb > .streleb {
     filter: brightness(0);
+    transition: 0.3s;
+}
+
+/* Mygtukas melynas, pasiverčia juodu, žemiau 478 px pasivečia kamuoliuku */
+
+
+
+.btn-default-bubm {
+    text-transform: uppercase;
+    padding: 0.3em 0.4em;
+    color: var(--secondary-color);
+    border: var(--color-bluelight) solid 0px;
+    background-color: var(--color-bluelight);
+    border-radius: 2em;
+    width: 12.5em;
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-textbm {
+    margin-left: 2em;
+}
+
+.kamuolisbm {
+    padding: 1em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.btn-default-bubm:hover {
+    border: var(--color-black) solid 0px;
+    background-color: var(--color-black);
+}
+
+.btn-default-bubm:hover > .kamuolisbm > .strelebm {
+    filter: brightness(0);
+    transition: 0.3s;
+}
+
+@media(max-width:478px){
+    .btn-default-bubm{
+        width: auto;
+    }
+   
+    .btn-textbm {
+        display: none;
+    }    
+
+
 }
 
 /* Play mygtukas */

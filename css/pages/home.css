@@ -147,17 +147,103 @@
 }
 
 .blueboximg {
-    width: 70%;
+    /* width: 70%; */
+    width: 100%;
     text-align: center;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 
 .ausys {
     width: 100%;
 }
 /* hero pabaiga */
+
 /* search conteineris startas */
+.container-search {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-search {
+    background-color: var(--secondary-color);
+    margin-top: -100px;
+    width: 80%;
+    border-radius: 8px;
+    padding: 70px 15px 50px;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+}
+.miniMain-search {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.input-search {
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 7px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3em;
+}
+
+.place-search {
+    position: relative;
+    border-style: none;
+    border-radius: 3em;
+    width: 60%;
+    padding: 10px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.input-search button {
+    width: 35%;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.list-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    list-style: none;
+    margin-top: 45px;
+}
+
+.price-search {
+    text-align: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    color: var(--color-gray);
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.price-search:hover {
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+}
+
+@media (max-with) {
+
+}
+
 /* search conteineris pabaiga */
+
 /* one click conteineris startas */
 .container.one-click {
     background-image: url(../../img/one-click-install/one_click_bg.png);
@@ -192,6 +278,12 @@
     .container > .row > .pirmas {
         font-size: 1.5em;
     }
+}
+.one-click h1{
+    font-weight: 900;
+}
+.one-click p {
+    font-weight: 400;
 }
 /* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
@@ -237,6 +329,7 @@ thead {
     background-color: transparent;
 }
 th {
+    font-weight: 600;
     border: 1px solid #eaeaea;
     background-color: #fff;
     font-size: 24px;
@@ -248,20 +341,25 @@ th {
     padding: 0;
     margin: 0;
 }
+
 .price-head .plan {
+    font-weight: 700;
     display: block;
     /* margin-bottom: 14px; */
 }
 span.price {
+    font-weight: 900;
     font-family: Lato;
     color: var(--color-bluelight);
     font-size: 48px;
 }
 .price sup {
+    font-weight: 600;
     font-size: 18px;
     font-family: Open Sans, sans-serif;
 }
 .price span {
+    font-weight: 600;
     text-align: bottom;
     font-size: Open Sans;
     font-size: 18px;
@@ -359,6 +457,15 @@ span.price {
     padding-top: 80px;
         }
         }
+.hosting-plan h1{
+    font-weight: 900;
+}
+.hosting-plan .antras {
+    font-weight: 400;
+}
+.price-bottom p {
+    font-weight: 400;
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
@@ -380,12 +487,16 @@ span.price {
 }
 .title-ourBest {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 48px;
     margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
 }
 .txt-ourBest {
     background-color: transparent;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
 }
 .container .row.bottom-ourBest {
     background-color: transparent;
@@ -393,6 +504,19 @@ span.price {
 .row > .block-ourBest {
     margin: 0;
     padding: 80px 15px;
+    width: 25%;
+}
+
+@media (max-width: 991px) {
+    .row > .block-ourBest {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .row > .block-ourBest {
+        width: 100%;
+    }
 }
 
 .block-ourBest {
@@ -401,15 +525,19 @@ span.price {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 23px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .block-ourBest:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .bottom-ourBest a {
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 
 /* melinas konteinris su 8 kvadratais pabaiga */
@@ -457,6 +585,10 @@ span.price {
     color: var(--secondary-color);
     font-size: 15px;
 }
+.server-row  a {
+    text-decoration: none;
+}
+
 @media (max-width: 991px) {
     .container .server-reverse {
         display: flex;
@@ -464,6 +596,31 @@ span.price {
     }
     .server-row .hopstack-btn {
         width: 35%;
+    }
+}
+@media (max-width: 1199px) {
+    .server-row .hopstack-btn {
+        width: 53%;
+    }
+}
+@media (max-width: 991px) {
+    .server-row .hopstack-btn {
+        width: 35%;
+    }
+}
+@media (max-width: 767px) {
+    .server-row .hopstack-btn {
+        width: 45%;
+    }
+}
+@media (max-width: 575px) {
+    .server-row .hopstack-btn {
+       width: 45%;
+    }
+}
+@media (max-width: 510px) {
+    .server-row .hopstack-btn {
+       width: auto;
     }
 }
 /* baltas conteineris su 4 sekcijom pabaiga */
@@ -475,6 +632,18 @@ span.price {
     background-image: url(../../img/search-bar/search-bar.png);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.girl-subscribe {
+    position: absolute;
+    top: -94px;
+    right: 9%;
+    background-color: transparent;
+}
+
+.container .img-subscribe {
+    margin: 0;
 }
 
 .content-subscribe {
@@ -488,7 +657,8 @@ span.price {
     color: var(--secondary-color);
     background-color: transparent;
     font-size: 48px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    margin-bottom: 45px;
 }
 
 .input-subscribe {
@@ -511,6 +681,7 @@ span.price {
     padding: 10px 15px;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 15px;
     color: var(--color-gray);
 }
@@ -520,9 +691,13 @@ span.price {
 }
 
 .input-subscribe button {
-    width: 40%;
+    width: 35%;
     position: relative;
+    cursor: pointer;
+    font-size: 16px;
 }
+
+
 
 /* melinas su serciu konteineris pabaiga */
 
@@ -555,6 +730,10 @@ span.price {
 
 .map-link:visited {
     color: #000;
+}
+
+.map-link:visited:hover {
+    color: var(--color-bluelight);
 }
 
 .map-map {
@@ -686,6 +865,12 @@ span.price {
 /* clients conteineris startas */
 /* clients conteineris pabaiga */
 /* get latest blog konteineris startas */
+.blog-bg  .pirmas > h1 {
+    font-weight: 900;
+}
+.blog-bg .antras > p {
+    font-weight: 400;
+}
 .container.blog-bg {
     background-color: var(--color-light);
 }
@@ -702,6 +887,7 @@ span.price {
     list-style: none;
 }
 .row .blog-date a {
+    font-weight: 600;
     text-decoration: none;
     color: var(--color-bluelight);
     font-size: 12px;
@@ -710,6 +896,7 @@ span.price {
     margin-bottom: 10px;
 }
 .row .blog-title a {
+    font-weight: 700;
     font-size: 24px;
     text-decoration: none;
     color: #111;
@@ -718,6 +905,7 @@ span.price {
 }
 
 .row .blog-link {
+    font-weight: 400;
     text-decoration: none;
     font-family: open-sans, sans-serif;
     font-size: 16px;
@@ -861,7 +1049,7 @@ span.price {
     padding-top: 30px;
 }
 .row .footer-cer {
-    background-image: url(/img/footer/certificate.png);
+    background-image: url(../../img/footer/certificate.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -872,7 +1060,7 @@ span.price {
     padding-bottom: 25px;
 }
 .footer-back {
-    background-image: url(/img/footer/footer.png);
+    background-image: url(../../img/footer/footer.png);
     background-position: top;
     background-size: cover;
 }
@@ -902,7 +1090,7 @@ span.price {
     gap: 30px;
     justify-content: left;
 }
-.row-list .phone {
+.row-list .phone > a {
     display: flex;
     justify-content: left;
     flex-direction: row;
@@ -916,7 +1104,10 @@ span.price {
     color: var(--color-bluelight);
 }
 .row-list .phone .icon {
-    font-size: 19px;
+    font-size: 18px;
+}
+.row-list .phone > a:hover {
+    color: var(--color-bluelight);
 }
 .first-bottom > p {
     color: var(--secondary-color);
