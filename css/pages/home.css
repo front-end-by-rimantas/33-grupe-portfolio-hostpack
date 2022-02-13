@@ -255,6 +255,12 @@
         font-size: 1.5em;
     }
 }
+.one-click h1{
+    font-weight: 900;
+}
+.one-click p {
+    font-weight: 400;
+}
 /* one click conteineris pabaiga */
 /* hosting (melynas konteineris) startas */
 .hosting-plan h1 {
@@ -299,6 +305,7 @@ thead {
     background-color: transparent;
 }
 th {
+    font-weight: 600;
     border: 1px solid #eaeaea;
     background-color: #fff;
     font-size: 24px;
@@ -310,20 +317,25 @@ th {
     padding: 0;
     margin: 0;
 }
+
 .price-head .plan {
+    font-weight: 700;
     display: block;
     /* margin-bottom: 14px; */
 }
 span.price {
+    font-weight: 900;
     font-family: Lato;
     color: var(--color-bluelight);
     font-size: 48px;
 }
 .price sup {
+    font-weight: 600;
     font-size: 18px;
     font-family: Open Sans, sans-serif;
 }
 .price span {
+    font-weight: 600;
     text-align: bottom;
     font-size: Open Sans;
     font-size: 18px;
@@ -421,6 +433,15 @@ span.price {
     padding-top: 80px;
         }
         }
+.hosting-plan h1{
+    font-weight: 900;
+}
+.hosting-plan .antras {
+    font-weight: 400;
+}
+.price-bottom p {
+    font-weight: 400;
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
@@ -775,6 +796,12 @@ span.price {
 /* clients conteineris startas */
 /* clients conteineris pabaiga */
 /* get latest blog konteineris startas */
+.blog-bg  .pirmas > h1 {
+    font-weight: 900;
+}
+.blog-bg .antras > p {
+    font-weight: 400;
+}
 .container.blog-bg {
     background-color: var(--color-light);
 }
@@ -791,6 +818,7 @@ span.price {
     list-style: none;
 }
 .row .blog-date a {
+    font-weight: 600;
     text-decoration: none;
     color: var(--color-bluelight);
     font-size: 12px;
@@ -799,6 +827,7 @@ span.price {
     margin-bottom: 10px;
 }
 .row .blog-title a {
+    font-weight: 700;
     font-size: 24px;
     text-decoration: none;
     color: #111;
@@ -807,6 +836,7 @@ span.price {
 }
 
 .row .blog-link {
+    font-weight: 400;
     text-decoration: none;
     font-family: open-sans, sans-serif;
     font-size: 16px;
