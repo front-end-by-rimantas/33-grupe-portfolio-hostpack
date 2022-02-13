@@ -475,6 +475,14 @@ span.price {
     background-image: url(../../img/search-bar/search-bar.png);
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+
+.girl-subscribe {
+    position: absolute;
+    top: -94px;
+    right: 9%;
+    background-color: transparent;
 }
 
 .content-subscribe {
@@ -488,7 +496,8 @@ span.price {
     color: var(--secondary-color);
     background-color: transparent;
     font-size: 48px;
-    margin-bottom: 30px;
+    font-weight: 700;
+    margin-bottom: 45px;
 }
 
 .input-subscribe {
@@ -511,6 +520,7 @@ span.price {
     padding: 10px 15px;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 15px;
     color: var(--color-gray);
 }
@@ -520,9 +530,13 @@ span.price {
 }
 
 .input-subscribe button {
-    width: 40%;
+    width: 35%;
     position: relative;
+    cursor: pointer;
+    font-size: 16px;
 }
+
+
 
 /* melinas su serciu konteineris pabaiga */
 
