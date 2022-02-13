@@ -333,13 +333,36 @@ span.price {
     font-size: 28px;
 }
 }
-@media (max-width: 767px){
+@media (min-width: 992px){
     .container> .row.bendras::after{
-      
-       padding-top: 20px;
-          
+     padding-top: 75px;
     }
+    }
+@media (max-width: 767px){
+.container> .row.bendras::after{
+    padding-top: 20px;       
 }
+}
+@media (max-width: 481px){
+    .container> .row.bendras::after{
+        padding-top: 15px;       
+    }
+    }
+@media (max-width: 466px){
+.container> .row.bendras::after{
+ padding-top: 20px;
+}
+}
+@media (max-width: 371px){
+    .container> .row.bendras::after{
+     padding-top: 50px;
+    }
+    }
+@media (max-width: 335px){
+    .container> .row.bendras::after{
+    padding-top: 80px;
+        }
+        }
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
