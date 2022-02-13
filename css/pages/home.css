@@ -504,7 +504,19 @@ span.price {
 .row > .block-ourBest {
     margin: 0;
     padding: 80px 15px;
-    /* width: 25%; */
+    width: 25%;
+}
+
+@media (max-width: 991px) {
+    .row > .block-ourBest {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .row > .block-ourBest {
+        width: 100%;
+    }
 }
 
 .block-ourBest {
