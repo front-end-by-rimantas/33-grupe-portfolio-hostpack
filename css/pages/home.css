@@ -630,6 +630,10 @@ span.price {
     background-color: transparent;
 }
 
+.container .img-subscribe {
+    margin: 0;
+}
+
 .content-subscribe {
     text-align: center;
     color: var(--secondary-color);
