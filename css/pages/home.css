@@ -157,8 +157,69 @@
     width: 100%;
 }
 /* hero pabaiga */
+
 /* search conteineris startas */
+.container-search {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-search {
+    background-color: pink;
+    margin-top: -100px;
+    width: 80%;
+    border-radius: 8px;
+    padding: 70px 15px 50px; /*?*/
+}
+.miniMain-search {
+    text-align: center;
+    color: var(--secondary-color);
+
+}
+
+.input-search {
+    background-color: var(--secondary-color);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 7px;
+    border: 1px solid var(--color-gray);
+    border-radius: 3em;
+}
+
+.place-search {
+    position: relative;
+    border-style: none;
+    border-radius: 3em;
+    width: 60%;
+    padding: 10px 15px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    color: var(--color-gray);
+}
+.input-search button {
+    width: 35%;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.list-search {
+    display: flex;
+    background-color: green;
+    list-style: none;
+}
+
+
 /* search conteineris pabaiga */
+
 /* one click conteineris startas */
 .container.one-click {
     background-image: url(../../img/one-click-install/one_click_bg.png);
