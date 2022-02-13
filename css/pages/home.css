@@ -168,16 +168,16 @@
 }
 
 .main-search {
-    background-color: pink;
+    background-color: var(--secondary-color);
     margin-top: -100px;
     width: 80%;
     border-radius: 8px;
-    padding: 70px 15px 50px; /*?*/
+    padding: 70px 15px 50px;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
 }
 .miniMain-search {
     text-align: center;
     color: var(--secondary-color);
-
 }
 
 .input-search {
@@ -188,7 +188,7 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 7px;
-    border: 1px solid var(--color-gray);
+    border: 1px solid #e8e8e8;
     border-radius: 3em;
 }
 
@@ -202,8 +202,8 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 15px;
-    color: var(--color-gray);
 }
+
 .input-search button {
     width: 35%;
     position: relative;
@@ -213,8 +213,28 @@
 
 .list-search {
     display: flex;
-    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
     list-style: none;
+    margin-top: 45px;
+}
+
+.price-search {
+    text-align: center;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    color: var(--color-gray);
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.price-search:hover {
+    box-shadow: 0 0 15px 5px #9d9d9d21;
 }
 
 
