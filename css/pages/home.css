@@ -939,7 +939,7 @@ span.price {
     padding-top: 30px;
 }
 .row .footer-cer {
-    background-image: url(/img/footer/certificate.png);
+    background-image: url(../../img/footer/certificate.png);
     background-color: transparent;
     background-position: center;
     background-size: contain;
@@ -950,7 +950,7 @@ span.price {
     padding-bottom: 25px;
 }
 .footer-back {
-    background-image: url(/img/footer/footer.png);
+    background-image: url(../../img/footer/footer.png);
     background-position: top;
     background-size: cover;
 }
