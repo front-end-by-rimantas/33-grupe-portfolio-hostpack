@@ -6,7 +6,7 @@
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width: 12.5em;
+    width: 230px;
     font-family: 'Open sans';
     font-weight: bold;
     font-size: 18px;
@@ -53,7 +53,7 @@
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width: 12.5em;
+    width: 230px;
     font-family: 'Open sans';
     font-weight: bold;
     font-size: 18px;
@@ -96,7 +96,7 @@
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width: 12.5em;
+    width: 230px;
     font-family: 'Open sans';
     font-weight: bold;
     font-size: 18px;
@@ -213,3 +213,30 @@ z-index: 3;
         opacity: 0;
       }
     }
+
+/* Apvalus mygtukai karuseleje */
+.ball-button{
+    padding: 1.3em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border-style: hidden;
+    cursor:pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.arrow-left{
+    transform: rotate(180deg);
+}
+
+.ball-button:hover{
+    background-color: var(--color-bluelight);
+}
+
+.ball-button:hover > .arrow{ 
+filter: brightness(0) invert(1);
+transition: 0.3s;
+}
+
+
