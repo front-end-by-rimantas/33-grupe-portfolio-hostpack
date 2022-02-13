@@ -381,12 +381,16 @@ span.price {
 }
 .title-ourBest {
     background-color: transparent;
-    font-size: 50px;
+    font-size: 48px;
     margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
 }
 .txt-ourBest {
     background-color: transparent;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
 }
 .container .row.bottom-ourBest {
     background-color: transparent;
@@ -394,6 +398,7 @@ span.price {
 .row > .block-ourBest {
     margin: 0;
     padding: 80px 15px;
+    /* width: 25%; */
 }
 
 .block-ourBest {
@@ -402,15 +407,19 @@ span.price {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 23px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .block-ourBest:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 .bottom-ourBest a {
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
 }
 
 /* melinas konteinris su 8 kvadratais pabaiga */
