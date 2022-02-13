@@ -1,0 +1,156 @@
+/* Mygtukas melynas, pasiverčia baltu */
+.btn-default-buw {
+    text-transform: uppercase;
+    padding: 0.4em 0.4em;
+    color: var(--secondary-color);
+    border: var(--color-bluelight) solid 0px;
+    background-color: var(--color-bluelight);
+    border-radius: 2em;
+    width: 12.5em;
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-textw {
+    margin-left: 2em;
+}
+
+.kamuolisw {
+    padding: 1em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.btn-default-buw:hover {
+    color: var(--color-bluelight);
+    border: var(--secondary-color) solid 0px;
+    background-color: var(--secondary-color);
+}
+
+.btn-default-buw:hover > .kamuolisw {
+    background-color: var(--color-bluelight);
+}
+
+.btn-default-buw:hover > .kamuolisw > .strelew {
+    filter: brightness(0) invert(1);
+}
+
+/* Mygtukas melynas, pasiverčia juodu */
+
+
+.btn-default-bub {
+    text-transform: uppercase;
+    padding: 0.4em 0.4em;
+    color: var(--secondary-color);
+    border: var(--color-bluelight) solid 0px;
+    background-color: var(--color-bluelight);
+    border-radius: 2em;
+    width: 12.5em;
+    font-family: 'Open sans';
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-textb {
+    margin-left: 2em;
+}
+
+.kamuolisb {
+    padding: 1em;
+    line-height: 1em;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+.btn-default-bub:hover {
+    border: var(--color-black) solid 0px;
+    background-color: var(--color-black);
+}
+
+.btn-default-bub:hover > .kamuolisb > .streleb {
+    filter: brightness(0);
+}
+
+/* Play mygtukas */
+
+.btn-hdr {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.btn-hdr-txt {
+   color: var(--secondary-color);
+   font-family: 'Open sans';
+   font-weight: bold;
+   font-size: 18px;
+   margin-left: 13px;
+   width:200px;
+   text-align: left;
+   text-decoration: none;
+}
+
+.play {
+    padding: 1.5em;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+  
+
+
+.play-container{    
+position:relative;
+z-index: 3;
+}
+
+.play-container::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    right:0px;
+    top:0px;
+   background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation-name: halo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes halo{
+
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.4);
+        opacity: 0;
+      }
+    }
