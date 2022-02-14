@@ -1269,8 +1269,8 @@ table th {
     bottom: 4rem;
 }
 
-.toTop-hidden {
-    display: none;
+#top {
+    visibility: hidden;
 }
 
 /* back to top pabaiga */
