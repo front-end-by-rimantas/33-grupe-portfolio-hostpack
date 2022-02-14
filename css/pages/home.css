@@ -960,17 +960,21 @@ table th {
     text-decoration: none;
     color: var(--color-bluelight);
     font-size: 12px;
+    font-family: Open Sans, sans-serif;
 }
 .row .blog-title {
     margin-bottom: 10px;
 }
 .row .blog-title a {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 23px;
     text-decoration: none;
     color: #111;
     font-family: Lato, sans-serif;
     line-height: 1.5;
+}
+.row .blog-title a:hover {
+    color: var(--color-bluelight);
 }
 
 .row .blog-link {
@@ -979,6 +983,9 @@ table th {
     font-family: open-sans, sans-serif;
     font-size: 16px;
     color: var(--color-gray);
+}
+.row .blog-link:hover{
+    color: var(--color-bluelight);
 }
 .row .blog-link img {
     margin-left: 5px;
