@@ -505,13 +505,13 @@ table th {
 @media (min-width: 580px) {
     .blocks-ourBest {
         grid-template-columns: 1fr 1fr;
-    } 
+    }
 }
 
 @media (min-width: 991px) {
     .blocks-ourBest {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    } 
+    }
 }
 
 .row > .blocks-ourBest > .block-ourBest {
@@ -526,11 +526,45 @@ table th {
     align-items: center;
     gap: 23px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.block-ourBest:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
 }
 
+.background-neibor {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+    /* transform: translate(50%, 50%) */
+}
+
+.block-ourBest:hover > .background-neibor {
+    animation-name: riseandshine;
+    width: 100%;
+    height: 100%;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 0.2;
+}
+
+@keyframes riseandshine {
+    0% {
+        width: 80%;
+        height: 80%;
+    }
+
+    50% {
+        width: 90%;
+        height: 90%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
 .bottom-ourBest a {
     text-decoration: none;
     text-align: center;
@@ -898,7 +932,6 @@ table th {
     margin-left: 100px;
 }
 
-
 @media (max-width: 980px) {
     .client-container {
         height: 800px;
@@ -926,15 +959,13 @@ table th {
 
     .carousel > .card > div {
         display: block;
-        width:100%
+        width: 100%;
     }
 
     .carousel > .card > img {
         display: none;
     }
 }
-
-
 
 /* clients conteineris pabaiga */
 /* get latest blog konteineris startas */
@@ -965,7 +996,6 @@ table th {
     color: var(--color-bluelight);
     font-size: 12px;
     font-family: Open Sans, sans-serif;
-    
 }
 .row .blog-title {
     margin-bottom: 10px;
@@ -991,7 +1021,7 @@ table th {
     color: var(--color-gray);
     transition: 0.3s;
 }
-.row .blog-link:hover{
+.row .blog-link:hover {
     color: var(--color-bluelight);
 }
 .row .blog-link img {
