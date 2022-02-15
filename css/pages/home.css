@@ -32,21 +32,22 @@
 
 .headerc-r {
     padding: 0;
+    width:80%;
+    margin-left: 10%;
+    display: flex;
     color: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .toplogo {
     width: 220px;
 }
 
-.linkcontainer {
-    font-size: 1.4em;
-    margin-top: 22px;
-    justify-content: center;
-}
 
 .linkbox{
-    display: inline;  
+    display: inline; 
+    font-size: 22px; 
 }
 
 .linkname {
@@ -56,15 +57,7 @@
     position: relative;
 }
 
-@media (max-width: 1250px) {
-    .linkcontainer {
-        font-size: 1em;
-    }
-    .linkname {
-        padding:0, 10px;
-    }
 
-}
 
 .linkname:before {
     content: '';
@@ -98,12 +91,14 @@ position:relative
     display: none;
 }
 
- .matchbox{
+.linkbox > .matchbox{
     background-color: #FFFFFF;
     border-radius: 0 0 10px 10px;
     display: none;
     position:absolute;
     top: 55px;
+    z-index: 4;
+    left:0%;
 }
 
 .matchbox > a{
@@ -126,13 +121,18 @@ display:block;
 }
 
 
-
-.navhouse {
+.hamburger {
     align-self: center;
     text-align: center;
     font-size: 21px;
     padding: 17px;
+    display: none;
 }
+
+@media(min-width:1000px){
+    
+}
+
 .freetriallink {
     margin-top: 11px;
     text-decoration: none;
