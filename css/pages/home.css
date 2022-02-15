@@ -42,22 +42,26 @@
 .linkcontainer {
     font-size: 1.4em;
     margin-top: 22px;
-    display: inline-flex;
     justify-content: center;
-    float: none;
 }
 
-@media (max-width: 1250px) {
-    .linkcontainer {
-        font-size: 1em;
-    }
-}
+
 
 .linkname {
     display: inline;
     text-transform: capitalize;
     padding: 0 15px;
     position: relative;
+}
+
+@media (max-width: 1250px) {
+    .linkcontainer {
+        font-size: 1em;
+    }
+    .linkname {
+        padding:0, 10px;
+    }
+
 }
 
 .linkname:before {
