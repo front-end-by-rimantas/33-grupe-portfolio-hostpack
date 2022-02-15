@@ -613,6 +613,15 @@ tfoot a{
     gap: 5px;
     font-family: 'Open Sans', sans-serif;
 }
+.row-counter .value-k {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+    font-size: 2em;
+    position: relative;
+    font-weight: bold;
+}
 .row-counter .value {
     font-size: 2em;
     position: relative;
@@ -621,6 +630,13 @@ tfoot a{
 .row-counter .value::after {
     content: '+';
     position: absolute;
+    top: 20%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+    font-size: 0.6em;
+}
+.row-counter .value-k::after {
+    content: '+';
     position: absolute;
     top: 20%;
     left: 105%;
@@ -667,13 +683,13 @@ tfoot a{
 .row-counter .data-value {
     color: var(--primary-color);
 }
-.row-counter .people-value {
+.container .people-value {
     color: var(--color-orange);
 }
 .row-counter .team-value {
     color: var(--color-greenlight);
 }
-.row-counter .value-rating {
+.container .value-rating {
     color: var(--color-bluelight);
 }
 /* data konteineris (su skaičiais) pabaiga */
