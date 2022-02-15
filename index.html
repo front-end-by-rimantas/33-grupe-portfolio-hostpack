@@ -119,12 +119,14 @@
 
         <!-- search conteineris startas -->
         <section class="container container-search">
-            <div class="col-12 col-lg-8 ml-lg-2 main-search">
+            <div class="main-search">
                 <div class="row miniMain-search">
-                    <div class="col-12 col-lg-8 ml-lg-2 content-search">
+                    <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 content-search">
                         <form class="form-search" action="#">
                             <div class="input-search">
+                                <label for="domain">Domain name</label>
                                 <input
+                                    id="domain"
                                     class="place-search"
                                     type="text"
                                     placeholder="Type your domain name"
@@ -148,32 +150,32 @@
                     </div>
                 </div>
                 <div class="row info-search">
-                    <ul class="col-12 col-lg-8 ml-lg-2 list-search">
-                        <li class="price-search">
+                    <div class="col-12 col-md-10 ml-md-1 col-lg-10 ml-lg-1 list-search">
+                        <div class="price-search">
                             <img src="./img/dot-img/com.png" alt="com" />
                             <div>$9.95/yr</div>
-                        </li>
-                        <li class="price-search">
+                        </div>
+                        <div class="price-search">
                             <img src="./img/dot-img/net.png" alt="net" />
                             <div>$8.99/yr</div>
-                        </li>
-                        <li class="price-search">
+                        </div>
+                        <div class="price-search">
                             <img src="./img/dot-img/store.png" alt="store" />
                             <div>$6.29/yr</div>
-                        </li>
-                        <li class="price-search">
+                        </div>
+                        <div class="price-search">
                             <img src="./img/dot-img/info.png" alt="info" />
                             <div>$7.99/yr</div>
-                        </li>
-                        <li class="price-search">
+                        </div>
+                        <div class="price-search">
                             <img src="./img/dot-img/co.png" alt="co" />
                             <div>$3.95/yr</div>
-                        </li>
-                        <li class="price-search">
+                        </div>
+                        <div class="price-search">
                             <img src="./img/dot-img/org.png" alt="org" />
                             <div>$12.15/yr</div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -670,7 +672,9 @@
                     </h2>
                     <form class="form-subscribe" action="#">
                         <div class="input-subscribe">
+                            <label for="email">Email for subscribe newsletter</label>
                             <input
+                                id="email"
                                 class="place-subscribe"
                                 type="email"
                                 placeholder="Subscribe Newsletter"
