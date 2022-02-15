@@ -489,7 +489,21 @@ table th {
 .hosting-btn {
     display: flex;
     justify-content: center;
+    
+    
 }
+tfoot a{
+    text-decoration: none;
+}
+.small-btn{
+    width: 150px;
+    white-space: nowrap;
+    display: inline-flex;
+    font-size: 12px;
+    
+}
+
+
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
