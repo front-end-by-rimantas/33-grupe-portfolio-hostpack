@@ -32,8 +32,11 @@
 
 .headerc-r {
     padding: 0;
-    width:80%;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 150px;
     margin-left: 10%;
+    height: 80px;
     display: flex;
     color: var(--secondary-color);
     justify-content: space-between;
@@ -44,10 +47,9 @@
     width: 220px;
 }
 
-
-.linkbox{
-    display: inline; 
-    font-size: 22px; 
+.linkbox {
+    display: inline;
+    font-size: 22px;
 }
 
 .linkname {
@@ -56,8 +58,6 @@
     padding: 0 15px;
     position: relative;
 }
-
-
 
 .linkname:before {
     content: '';
@@ -69,8 +69,8 @@
     display: none;
 }
 
-.linkbox{
-position:relative
+.linkbox {
+    position: relative;
 }
 
 .linkbox:hover > .linkname:before {
@@ -91,20 +91,20 @@ position:relative
     display: none;
 }
 
-.linkbox > .matchbox{
-    background-color: #FFFFFF;
+.linkbox > .matchbox {
+    background-color: #ffffff;
     border-radius: 0 0 10px 10px;
     display: none;
-    position:absolute;
+    position: absolute;
     top: 55px;
     z-index: 4;
-    left:0%;
+    left: 0%;
 }
 
-.matchbox > a{
-    display:block;
+.matchbox > a {
+    display: block;
     border-top: rgb(128, 128, 128, 0.5) 1px solid;
-    width:250px;
+    width: 250px;
     color: #000;
     padding-left: 20px;
     line-height: 3em;
@@ -112,25 +112,45 @@ position:relative
     text-transform: capitalize;
 }
 
-.livelink{
+.livelink {
     color: #00c3ff;
 }
 
-.linkbox:hover > .matchbox{
-display:block;
+.linkbox:hover > .matchbox {
+    display: block;
 }
 
-
-.hamburger {
-    align-self: center;
-    text-align: center;
+.navhouse {
     font-size: 21px;
     padding: 17px;
     display: none;
 }
 
-@media(min-width:1000px){
-    
+
+@media(max-width: 1170px){
+.linkname{
+font-size: 18px;
+padding: 5px;
+}
+
+}
+
+
+@media (max-width: 1000px) {
+    .navhouse {
+        display: flex;
+        justify-self: end;
+    }
+
+@media(max-width: 580px){
+    .freetrial{
+        display:none;
+    }
+}
+
+.linkbox{
+    display:none;
+}    
 }
 
 .freetriallink {
@@ -568,20 +588,16 @@ table th {
 .hosting-btn {
     display: flex;
     justify-content: center;
-    
-    
 }
-tfoot a{
+tfoot a {
     text-decoration: none;
 }
-.small-btn{
+.small-btn {
     width: 150px;
     white-space: nowrap;
     display: inline-flex;
     font-size: 12px;
-    
 }
-
 
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
@@ -798,7 +814,6 @@ tfoot a{
     background-color: #fff;
     opacity: 0;
     z-index: 1;
-    /* transform: translate(50%, 50%) */
 }
 
 .block-ourBest:hover > .background-neibor {
@@ -970,7 +985,7 @@ tfoot a{
     width: 200px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .input-subscribe .btn-newSize {
         width: auto;
     }
@@ -1015,7 +1030,6 @@ tfoot a{
 
 .map-map {
     width: 100%;
-    position: relative;
     padding: 50px 0px;
 }
 
@@ -1038,14 +1052,12 @@ tfoot a{
     display: block;
     background-color: var(--color-bluelight);
     margin-top: 50%;
-    position: absolute;
     z-index: 3;
 }
 
 .lightbulb::after {
     content: '';
     z-index: 2;
-    position: absolute;
     right: 0px;
     top: 0px;
     background-color: var(--color-bluelight);
@@ -1217,7 +1229,7 @@ tfoot a{
 @media (max-width: 615px) {
     .client-container {
         height: 700px;
-    }  
+    }
 
     .carousel {
         left: 60px;
