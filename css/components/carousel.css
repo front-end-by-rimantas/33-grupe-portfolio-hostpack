@@ -3,12 +3,19 @@
     z-index: 2;
     left: 55%;
     top: 10%;
-    width: 500px;
+    width: 700px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 15px 5px #9d9d9d21;
     border-width: 3px;
 }
+
+@media (max-width: 1570px) {
+    .carousel {
+        width: 500px;
+    }
+}
+
 .card > div {
     display: inline;
     width: 50%;
