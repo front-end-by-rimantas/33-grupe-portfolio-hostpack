@@ -1,3 +1,4 @@
+
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
@@ -159,7 +160,7 @@
 }
 /* hero pabaiga */
 
-/* search conteineris startas */
+/* search conteineris startas f*/
 .container-search {
     position: relative;
     padding: 0;
@@ -217,7 +218,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: transparent;
+    background-color: #fff;
     list-style: none;
     margin-top: 45px;
 }
@@ -228,18 +229,19 @@
     font-family: Lato, sans-serif;
     color: var(--color-gray);
     font-weight: bolder;
-    border: 1px solid white;
-    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 23px 20px 27px;
     margin-bottom: 15px;
     margin-right: 15px;
     transition: 0.5s;
 }
 
 .price-search:hover {
-    box-shadow: 0 0 15px 5px #9d9d9d21;
+    box-shadow: 15px 15px 30px #0d6dfd23;
 }
-
-@media (max-with) {
+.price-search img {
+    margin-bottom: 6px;
 }
 
 /* search conteineris pabaiga */
@@ -462,11 +464,138 @@ table th {
 .price-bottom p {
     font-weight: 400;
 }
+.hosting-btn{
+    display: flex;
+    justify-content: center;
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
 /* baltas fonas konteineris startas */
 /* data konteineris (su skaičiais) startas */
+.numbers-container {
+    position: relative;
+    z-index: 1;
+    margin-top: -10% ;
+    margin-bottom: -13%;
+}
+
+.border-row {
+    background-color: var(--secondary-color);
+    padding: 50px 0px 50px 0px;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+    border-radius: 15px;
+}
+@media (max-width:990px){
+    .container-ourBest{
+        padding-top:100px;
+    }
+    .numbers-container {
+        margin-bottom: -20%;
+    }
+}
+@media (max-width:720px){
+    .container-ourBest{
+        padding-top:100px;
+    }
+    .numbers-container {
+        margin-bottom: -25%;
+    }
+}
+@media (max-width:575px){
+    .container-ourBest{
+        padding-top:150px;
+    }
+    .numbers-container {
+        margin-bottom: -35%;
+    }
+}
+@media (max-width:440px){
+    .container-ourBest{
+        padding-top:150px;
+    }
+    .numbers-container {
+        margin-bottom: -50%;
+    }
+}
+@media (min-width:991px){
+    .container-ourBest{
+        padding-top:100px;
+    }
+    .numbers-container {
+        margin-bottom: -15%;
+    }
+}
+.row-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: "Open Sans",sans-serif;
+}
+.row-counter .value {
+    font-size: 2em;
+    position: relative;
+    font-weight: bold;
+}
+.row-counter .value::after {
+    content: "+";
+    position:absolute;
+    position: absolute;
+    top: 20%;
+    left: 105%;
+    transform: translate(-50%, -50%);
+    font-size: 0.6em;
+}
+.row-cntr-dot {
+    position: relative;
+}
+.row-counter::before{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.row-counter2::before{
+    background-color: var(--color-orange);
+}
+.row-counter3::before{
+    background-color: var(--color-greenlight);
+}
+
+@media (max-width:991px) {
+    .row-counter::before,
+    .row-counter2::before,
+    .row-counter3::before {
+        background-color: transparent;
+    }
+}
+@media (max-width:990px){
+    .row-counter {
+        margin-bottom: 30px;
+    }
+}
+.row-counter .label {
+    color: var(--color-dark);
+    font-size: 1.2em;
+}
+.row-counter .data-value {
+    color: var(--primary-color);
+}
+.row-counter .people-value {
+    color: var(--color-orange)
+}
+.row-counter .team-value {
+    color: var(--color-greenlight);
+}
+.row-counter .value-rating {
+    color: var(--color-bluelight);
+}
 /* data konteineris (su skaičiais) pabaiga */
 /* baltas fonas konteineris pabaiga */
 /* melinas konteinris su 8 kvadratais startas */
@@ -497,22 +626,25 @@ table th {
 .container .row.bottom-ourBest {
     background-color: transparent;
 }
-.row > .block-ourBest {
-    margin: 0;
+
+.blocks-ourBest {
+    display: grid;
+}
+
+@media (min-width: 580px) {
+    .blocks-ourBest {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 991px) {
+    .blocks-ourBest {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.row > .blocks-ourBest > .block-ourBest {
     padding: 80px 15px;
-    width: 25%;
-}
-
-@media (max-width: 991px) {
-    .row > .block-ourBest {
-        width: 50%;
-    }
-}
-
-@media (max-width: 576px) {
-    .row > .block-ourBest {
-        width: 100%;
-    }
 }
 
 .block-ourBest {
@@ -523,13 +655,48 @@ table th {
     align-items: center;
     gap: 23px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-.block-ourBest:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
 }
 
+.background-neibor {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+    /* transform: translate(50%, 50%) */
+}
+
+.block-ourBest:hover > .background-neibor {
+    animation-name: riseandshine;
+    width: 100%;
+    height: 100%;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 0.2;
+}
+
+@keyframes riseandshine {
+    0% {
+        width: 80%;
+        height: 80%;
+    }
+
+    50% {
+        width: 90%;
+        height: 90%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
 .bottom-ourBest a {
     text-decoration: none;
+    text-align: center;
     color: var(--secondary-color);
     font-size: 18px;
     font-family: Lato, sans-serif;
@@ -894,7 +1061,6 @@ table th {
     margin-left: 100px;
 }
 
-
 @media (max-width: 980px) {
     .client-container {
         height: 800px;
@@ -922,15 +1088,13 @@ table th {
 
     .carousel > .card > div {
         display: block;
-        width:100%
+        width: 100%;
     }
 
     .carousel > .card > img {
         display: none;
     }
 }
-
-
 
 /* clients conteineris pabaiga */
 /* get latest blog konteineris startas */
@@ -972,6 +1136,7 @@ table th {
     color: #111;
     font-family: Lato, sans-serif;
     line-height: 1.5;
+    transition: 0.3s;
 }
 .row .blog-title a:hover {
     color: var(--color-bluelight);
@@ -983,8 +1148,9 @@ table th {
     font-family: open-sans, sans-serif;
     font-size: 16px;
     color: var(--color-gray);
+    transition: 0.3s;
 }
-.row .blog-link:hover{
+.row .blog-link:hover {
     color: var(--color-bluelight);
 }
 .row .blog-link img {
@@ -1196,3 +1362,38 @@ table th {
     font-size: 14px;
 }
 /* footer pabaiga */
+
+/* back to top startas */
+.btn-to-top {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--color-bluelight);
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+    text-decoration: none;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+.btn-to-top:hover {
+    opacity: 50%;
+}
+
+.back-to-top {
+    right: 2rem;
+    bottom: 4rem;
+}
+
+#top {
+    visibility: hidden;
+}
+
+/* back to top pabaiga */
