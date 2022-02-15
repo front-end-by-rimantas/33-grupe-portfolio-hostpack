@@ -494,6 +494,9 @@ table th {
     
     
 }
+tfoot a{
+    text-decoration: none;
+}
 .small-btn{
     width: 150px;
     white-space: nowrap;
