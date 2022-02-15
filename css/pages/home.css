@@ -41,14 +41,39 @@
 }
 
 .linkcontainer {
-    font-size: 1.45em;
+    font-size: 1.4em;
     margin-top: 22px;
+    /* display: flex;
+    justify-content: center;
+    float: none; */
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    .linkcontainer {
+        font-size: 1em;
+    }
 }
 
 .linkname {
     display: inline;
     text-transform: capitalize;
-    padding: 0 5px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.linkname:before{
+    content: "";
+    position: absolute;
+    top:50px;
+    left:calc(50% - 15px);
+    width: 20px;
+    border-bottom: #fff 3px solid;
+    display: none;
+}
+
+.linkname:hover + .linkname:before{
+display:block;
 }
 
 .linkname::after {
@@ -61,7 +86,7 @@
     text-transform: uppercase;
 }
 
-.linkthree:after {
+.linkthree:before {
     display: none;
 }
 
@@ -149,10 +174,9 @@
 }
 
 .blueboximg {
-    /* width: 70%; */
     width: 100%;
     text-align: center;
-    /* margin-left: 15%; */
+    margin-bottom: 150px;
 }
 
 .ausys {
@@ -464,7 +488,7 @@ table th {
 .price-bottom p {
     font-weight: 400;
 }
-.hosting-btn{
+.hosting-btn {
     display: flex;
     justify-content: center;
 }
@@ -903,7 +927,7 @@ table th {
     padding: 50px 0px;
 }
 
-.map-map >div {
+.map-map > div {
     position: relative;
 }
 
@@ -1082,9 +1106,9 @@ table th {
 
 @media (max-width: 615px) {
     .carousel {
-        left: 0px;
+        left: 60px;
         top: 63%;
-        width: 300px;
+        width: 200px;
     }
 
     .blueribbon {
