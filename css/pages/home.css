@@ -124,7 +124,63 @@
     font-size: 21px;
     padding: 17px;
     display: none;
+    cursor:pointer;
+    position: relative;
 }
+
+.navhouse > input{
+display:none;
+}
+
+.burgeropen{
+    display:block;
+    cursor:pointer;
+}
+
+.burgerclose{
+    display:none;
+    cursor:pointer;
+}
+
+.navhouse-menu{
+    display:none;
+    position: absolute;
+    background-color: white;
+    bottom: -450px;
+    left:-45vw;
+    width:90vw;
+    z-index: 4;
+
+}
+
+.menu-link{
+    font-size: 22px;
+    color: #000;
+    padding: 20px;
+}
+
+
+
+#clicky:checked+.navhouse-contain>.burgeropen{
+    display:none;
+}
+
+#clicky:checked+.navhouse-contain>.burgerclose{
+    display:block;
+}
+
+#clicky:checked+.navhouse-contain>.navhouse-menu{
+    display:block;
+}
+
+
+
+@media (max-width: 1000px) {
+    .navhouse {
+        display: flex;
+        justify-self: end;
+    }
+
 
 
 @media(max-width: 1170px){
@@ -136,11 +192,7 @@ padding: 5px;
 }
 
 
-@media (max-width: 1000px) {
-    .navhouse {
-        display: flex;
-        justify-self: end;
-    }
+
 
 @media(max-width: 580px){
     .freetrial{
