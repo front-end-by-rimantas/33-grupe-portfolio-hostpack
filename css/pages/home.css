@@ -463,6 +463,10 @@ table th {
 .price-bottom p {
     font-weight: 400;
 }
+.hosting-btn{
+    display: flex;
+    justify-content: center;
+}
 /* kainos konteineris startas */
 /* kainos konteineris pabaiga */
 /* hosting (melynas konteineris) pabaiga */
