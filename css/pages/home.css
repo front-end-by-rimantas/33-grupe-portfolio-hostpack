@@ -1094,7 +1094,7 @@ tfoot a{
     margin-bottom: 20px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1180px) {
     .blueribbon > h2 {
         font-size: 56px;
     }
@@ -1116,7 +1116,7 @@ tfoot a{
     margin-left: 100px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
     .blueribbon {
         margin-top: 50px;
     }
