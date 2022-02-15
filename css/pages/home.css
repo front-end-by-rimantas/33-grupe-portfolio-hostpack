@@ -824,7 +824,6 @@ tfoot a{
     margin-top: 30px;
 }
 .server-row .hopstack-btn {
-    width: 45%;
     margin-top: 30px;
 }
 .server-row .hopstack-btn p {
@@ -840,35 +839,8 @@ tfoot a{
         display: flex;
         flex-direction: column-reverse;
     }
-    .server-row .hopstack-btn {
-        width: 35%;
-    }
 }
-@media (max-width: 1199px) {
-    .server-row .hopstack-btn {
-        width: 53%;
-    }
-}
-@media (max-width: 991px) {
-    .server-row .hopstack-btn {
-        width: 35%;
-    }
-}
-@media (max-width: 767px) {
-    .server-row .hopstack-btn {
-        width: 45%;
-    }
-}
-@media (max-width: 575px) {
-    .server-row .hopstack-btn {
-        width: 45%;
-    }
-}
-@media (max-width: 510px) {
-    .server-row .hopstack-btn {
-        width: auto;
-    }
-}
+
 /* baltas conteineris su 4 sekcijom pabaiga */
 
 /* melinas su serciu konteineris startas */
