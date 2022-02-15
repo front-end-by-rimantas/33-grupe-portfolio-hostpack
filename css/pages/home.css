@@ -915,6 +915,16 @@ tfoot a{
     cursor: pointer;
 }
 
+.input-subscribe .btn-newSize {
+    width: 200px;
+}
+
+@media (max-width:767px) {
+    .input-subscribe .btn-newSize {
+        width: auto;
+    }
+}
+
 /* melinas su serciu konteineris pabaiga */
 
 /* Zemelapis startas */

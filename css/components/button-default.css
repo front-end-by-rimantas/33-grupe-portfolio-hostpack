@@ -6,10 +6,10 @@
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width: 180px;
+    width: 200px;
     font-family: 'Open sans';
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 0px;
     display:inline-flex;
     justify-content: space-between;
@@ -54,10 +54,10 @@
     border: var(--color-bluelight) solid 0px;
     background-color: var(--color-bluelight);
     border-radius: 2em;
-    width: 180px;
+    width: 200px;
     font-family: 'Open sans';
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 0px;
     display:inline-flex;
     justify-content: space-between;
