@@ -1,4 +1,3 @@
-
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
@@ -43,10 +42,9 @@
 .linkcontainer {
     font-size: 1.4em;
     margin-top: 22px;
-    /* display: flex;
+    display: inline-flex;
     justify-content: center;
-    float: none; */
-    text-align: center;
+    float: none;
 }
 
 @media (max-width: 1250px) {
@@ -62,18 +60,18 @@
     position: relative;
 }
 
-.linkname:before{
-    content: "";
+.linkname:before {
+    content: '';
     position: absolute;
-    top:50px;
-    left:calc(50% - 15px);
+    top: 50px;
+    left: calc(50% - 15px);
     width: 20px;
     border-bottom: #fff 3px solid;
     display: none;
 }
 
-.linkname:hover + .linkname:before{
-display:block;
+.linkname:hover + .linkname:before {
+    display: block;
 }
 
 .linkname::after {
@@ -158,7 +156,7 @@ display:block;
 }
 
 .hero-btn-right {
-    margin-left: 30px;
+    margin-left: 55px;
 }
 
 .hero-btn-right-link {
@@ -500,7 +498,7 @@ table th {
 .numbers-container {
     position: relative;
     z-index: 1;
-    margin-top: -10% ;
+    margin-top: -10%;
     margin-bottom: -13%;
 }
 
@@ -510,41 +508,41 @@ table th {
     box-shadow: 0 0 15px 5px #9d9d9d21;
     border-radius: 15px;
 }
-@media (max-width:990px){
-    .container-ourBest{
-        padding-top:100px;
+@media (max-width: 990px) {
+    .container-ourBest {
+        padding-top: 100px;
     }
     .numbers-container {
         margin-bottom: -20%;
     }
 }
-@media (max-width:720px){
-    .container-ourBest{
-        padding-top:100px;
+@media (max-width: 720px) {
+    .container-ourBest {
+        padding-top: 100px;
     }
     .numbers-container {
         margin-bottom: -25%;
     }
 }
-@media (max-width:575px){
-    .container-ourBest{
-        padding-top:150px;
+@media (max-width: 575px) {
+    .container-ourBest {
+        padding-top: 150px;
     }
     .numbers-container {
         margin-bottom: -35%;
     }
 }
-@media (max-width:440px){
-    .container-ourBest{
-        padding-top:150px;
+@media (max-width: 440px) {
+    .container-ourBest {
+        padding-top: 150px;
     }
     .numbers-container {
         margin-bottom: -50%;
     }
 }
-@media (min-width:991px){
-    .container-ourBest{
-        padding-top:100px;
+@media (min-width: 991px) {
+    .container-ourBest {
+        padding-top: 100px;
     }
     .numbers-container {
         margin-bottom: -15%;
@@ -555,7 +553,7 @@ table th {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    font-family: "Open Sans",sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 .row-counter .value {
     font-size: 2em;
@@ -563,8 +561,8 @@ table th {
     font-weight: bold;
 }
 .row-counter .value::after {
-    content: "+";
-    position:absolute;
+    content: '+';
+    position: absolute;
     position: absolute;
     top: 20%;
     left: 105%;
@@ -574,8 +572,8 @@ table th {
 .row-cntr-dot {
     position: relative;
 }
-.row-counter::before{
-    content: "";
+.row-counter::before {
+    content: '';
     height: 8px;
     width: 8px;
     background-color: var(--primary-color);
@@ -585,21 +583,21 @@ table th {
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
-.row-counter2::before{
+.row-counter2::before {
     background-color: var(--color-orange);
 }
-.row-counter3::before{
+.row-counter3::before {
     background-color: var(--color-greenlight);
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .row-counter::before,
     .row-counter2::before,
     .row-counter3::before {
         background-color: transparent;
     }
 }
-@media (max-width:990px){
+@media (max-width: 990px) {
     .row-counter {
         margin-bottom: 30px;
     }
@@ -612,7 +610,7 @@ table th {
     color: var(--primary-color);
 }
 .row-counter .people-value {
-    color: var(--color-orange)
+    color: var(--color-orange);
 }
 .row-counter .team-value {
     color: var(--color-greenlight);
@@ -1082,6 +1080,20 @@ table th {
     margin-bottom: 20px;
 }
 
+@media (max-width: 1160px) {
+    .blueribbon > h2 {
+        font-size: 56px;
+    }
+    .blueribbon > p {
+        font-size: 18px;
+    }
+
+    .carousel {
+        left: 50%;
+        width: 500px;
+    }
+}
+
 .blueribbon > p > span {
     text-transform: capitalize;
 }
@@ -1091,9 +1103,13 @@ table th {
 }
 
 @media (max-width: 980px) {
-    .client-container {
-        height: 800px;
+    .blueribbon {
+        margin-top: 50px;
     }
+    .client-container {
+        height: 600px;
+    }
+
     .blueribbon {
         height: 500px;
         justify-content: flex-start;
@@ -1105,9 +1121,13 @@ table th {
 }
 
 @media (max-width: 615px) {
+    .client-container {
+        height: 700px;
+    }  
+
     .carousel {
         left: 60px;
-        top: 63%;
+        top: 65%;
         width: 200px;
     }
 
