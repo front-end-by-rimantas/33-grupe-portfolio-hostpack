@@ -379,6 +379,10 @@ padding: 5px;
     line-height: 15px;
 }
 
+.place-search::placeholder{
+    color: rgb(182, 182, 182);
+}
+
 .input-search button {
     position: relative;
     cursor: pointer;
@@ -1022,6 +1026,10 @@ tfoot a {
     font-weight: 400;
     line-height: 15px;
     color: var(--color-gray);
+}
+
+.place-subscribe::placeholder {
+    color: rgb(182, 182, 182);
 }
 
 *:focus {
