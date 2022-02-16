@@ -1,5 +1,6 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
+
 /* header start */
 .headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
@@ -46,20 +47,18 @@
 .headeris a::before {
     content: "\f015";
     font-family: fontawesome;
+    transition: 0.5s ease-in-out;
 }
-.headeris a:hover  {
-    color:red
-}
-.namukas p:hover {
-    color:red;
-}
-.headeris span {
+
+.headeris a {
     font-size: 17px;
     font-weight: 400;
     text-decoration: none;
     color: #fff;
     margin-right: 5px;
     vertical-align: baseline;
+    transition-delay: 0.2s;
+    transition: 0.4s ease-in-out;
 }
 
 .headeris sup {
@@ -76,6 +75,10 @@
     margin-left: 10px;
     color: #fff
 }
+.headeris .linkas:hover {
+    color: var(--color-bluelight);
+}
+
 /* header end */
 
 .container.choose-us{
