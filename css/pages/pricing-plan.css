@@ -1,10 +1,46 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
 /* header start */
-.virsus {
+.headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    background-position: bottom;
+    min-height: 540px;
+    padding-top: 220px;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.fa {
+    color: #fff;
+}
+.headeris h1{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 55px;
+    font-family: Lato;
+    margin-bottom: 22px;
+    font-weight: 900;
+    color: #fff;
+
+}
+.middle{
+    vertical-align: middle;
+}
+.headeris span {
+    font-size: 17px;
+    font-family: Open Sans;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle; 
+    margin-left: 5px;
 }
 /* header end */
 
