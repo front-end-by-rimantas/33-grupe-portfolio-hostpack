@@ -1,1 +1,39 @@
 @import '../pages/home.css';
+@import '../base/layout.css';
+
+.kortele {
+    padding: 60px 15px 57px;
+}
+.choose-us.icon{
+    text-align: center;
+}
+ .choose-us img{
+    width: 60px;
+    height: 60px;
+}
+.choose-us .pirmas{
+    font-weight: 700;
+}
+.para.antras{
+  
+}
+.choose-us-content{
+    /* width: 80%; */
+    text-align: center;
+    align-items: center;
+    place-content: center;
+}
+.pirmas{
+    color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+}
+.antras{
+    color: #666;
+    font-family: Open Sans, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    text-align: center;
+}
