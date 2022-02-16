@@ -1,5 +1,17 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
+/* header start */
+.virsus {
+    background: rgb(29, 15, 155);
+    background: linear-gradient(
+        90deg,
+        rgba(29, 15, 155, 1) 0%,
+        rgba(0, 195, 255, 1) 100%
+    );
+    padding: 0;
+}
+/* header end */
+
 .container.choose-us{
     background-color: var(--color-light);
 }
