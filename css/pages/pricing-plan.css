@@ -43,9 +43,16 @@
     font-size: 17px;
     vertical-align: middle; 
 }
+.headeris a::before {
+    content: "\f015";
+    font-family: fontawesome;
+}
 .headeris a:hover  {
     color:red
-
+}
+.namukas p:hover {
+    color:red;
+}
 .headeris span {
     font-size: 17px;
     font-weight: 400;
