@@ -19,6 +19,31 @@
 /* hero pabaiga */
 
 /* our best konteineris startas */
+.container-ourBest {
+    background-color: var(--color-light);
+    background-image: none;
+}
+.title-ourBest {
+    color: var(--color-dark);
+    text-transform: capitalize;
+}
+.txt-ourBest {
+    color: var(--color-graytext);
+}
+.bottom-ourBest a {
+    color: var(--color-dark);
+}
+.block-ourBest {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.background-neibor {
+    z-index: -1;
+}
+
+.block-ourBest:hover > .background-neibor {
+    opacity: 0.7;
+}
+
 /* ourBest konteineris pabaiga */
 
 /* control panel konteineris startas */
@@ -31,4 +56,12 @@
 /* footer pabaiga */
 
 /* back to top startas */
+.btn-to-top {
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: none;
+}
 /* back to top pabaiga */
