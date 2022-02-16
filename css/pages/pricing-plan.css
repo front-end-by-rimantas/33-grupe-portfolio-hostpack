@@ -1,24 +1,50 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
-
+.container.choose-us{
+    background-color: var(--color-light);
+}
 .kortele {
+    box-shadow: #666;
+    text-align: center;
+    background-color: #fff;
     padding: 60px 15px 57px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 10px;
+}
+.choose-us p {
+    line-height: 1.5;
+    font-weight: 400;
 }
 .choose-us.icon{
-    text-align: center;
-}
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;}
  .choose-us img{
+    background-color: #fff;
     width: 60px;
     height: 60px;
 }
-.choose-us .pirmas{
+.choose-us .pirmas h1{
+    background-color: var(--color-light);;
+    font-weight: 900;
+}
+.choose-us .pirmas {
+    background-color: #fff;;
     font-weight: 700;
 }
+.choose-title{
+    background-color: #fff;
+}
 .para.antras{
-  
+    background-color: #fff;  
 }
 .choose-us-content{
-    /* width: 80%; */
+    background-color: #fff;
+    max-width: 264px;
     text-align: center;
     align-items: center;
     place-content: center;
@@ -30,10 +56,9 @@
     font-family: Lato, sans-serif;
     font-size: 24px;
 }
-.antras{
+.choose-us .antras{
     color: #666;
     font-family: Open Sans, sans-serif;
-    letter-spacing: 1px;
-    line-height: 1.8;
+    line-height: 1.5;
     text-align: center;
 }
