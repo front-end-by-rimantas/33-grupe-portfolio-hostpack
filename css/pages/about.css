@@ -41,8 +41,15 @@
     text-transform: capitalize;
     color: var(--secondary-color);
 }
+.header .hamburger {
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+
 .nav-btn {
-    border-color: red;
+    display: flex;
+    flex-wrap: nowrap;
     border: 1px;
     color: var(--secondary-color);
     text-decoration: none;
@@ -97,6 +104,7 @@
 .meet-title {
     font-size: 50px;
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 .meet-pic {
     margin-top: -3%;
@@ -106,10 +114,16 @@
     line-height: 1.5em;
     font-size: 'Lato';
     font-size: 18px;
+    text-align: center;
 }
 /* ///////////////////trys cardai/////////////////// */
+.container.content3 {
+    margin-bottom: -170px;
+    position: relative;
+    z-index: 10;
+}
 .card-content {
-    background-color: red;
+    background-color: #fff;
     display: grid;
     gap: 15px ;
     padding: 50px 30px 70px 30px;
@@ -124,7 +138,7 @@
     grid-area: icon;
     height: 50px;
     justify-self: start;
-
+    
 }
 .card-content .title{
     grid-area: title;
@@ -147,6 +161,7 @@
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 20px;
+    
 }
 
 .container .bg2 {
@@ -169,11 +184,16 @@
     }
 }
 /* ////////////////////////////astuoniu kardu pradzia////////////////////////// */
+/* .container.card {
+    position: absolute;
+} */
 .card {
     background-image: url(../../pages/About-us/img/service_bg.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
+
 }
 .text8 {
     text-align: center;
@@ -184,39 +204,182 @@
     font-family: 'Lato';
     line-height: 1.7em;
     font-weight: bolder;
+    text-align: center;
 }
 .text8 .description {
     font-family: 'Lato';
     font-size: 16px;
     line-height: 1.5em;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
+    text-align: center;
 }
-.cards-servise 
 .cards8 {
+    display: grid;
+}
+.cards8 .content {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    border: 1px solid var(--secondary-color);
-    
+    padding: 80px 15px;
+    grid-template-areas: 
+           "icon"
+           "link";
+}
+.cards8 .content-img { 
+    grid-area: icon;
+    justify-self: center;
 
 }
-.cards8 .card-icon { 
-grid-column: span 1;
-justify-self: center;
-
-}
-.cards8 .cards-link {
-    grid-column: span 1;
+.cards8  .content-link {
+    grid-area: link;
     justify-self: center;
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
-    line-height: 1.7em;
-    font-size: 18px;
+    line-height: 1.5em;
+    font-size: 16px;
     font-family: 'Lato';
 }
-@media (min-width:575px) {
+@media (max-witdh:575px) {
     .cards8 {
         grid-template-columns: 1fr;
     }
+}
+@media (min-width:575px) {
+    .cards8 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:991px) {
+    .cards8 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+}
+.fonas1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    opacity: 0;
+    z-index: 1;
+}
+.content:hover > .fonas1 {
+    animation-name: fillUp;
+    width: 100%;
+    height: 100%;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 0.2;
+
+}
+@keyframes fillUp {
+    0% {
+        width: 80%;
+        height: 80%;
+    }
+
+    50% {
+        width: 90%;
+        height: 90%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* ////////////////////////////////trys nuptraukos///////////// */
+.people-content {
+    margin-top: -100px;
+    margin-bottom: 30px;
+}
+.container .people-content .title {
+    grid-area: title;
+    font-size: 50px;
+    font-family: 'Lato';
+    color: var(--color-dark);
+    font-weight: bold;
+    line-height: 1.7em;
+    text-align: center;
+}
+.container .people-content .description {
+    font-size: 16px;
+    font-family: 'Lato';
+    color: var(--color-graytext);
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.pic-img {
+    height: 280px;
+    justify-self: center;
+    background-color: transparent;
+    border-radius: 10px;
+}
+@media (max-width: 767px){
+    .people {
+        width: 150px;
+    }
+    .pic-img {
+        height: 250px;
+    }
+}
+.picture3 {
+    display: grid;
+    gap: 20px 20px;
+    margin-bottom: 20px;
+    
+}
+.picture3 .people {
+    display: grid;
+    gap:  10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "name"
+    'job';
+}
+.picture3 .people {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 220px;
+    justify-self: center;
+    padding: 20px 30px;
+    position: relative;
+    margin-top: -40px;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+    
+}
+.picture3 .name {
+    grid-area: name;
+    justify-self: center;
+    align-self: center;
+}
+.picture3 .job {
+    grid-area: job;
+    justify-self: center;
+}
+.picture3 .name {
+    font-size: 22px;
+    font-family: 'Lato';
+    line-height: 1.5em;
+}
+.picture3 .job {
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: bold;
+    line-height: 1.5em;
+    color: var(--color-bluelight);
+}
+/* //////////////////////counter///////////////////////// */
+.numbers-container2 {
+position: relative;
+margin-top: -120px;
 }
