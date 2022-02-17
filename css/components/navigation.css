@@ -5,17 +5,100 @@
 }
 
 .headerc-r {
-    padding: 0;
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    margin-left: 10%;
     height: 80px;
     display: flex;
-    color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
 }
+
+.headerscreenfixed{
+position: fixed;
+top:0;
+margin-top: 0;
+margin-bottom: 0;
+background-color: #fff;
+color: #000;
+width: 100%;
+margin-left: 0%;
+padding-left: 10%;
+padding-right: 10%;
+z-index: 5;
+animation-name: slidedown;
+animation-duration: 0.5s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+}
+
+@keyframes slidedown {
+0%{
+    top:-80px;
+}
+
+50%{
+    top:-40px;
+}
+
+100%{
+    top:0px;
+}
+}
+
+
+.headerscreenfixed > .freetriallink >.freetrial {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: var(--color-bluelight);
+    border: var(--color-bluelight) solid 1px;
+    border-radius: 30px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: -10px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.headerscreenfixed > .freetriallink> .freetrial:hover {
+    background-color: var(--color-bluelight);
+    color: var(--secondary-color);
+}
+
+.headerscreenfixed > .toplogolink{
+    filter: brightness(0) invert(67%) sepia(61%) saturate(2158%) hue-rotate(143deg) brightness(98%) contrast(92%);
+}
+
+
+.headertopfixed{
+position: static;
+margin-top: 20px;
+margin-bottom: 150px;
+color: var(--secondary-color);
+width: 80%;
+margin-left: 10%;
+padding: 0;
+transition:0.5s
+}
+
+.headertopfixed > .freetriallink >.freetrial {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 30px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: -10px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.headertopfixed > .freetriallink > .freetrial:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-bluelight);
+}
+
+/*  */
 
 .toplogo {
     width: 220px;
@@ -142,7 +225,7 @@ display:none;
     right:0;
     transform: translateX(0);
     width:60vw;
-    z-index: 4;
+    z-index:4;
     height:60vh;
     overflow-y: auto;
 }
@@ -380,20 +463,4 @@ display:none;
     text-decoration: none;
 }
 
-.freetrial {
-    text-transform: uppercase;
-    padding: 15px 20px;
-    color: var(--secondary-color);
-    border: var(--secondary-color) solid 1px;
-    border-radius: 30px;
-    width: 160px;
-    font-size: 16px;
-    margin-top: 0px;
-    font-weight: 600;
-    text-align: center;
-}
 
-.freetrial:hover {
-    background-color: var(--secondary-color);
-    color: var(--color-bluelight);
-}
