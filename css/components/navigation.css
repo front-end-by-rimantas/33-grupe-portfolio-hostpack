@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+
+.hp-display-none{
+    display:none;
+}
+
 .headerscreenfixed{
 position: fixed;
 top:0;
@@ -76,7 +81,6 @@ color: var(--secondary-color);
 width: 80%;
 margin-left: 10%;
 padding: 0;
-transition:0.5s
 }
 
 .headertopfixed > .freetriallink >.freetrial {
