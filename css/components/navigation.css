@@ -1,0 +1,388 @@
+.navline {
+    padding: 0;
+    background-color: transparent;
+    margin-bottom: 150px;
+}
+
+.headerc-r {
+    padding: 0;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    margin-left: 10%;
+    height: 80px;
+    display: flex;
+    color: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toplogo {
+    width: 220px;
+}
+
+.linkbox {
+    display: inline;
+    font-size: 22px;
+}
+
+.linkname {
+    display: inline;
+    text-transform: capitalize;
+    padding: 0 15px;
+    position: relative;
+}
+
+.linkname:before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 15px);
+    width: 20px;
+    border-bottom: #fff 3px solid;
+    display: none;
+}
+
+.linkbox {
+    position: relative;
+}
+
+.linkbox:hover > .linkname:before {
+    display: block;
+}
+
+.linkname::after {
+    font-family: 'FontAwesome';
+    margin-left: 2px;
+    content: '\f107';
+}
+
+.linkthree {
+    text-transform: uppercase;
+}
+
+.linkthree:after {
+    display: none;
+}
+
+/* .linkone::before{
+    display:block;
+}  */
+
+.linkbox > .matchbox {
+    
+    border-radius: 0 0 10px 10px;
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+    left: 0%;
+}
+
+.matchbox-holder{
+    width:1px;
+    opacity: 0;
+    height: 60px;
+}
+
+.matchbox > a {
+    display: block;
+    background-color: #ffffff;
+    border-top: rgb(128, 128, 128, 0.5) 1px solid;
+    width: 250px;
+    padding-left: 20px;
+    line-height: 3em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.matchbox > a:last-of-type {
+    border-radius: 0 0 10px 10px;
+}
+
+.livelink {
+    color: #00c3ff;
+}
+
+.linkbox:hover > .matchbox {
+    display: block;
+}
+
+.navhouse {
+    font-size: 21px;
+    padding: 17px;
+    display: none;
+    cursor:pointer;
+    position: relative;
+}
+
+.navhouse > input{
+display:none;
+}
+
+.burgeropen{
+    display:block;
+    cursor:pointer;
+}
+
+.burgerclose{
+    display:none;
+    cursor:pointer;
+}
+
+.navhouse-menu{
+    display:none;
+    position: absolute;
+    background-color: white;
+    top:100px;
+    left:-45vw;
+    width:90vw;
+    z-index: 4;
+    height:50vh;
+    overflow-y: auto;
+}
+
+
+
+.menu-link{
+    font-size: 22px;
+    color: #000;
+    padding: 20px;
+}
+
+
+
+#clicky:checked+.navhouse-contain>.burgeropen{
+    display:none;
+}
+
+
+
+#clicky:checked+.navhouse-contain>.burgerclose{
+    display:block;
+}
+
+#clicky:checked+.navhouse-contain>.navhouse-menu{
+    display:block;
+}
+
+/* mobile navigation */
+
+.menu-link-box > p{
+    font-size: 22px;
+    color: #000;
+    padding: 10px;
+    display:inline;
+    text-align: left;
+}
+
+.menu-link-box > p:hover{
+    color: #00c3ff;
+}
+
+.checkbox-nav{
+    display:none;
+}
+
+.menu-link-box > a{
+    text-decoration: none;
+    display:none;
+    margin-left: 50px;
+    line-height: 3em;
+    color: #000;
+    font-size: 20px;
+}
+
+
+.menu-link-box > a:hover{
+    color: #00c3ff;
+}
+
+.menu-link-box > label:hover{
+    color: #00c3ff;
+}
+
+
+/* mobile navigation 1 link specific */
+.menu-link-box > .navclick-one-open{
+    display:inline;
+    float:right;
+ }
+    
+.menu-link-box > .navclick-one-close{
+    display:none;
+    float:right;
+}
+    
+
+#navclick-one:checked+.menu-link-box>.navclick-one-open{
+    display:none;
+}
+
+#navclick-one:checked+.menu-link-box>.navclick-one-close{
+    display:block;
+}
+
+#navclick-one:checked+.menu-link-box>.a-navclick-one{
+    display:block;
+}
+
+/* mobile navigation 2 link specific */
+.menu-link-box > .navclick-two-open{
+    display:inline;
+    float:right;
+ }
+    
+.menu-link-box > .navclick-two-close{
+    display:none;
+    float:right;
+}
+    
+
+#navclick-two:checked+.menu-link-box>.navclick-two-open{
+    display:none;
+}
+
+#navclick-two:checked+.menu-link-box>.navclick-two-close{
+    display:block;
+}
+
+#navclick-two:checked+.menu-link-box>.a-navclick-two{
+    display:block;
+}
+
+/* mobile navigation 4 link specific */
+
+.menu-link-box > .navclick-four-open{
+    display:inline;
+    float:right;
+ }
+    
+.menu-link-box > .navclick-four-close{
+    display:none;
+    float:right;
+}
+    
+
+#navclick-four:checked+.menu-link-box>.navclick-four-open{
+    display:none;
+}
+
+#navclick-four:checked+.menu-link-box>.navclick-four-close{
+    display:block;
+}
+
+#navclick-four:checked+.menu-link-box>.a-navclick-four{
+    display:block;
+}
+
+/* mobile navigation 5 link specific */
+
+.menu-link-box > .navclick-five-open{
+    display:inline;
+    float:right;
+ }
+    
+.menu-link-box > .navclick-five-close{
+    display:none;
+    float:right;
+}
+    
+
+#navclick-five:checked+.menu-link-box>.navclick-five-open{
+    display:none;
+}
+
+#navclick-five:checked+.menu-link-box>.navclick-five-close{
+    display:block;
+}
+
+#navclick-five:checked+.menu-link-box>.a-navclick-five{
+    display:block;
+}
+
+/* mobile navigation 6 link specific */
+
+.menu-link-box > .navclick-six-open{
+    display:inline;
+    float:right;
+ }
+    
+.menu-link-box > .navclick-six-close{
+    display:none;
+    float:right;
+}
+    
+
+#navclick-six:checked+.menu-link-box>.navclick-six-open{
+    display:none;
+}
+
+#navclick-six:checked+.menu-link-box>.navclick-six-close{
+    display:block;
+}
+
+#navclick-six:checked+.menu-link-box>.a-navclick-six{
+    display:block;
+}
+
+/* mobile navigation end */
+
+@media(max-width: 1170px){
+
+    .linkname{
+    font-size: 18px;
+    padding: 5px;
+    }
+    
+    } 
+
+
+@media (max-width: 1000px) {
+    .navhouse {
+        display: flex;
+        justify-self: end;
+    }
+
+.linkbox{
+    display:none;
+}    
+}
+
+@media(max-width: 580px){
+    .freetrial{
+        display:none;
+    }
+    .navhouse {
+ order: 2;
+    }
+    .navhouse-menu{
+        left:-60vw;
+        width:60vw;
+    }
+
+}
+
+.freetriallink {
+    margin-top: 11px;
+    text-decoration: none;
+}
+
+.freetrial {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 30px;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 0px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.freetrial:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-bluelight);
+}

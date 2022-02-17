@@ -1,0 +1,138 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+
+/* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+@import '../3rd-party/font.css';
+
+/* components */
+@import '../components/button-default.css';
+@import '../components/carousel.css';
+
+/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+/* header startas */
+/* header pabaiga */
+
+/* hero startas */
+/* hero pabaiga */
+
+/* our best konteineris startas */
+.container-ourBest {
+    background-color: #fcfcfc;
+    background-image: none;
+}
+.title-ourBest {
+    color: var(--color-dark);
+    text-transform: capitalize;
+}
+.txt-ourBest {
+    color: var(--color-graytext);
+}
+.bottom-ourBest a {
+    color: var(--color-dark);
+}
+.block-ourBest {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.background-neibor {
+    z-index: -1;
+}
+.block-ourBest:hover > .background-neibor {
+    opacity: 1;
+}
+/* ourBest konteineris pabaiga */
+
+/* control panel konteineris startas */
+.container-controlPnl {
+    background-color: #f7faff;
+}
+
+.top-controlPnl {
+    text-align: center;
+}
+
+.title-controlPnl {
+    background-color: transparent;
+    margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+@media (min-width: 498px) {
+    .title-controlPnl {
+        font-size: 48px; 
+    }
+}
+
+.txt-controlPnl {
+    background-color: transparent;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.left-controlPnl {
+    display: grid;
+    gap: 30px;
+}
+
+.column-controlPnl {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+        'icon title'
+        'icon txt';
+    gap: 10px;
+    padding: 5px;
+}
+
+.title2-controlPnl {
+    grid-area: title;
+    background-color: transparent;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.txt2-controlPnl {
+    grid-area: txt;
+    background-color: transparent;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.img-controlPnl {
+    grid-area: icon;
+    width: 68px;
+    height: 61px;
+    justify-self: center;
+}
+
+.right-controlPnl img {
+    width: 100%;
+}
+/* control panel konteineris pabaiga */
+
+/* get latest blog konteineris startas */
+/* get latest blog konteineris pabaiga */
+
+/* footer startas */
+/* footer pabaiga */
+
+/* back to top startas */
+.btn-to-top {
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: none;
+}
+/* back to top pabaiga */
