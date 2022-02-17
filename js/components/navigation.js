@@ -8,10 +8,9 @@ window.addEventListener("scroll",() => runOnScrollTop())
 
 function runOnScrollScreen() {
     const hdr = document.getElementById('navhome');
-    const hp = document.getElementById('hp');
     if (window.pageYOffset > 500) {
         hdr.classList.add('headerscreenfixed');
-        hdr.classList.remove('hp-display-none');
+        hdr.classList.remove('headertopfixed');
     }
 }
 
@@ -19,6 +18,7 @@ function runOnScrollTop() {
     const hdr = document.getElementById('navhome');
     if (window.pageYOffset < 300) {
         hdr.classList.remove('headerscreenfixed');
-        hdr.classList.add('hp-display-none');
+        hdr.classList.add('headertopfixed');
     }
 }
+
