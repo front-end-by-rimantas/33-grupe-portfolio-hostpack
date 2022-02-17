@@ -1,6 +1,11 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
-
+.no-padding {
+    padding: 0;
+}
+.no-margin{
+    margin: 0;
+}
 .flexas {
     display: flex;
     gap: 20px
@@ -26,15 +31,23 @@
     }
 }
 
-/* header start */
 .virsus {
     gap: 0px;
-    background-color: red;
-    padding: 0   
+    background-color: transparent;
+    padding: 0;
+    min-height: 46px; 
+      
 }
 .header-top{
-    background-color: yellow;
+    /* background-color: var(--color-bluelight); */
     justify-content: space-between;
+
+}
+.header-top a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: Open Sans;
 }
 
 .header-main{
@@ -53,6 +66,7 @@
      display: flex;
     align-items: center;
     vertical-align: middle;
+    margin-top: -200px
 }
 .fa {
     color: #fff;
