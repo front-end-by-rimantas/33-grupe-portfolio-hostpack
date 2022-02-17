@@ -1,7 +1,7 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
 .no-padding {
-    padding: 0;
+    padding: 15px 0px;
 }
 .no-margin {
     margin-bottom: -30px;
@@ -17,6 +17,7 @@
     float: unset;
     justify-content: flex-end;
 }
+
 @media (max-width: 575px) {
     .header-top {
         align-content: center;
@@ -36,6 +37,33 @@
     background-color: transparent;
     padding: 0;
     min-height: 46px;
+}
+.contacts-bg{
+    background-color: #0002;
+}
+.phone::before{
+    content: '\f095';
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.mail::before{
+    content: '\f0e0';
+    font-family: fontawesome;
+    margin-right: 5px;
+    color: #fff
+}
+.login{
+    margin-right: 5px;
+}
+.login::before{
+    content: '\f090';
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.support::before{
+    content: '\f140';
+    font-family: fontawesome;
+    margin-right: 5px;
 }
 .header-top {
     /* background-color: var(--color-bluelight); */
