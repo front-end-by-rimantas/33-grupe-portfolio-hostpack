@@ -115,6 +115,7 @@
     display: none;
     cursor:pointer;
     position: relative;
+    margin-left: 25vw;
 }
 
 
@@ -138,10 +139,11 @@ display:none;
     position: absolute;
     background-color: white;
     top:100px;
-    left:-45vw;
-    width:90vw;
+    right:0;
+    transform: translateX(0);
+    width:60vw;
     z-index: 4;
-    height:50vh;
+    height:60vh;
     overflow-y: auto;
 }
 
@@ -352,12 +354,19 @@ display:none;
 }    
 }
 
+@media(max-width:700px){
+    .navhouse{
+        margin-left: 13vw;
+    }
+}
+
 @media(max-width: 580px){
     .freetrial{
         display:none;
     }
     .navhouse {
  order: 2;
+ margin-left:0;
     }
     .navhouse-menu{
         left:-60vw;
