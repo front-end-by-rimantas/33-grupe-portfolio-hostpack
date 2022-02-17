@@ -3,31 +3,31 @@
 .no-padding {
     padding: 0;
 }
-.no-margin{
+.no-margin {
     margin: 0;
+}
+.min-margin{
+    margin-top: -20px;
 }
 .flexas {
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 .end {
     float: unset;
-   justify-content: flex-end;
+    justify-content: flex-end;
 }
-@media (max-width: 575px){
-    .header-top{
+@media (max-width: 575px) {
+    .header-top {
         align-content: center;
-        
     }
-    .end, .flexas{
+    .end,
+    .flexas {
         justify-content: center;
         width: 100%;
-        
-        
     }
-    .flexas.contacts{
+    .flexas.contacts {
         margin-bottom: 5px;
-    
     }
 }
 
@@ -35,43 +35,44 @@
     gap: 0px;
     background-color: transparent;
     padding: 0;
-    min-height: 46px; 
-      
+    min-height: 46px;
 }
-.header-top{
+.header-top {
     /* background-color: var(--color-bluelight); */
     justify-content: space-between;
-
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+    margin-top: 220px;
 }
-.header-top a{
+.header-top a {
     text-decoration: none;
     color: #fff;
     font-size: 13px;
     font-family: Open Sans;
 }
 
-.header-main{
+.header-main {
     background-color: #fff;
-    
 }
 
 .headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: bottom;
     min-height: 540px;
     padding-top: 220px;
     padding-bottom: 100px;
-     display: flex;
+    display: flex;
     align-items: center;
     vertical-align: middle;
-    margin-top: -200px
+    margin-top: -200px;
 }
 .fa {
     color: #fff;
 }
-.headeris h1{
+.headeris h1 {
     vertical-align: middle;
     text-align: center;
     font-size: 55px;
@@ -79,15 +80,14 @@
     margin-bottom: 22px;
     font-weight: 900;
     color: #fff;
-
 }
-.middle{
+.middle {
     vertical-align: middle;
 }
 .centriukas {
     text-align: center;
 }
-.justify-align-center{
+.justify-align-center {
     display: flex;
     justify-content: center;
 }
@@ -96,10 +96,10 @@
     text-decoration: none;
     color: #fff;
     font-size: 17px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 .headeris a::before {
-    content: "\f015";
+    content: '\f015';
     font-family: fontawesome;
     transition: 0.5s ease-in-out;
 }
@@ -120,14 +120,14 @@
     font-size: 17px;
     font-family: Open Sans;
     margin-left: 10px;
-    color: #fff
+    color: #fff;
 }
 .headeris p {
     vertical-align: middle;
     font-size: 17px;
     font-family: Open Sans;
     margin-left: 10px;
-    color: #fff
+    color: #fff;
 }
 .headeris .linkas:hover {
     color: var(--color-bluelight);
@@ -135,7 +135,7 @@
 
 /* header end */
 
-.container.choose-us{
+.container.choose-us {
     background-color: var(--color-light);
 }
 .kortele {
@@ -153,46 +153,47 @@
     line-height: 1.5;
     font-weight: 400;
 }
-.choose-us.icon{
+.choose-us.icon {
     background-color: #fff;
     justify-content: center;
     width: 100%;
-    margin-bottom: 40px;}
- .choose-us img{
+    margin-bottom: 40px;
+}
+.choose-us img {
     background-color: #fff;
     width: 60px;
     height: 60px;
 }
-.choose-us .pirmas h1{
-    background-color: var(--color-light);;
+.choose-us .pirmas h1 {
+    background-color: var(--color-light);
     font-weight: 900;
 }
 .choose-us .pirmas {
-    background-color: #fff;;
+    background-color: #fff;
     font-weight: 700;
 }
-.choose-title{
+.choose-title {
     background-color: #fff;
 }
-.para.antras{
-    background-color: #fff;  
+.para.antras {
+    background-color: #fff;
     max-width: 264px;
 }
-.choose-us-content{
+.choose-us-content {
     background-color: #fff;
     max-width: 264px;
     text-align: center;
     align-items: center;
     place-content: center;
 }
-.pirmas{
+.pirmas {
     color: #111;
     margin-bottom: 25px;
     text-align: center;
     font-family: Lato, sans-serif;
     font-size: 24px;
 }
-.choose-us .antras{
+.choose-us .antras {
     color: #666;
     font-family: Open Sans, sans-serif;
     line-height: 1.5;
