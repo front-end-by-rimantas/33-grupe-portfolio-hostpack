@@ -1,16 +1,23 @@
-window.addEventListener("scroll",() => runOnScroll())
+setTimeout(Checkscroll,1000);
 
 
-function runOnScroll() {
+function Checkscroll() {
+window.addEventListener("scroll",() => runOnScrollScreen())
+window.addEventListener("scroll",() => runOnScrollTop())
+};
+
+function runOnScrollScreen() {
     const hdr = document.getElementById('navhome');
-    console.log('function', hdr);
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 500) {
         hdr.classList.add('headerscreenfixed');
         hdr.classList.remove('headertopfixed');
-        console.log("screen");
-    } else {
+    }
+}
+
+function runOnScrollTop() {
+    const hdr = document.getElementById('navhome');
+    if (window.pageYOffset < 300) {
         hdr.classList.remove('headerscreenfixed');
         hdr.classList.add('headertopfixed');
-        console.log("top");
     }
-};
+}
