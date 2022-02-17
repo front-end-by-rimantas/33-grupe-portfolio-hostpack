@@ -16,6 +16,13 @@
 /* header pabaiga */
 
 /* hero startas */
+.container-srvHero {
+    background-color: var(--primary-color);
+    background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 358px;
+}
 /* hero pabaiga */
 
 /* our best konteineris startas */
