@@ -1,7 +1,47 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
 
+.flexas {
+    display: flex;
+    gap: 20px
+}
+.end {
+    float: unset;
+   justify-content: flex-end;
+}
+@media (max-width: 575px){
+    .header-top{
+        align-content: center;
+        
+    }
+    .end, .flexas{
+        justify-content: center;
+        width: 100%;
+        
+        
+    }
+    .flexas.contacts{
+        margin-bottom: 5px;
+    
+    }
+}
+
 /* header start */
+.virsus {
+    gap: 0px;
+    background-color: red;
+    padding: 0   
+}
+.header-top{
+    background-color: yellow;
+    justify-content: space-between;
+}
+
+.header-main{
+    background-color: #fff;
+    
+}
+
 .headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
     background-repeat: no-repeat;
