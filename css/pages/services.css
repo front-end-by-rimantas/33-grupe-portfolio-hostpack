@@ -163,11 +163,14 @@
 .main-getLBlog {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 30px;
 }
 
 @media (min-width: 575px) {
     .main-getLBlog {
         grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
     }
 }
 
@@ -175,6 +178,10 @@
     .main-getLBlog {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
+
+.column-getLBlog a {
+    text-decoration: none;
 }
 
 /* get latest blog konteineris pabaiga */
