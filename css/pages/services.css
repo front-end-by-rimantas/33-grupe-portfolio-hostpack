@@ -186,11 +186,25 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+    .main-getLBlog > .three {
+        width: 245px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+@media (min-width: 767px) {
+    .main-getLBlog > .three {
+        width: 330px;
+    }
 }
 
 @media (min-width: 991px) {
     .main-getLBlog {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main-getLBlog > .three {
+        grid-column: unset;
+        width: auto;
     }
 }
 
