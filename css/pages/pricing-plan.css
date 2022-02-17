@@ -34,12 +34,22 @@
 
 .virsus {
     gap: 0px;
-    background-color: transparent;
+    background-color: lightgreen;
     padding: 0;
     min-height: 46px;
 }
+.row.header-top{
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.container.contacts-bg{
+    padding-bottom: 0px;
+}
 .contacts-bg{
     background-color: #0002;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .phone::before{
     content: '\f095';
@@ -65,6 +75,28 @@
     font-family: fontawesome;
     margin-right: 5px;
 }
+.container.header-main{
+    padding: 0;
+}
+.header-main{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.row.head-main{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 .header-top {
     /* background-color: var(--color-bluelight); */
     justify-content: space-between;
@@ -80,9 +112,9 @@
     font-family: Open Sans;
 }
 
-.header-main {
+/* .header-main {
     background-color: #fff;
-}
+} */
 
 .headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
