@@ -1,0 +1,222 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+
+/* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+@import '../3rd-party/font.css';
+
+/* components */
+@import '../components/button-default.css';
+@import '../components/carousel.css';
+
+/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+.header-bg {
+    background-image: url(../../pages/About-us/img/page-title-bg.png);
+    height: 60vh;
+    margin-top: 0;
+    padding-top: 0;
+}
+.header-nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+}
+.header-nav  img {
+    width: 230px;
+}
+.main-nav {
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+    line-height: 1.7em;
+}
+.main-nav > a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+.nav-btn {
+    border-color: red;
+    border: 1px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: transparent;
+
+}
+.nav-btn:hover {
+    background-color: var(--secondary-color);
+    color:var(--color-bluelight);
+    transition: 0.5s;
+}
+.hero1 {
+    text-align: center;
+}
+.hero-text {
+    font-size: 55px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.hero-link{
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.hero-link >a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.hero-link > .fa:hover,
+.hero-link a:hover {
+    color: var(--color-bluelight);
+}
+/* .footer-back{
+    padding-bottom: 0;
+} */
+
+.meet-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.meet-title {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+}
+.meet-pic {
+    margin-top: -3%;
+}
+.meet-content .desc {
+    color: var(--color-graytext);
+    line-height: 1.5em;
+    font-size: 'Lato';
+    font-size: 18px;
+}
+/* ///////////////////trys cardai/////////////////// */
+.card-content {
+    background-color: red;
+    display: grid;
+    gap: 15px ;
+    padding: 50px 30px 70px 30px;
+    align-self: center;
+    grid-template-columns: 70px 1fr;
+    grid-template-areas: 
+         'icon  .' 
+         'title title'
+         'desc desc' ;
+}
+.card-content .icon {
+    grid-area: icon;
+    height: 50px;
+    justify-self: start;
+
+}
+.card-content .title{
+    grid-area: title;
+    font-size: 24px;
+    font-family: 'Lato';
+    color: var(--color-dark);
+    font-weight: bold;
+    line-height: 1.7em;
+}
+.card-content .description {
+    grid-area: desc;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: var(--color-graytext);
+    font-family: 'Open Sans';
+    
+}
+.container .bg1 {
+    background-image: url(../../pages/About-us/img/cu_bg1.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.container .bg2 {
+    background-image: url(../../pages/About-us/img/cu_bg2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.container .bg3 {
+    background-image: url(../../pages/About-us/img/cu_bg3.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+@media (max-width:991px){
+    .card-content {
+        margin-bottom: 30px;
+
+    }
+}
+/* ////////////////////////////astuoniu kardu pradzia////////////////////////// */
+.card {
+    background-image: url(../../pages/About-us/img/service_bg.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text8 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+.text8 .title {
+    font-size: 50px;
+    font-family: 'Lato';
+    line-height: 1.7em;
+    font-weight: bolder;
+}
+.text8 .description {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 60px;
+}
+.cards-servise 
+.cards8 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: 1px solid var(--secondary-color);
+    
+
+}
+.cards8 .card-icon { 
+grid-column: span 1;
+justify-self: center;
+
+}
+.cards8 .cards-link {
+    grid-column: span 1;
+    justify-self: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-family: 'Lato';
+}
+@media (min-width:575px) {
+    .cards8 {
+        grid-template-columns: 1fr;
+    }
+}
