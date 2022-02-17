@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg class="svg replaced-svg" viewBox="0 0 12.001 10" xmlns="http://www.w3.org/2000/svg">
-<path transform="translate(-247 -248.5)" d="M254.345,248.64a.5.5,0,1,0-.689.724L257.491,253H247.5a.5.5,0,1,0,0,1h9.975l-3.82,3.638a.5.5,0,1,0,.689.724l4.363-4.155a1,1,0,0,0-.009-1.423Z" fill="#818181"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="svg replaced-svg" viewBox="0 0 12.001 10"><path fill="#818181" d="M254.345,248.64a.5.5,0,1,0-.689.724L257.491,253H247.5a.5.5,0,1,0,0,1h9.975l-3.82,3.638a.5.5,0,1,0,.689.724l4.363-4.155a1,1,0,0,0-.009-1.423Z" transform="translate(-247 -248.5)"/></svg>
