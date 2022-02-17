@@ -240,18 +240,17 @@
     color: #818181;
 }
 
-.nav-more::before {
-    font-family: 'FontAwesome';
-    margin-right: 6px;
-    content: '\f061';
-    color: var(--color-bluelight);
+.nav-more img {
+    filter: brightness(0) invert(61%) sepia(91%) saturate(1152%) hue-rotate(144deg) brightness(97%) contrast(94%);
+    width: 12px;
+    height: 10px;
+    margin: 11px 8px 0 0;
 }
 
 .nav-more:hover {
     color: var(--color-bluelight);
     transition: 0.3s;
 }
-
 
 /* get latest blog konteineris pabaiga */
 
