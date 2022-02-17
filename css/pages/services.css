@@ -121,6 +121,69 @@
 /* control panel konteineris pabaiga */
 
 /* get latest blog konteineris startas */
+.container-getLBlog {
+    background-color: var(--secondary-color);
+}
+.top-getLBlog {
+    text-align: center;
+}
+
+.title-getLBlog {
+    background-color: transparent;
+    margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+@media (min-width: 498px) {
+    .title-getLBlog {
+        font-size: 48px; 
+    }
+}
+
+.txt-getLBlog {
+    background-color: transparent;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.column-getLBlog img {
+    width: 100%;
+}
+
+.last-getLBlog {
+    display: grid;
+    gap: 30px;
+}
+
+.main-getLBlog {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+@media (min-width: 575px) {
+    .main-getLBlog {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
+@media (min-width: 991px) {
+    .main-getLBlog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.column-getLBlog a {
+    text-decoration: none;
+}
+
 /* get latest blog konteineris pabaiga */
 
 /* footer startas */
