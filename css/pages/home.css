@@ -122,9 +122,9 @@
 
 @media (max-width: 767px) {
     .container-search {
-        width: 540px;
-        margin-left: calc(50% - 270px);
-        margin-right: calc(50% - 270px);
+        width: 520px;
+        margin-left: calc(50% - 260px);
+        margin-right: calc(50% - 260px);
     }
 }
 
