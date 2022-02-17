@@ -16,6 +16,13 @@
 /* header pabaiga */
 
 /* hero startas */
+.container-srvHero {
+    background-color: var(--primary-color);
+    background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 358px;
+}
 /* hero pabaiga */
 
 /* our best konteineris startas */
@@ -186,11 +193,25 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+    .main-getLBlog > .three {
+        width: 245px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+@media (min-width: 767px) {
+    .main-getLBlog > .three {
+        width: 330px;
+    }
 }
 
 @media (min-width: 991px) {
     .main-getLBlog {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main-getLBlog > .three {
+        grid-column: unset;
+        width: auto;
     }
 }
 
@@ -240,18 +261,17 @@
     color: #818181;
 }
 
-.nav-more::before {
-    font-family: 'FontAwesome';
-    margin-right: 6px;
-    content: '\f061';
-    color: var(--color-bluelight);
+.nav-more img {
+    filter: brightness(0) invert(61%) sepia(91%) saturate(1152%) hue-rotate(144deg) brightness(97%) contrast(94%);
+    width: 12px;
+    height: 10px;
+    margin: 11px 8px 0 0;
 }
 
 .nav-more:hover {
     color: var(--color-bluelight);
     transition: 0.3s;
 }
-
 
 /* get latest blog konteineris pabaiga */
 

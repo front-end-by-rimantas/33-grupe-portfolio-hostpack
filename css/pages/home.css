@@ -42,8 +42,9 @@
 
 .spananimation {
     color: #00c3ff;
-    width: 340px;
+    width: 360px;
     height: 72px;
+    background-color: transparent;
 }
 
 .spanmoney {
@@ -80,10 +81,21 @@
     }
 }
 
-.blueboximg {
+.bluebox {
     width: 100%;
     text-align: center;
     margin-bottom: 150px;
+    background-image: url(../../img/header/header-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 570px;
+    position: relative;
+}
+
+.bluebox-woman{
+    position: absolute;
+    top:50%;
+    left:0%;
 }
 
 .ausys {
