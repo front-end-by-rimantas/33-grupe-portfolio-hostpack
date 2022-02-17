@@ -8,13 +8,14 @@ let counter = 0;
 const textAnimation = document.getElementById('spananime');
 
 let currentText = 'in ';
-setTimeout(writetext1, 1000000);
+setTimeout(writetext1, 2000);
 
-function oncemore {
-i = 0;
-j = 0;
-k = 0;
-setTimeout(writetext1,100);   
+function oncemore() {
+    i = 0;
+    j = 0;
+    k = 0;
+    currentText = 'in ';
+    setTimeout(writetext1, 100);
 }
 
 function writetext1() {
@@ -114,18 +115,19 @@ function deletetext3() {
     if (currentText.length > 3) {
         setTimeout(deletetext2, 100);
     } else {
-        setTimeout(writetext1, 3000);
+        setTimeout(oncemore, 3000);
     }
 }
 
 function pinglampon() {
-    currentText = currentText + '|';
+    currentText = currentText + '| ';
     textAnimation.innerHTML = currentText;
     setTimeout(pinglampoff, 500);
 }
 
 function pinglampoff() {
-    currentText = currentText.substring(0, currentText.length - 1);
+    currentText = currentText.substring(0, currentText.length - 2) + '  ';
     textAnimation.innerHTML = currentText;
+    currentText = currentText.substring(0, currentText.length - 2);
     setTimeout(pinglampon, 500);
 }

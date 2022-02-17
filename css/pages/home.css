@@ -42,8 +42,9 @@
 
 .spananimation {
     color: #00c3ff;
-    width: 340px;
+    width: 360px;
     height: 72px;
+    background-color: transparent;
 }
 
 .spanmoney {
