@@ -41,8 +41,9 @@
 }
 
 .spananimation {
+    display:inline-block;
     color: #00c3ff;
-    width: 360px;
+    width: 410px;
     height: 72px;
     background-color: transparent;
 }

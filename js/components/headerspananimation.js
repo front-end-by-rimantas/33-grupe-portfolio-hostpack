@@ -28,7 +28,7 @@ function writetext1() {
     textAnimation.innerHTML = currentText;
     i++;
     if (i !== text1.length) {
-        setTimeout(writetext1, 300);
+        setTimeout(writetext1, 200);
     } else {
         setTimeout(deletetext1, 3000);
     }
@@ -60,7 +60,7 @@ function writetext2() {
     textAnimation.innerHTML = currentText;
     j++;
     if (j !== text2.length) {
-        setTimeout(writetext2, 300);
+        setTimeout(writetext2, 200);
     } else {
         setTimeout(deletetext2, 3000);
     }
@@ -92,7 +92,7 @@ function writetext3() {
     textAnimation.innerHTML = currentText;
     k++;
     if (k !== text3.length) {
-        setTimeout(writetext3, 300);
+        setTimeout(writetext3, 200);
     } else {
         counter++;
         if (counter < 3) {
@@ -120,14 +120,14 @@ function deletetext3() {
 }
 
 function pinglampon() {
-    currentText = currentText + '| ';
+    currentText = currentText + '|';
     textAnimation.innerHTML = currentText;
     setTimeout(pinglampoff, 500);
 }
 
 function pinglampoff() {
-    currentText = currentText.substring(0, currentText.length - 2) + '  ';
+    currentText = currentText.substring(0, currentText.length - 1) + ' ';
     textAnimation.innerHTML = currentText;
-    currentText = currentText.substring(0, currentText.length - 2);
+    currentText = currentText.substring(0, currentText.length - 1);
     setTimeout(pinglampon, 500);
 }
