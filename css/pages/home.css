@@ -10,6 +10,7 @@
 @import '../components/button-default.css';
 @import '../components/carousel.css';
 @import '../components/navigation.css';
+@import '../components/hero-img-animation.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -96,22 +97,7 @@
     }
 }
 
-.bluebox {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 150px;
-    background-image: url(../../img/header/header-img.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 570px;
-    position: relative;
-}
 
-.bluebox-woman{
-    position: absolute;
-    top:50%;
-    left:0%;
-}
 
 .ausys {
     width: 100%;
