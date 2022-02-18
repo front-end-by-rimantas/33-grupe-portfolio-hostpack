@@ -230,13 +230,15 @@ display:none;
 .navhouse-menu{
     display:none;
     position: absolute;
-    background-color: white;
+    /* background-color: white; */
+    background: rgb(200,206,254);
+    background: linear-gradient(130deg, rgba(200,206,254,1) 0%, rgba(101,92,203,1) 100%);
     top:100px;
     right:0;
     transform: translateX(0);
     width:60vw;
     z-index:4;
-    height:60vh;
+    height:43.2vh;
     overflow-y: auto;
 }
 
@@ -246,6 +248,13 @@ display:none;
     font-size: 22px;
     color: #000;
     padding: 20px;
+    border-bottom: #fff;
+    border-style: dashed;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
 }
 
 

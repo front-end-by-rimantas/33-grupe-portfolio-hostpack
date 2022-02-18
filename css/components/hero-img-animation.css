@@ -1,0 +1,207 @@
+.bluebox {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+    background-repeat: no-repeat;
+    height: 570px;
+    position: relative;
+}
+
+.bluebox-img{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+}
+
+:root{
+    --cube1-top:42%;
+    --cube1-left:86%;
+    --cube2-top:31%;
+    --cube2-left:77%;
+    --cube3-top:6%;
+    --cube3-left:44%;
+}
+
+
+@media(max-width:1700px){
+    :root{
+        --cube1-top:38%;
+        --cube2-top:27%;
+        --cube3-top:5%;
+    }  
+}
+
+@media(max-width:1450px){
+    :root{
+        --cube1-top:32%;
+        --cube2-top:22%;
+        --cube3-top:5%;
+    }  
+}
+
+@media(max-width:1250px){
+    :root{
+        --cube1-top:28%;
+        --cube2-top:18%;
+        --cube3-top:4%;
+    }  
+}
+
+
+@media(max-width:1150px){
+    :root{
+        --cube1-top:26%;
+        --cube2-top:18%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:1050px){
+    :root{
+        --cube1-top:24%;
+        --cube2-top:17%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:990px){
+    :root{
+        --cube1-top:42%;
+        --cube2-top:28%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:850px){
+    :root{
+        --cube1-top:38%;
+        --cube2-top:27%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:750px){
+    :root{
+        --cube1-top:35%;
+        --cube2-top:25%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:650px){
+    :root{
+        --cube1-top:30%;
+        --cube2-top:20%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:550px){
+    :root{
+        --cube1-top:25%;
+        --cube2-top:15%;
+        --cube3-top:4%;
+    }  
+}
+
+@media(max-width:480px){
+    :root{
+        --cube1-top:20%;
+        --cube2-top:13%;
+        --cube3-top:3%;
+    }  
+}
+
+@media(max-width:390px){
+    :root{
+        --cube1-top:17%;
+        --cube2-top:12%;
+        --cube3-top:3%;
+    }  
+}
+
+@media(max-width:350px){
+    :root{
+        --cube1-top:14%;
+        --cube2-top:10%;
+        --cube3-top:3%;
+    }  
+}
+
+.bluebox-cube1{
+    position: absolute;
+    top:var(--cube1-top);
+    left:var(--cube1-left);
+    width:5%;
+    animation-name: cube1flight;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes cube1flight {
+0%{
+    top:var(--cube1-top);
+}
+
+50%{
+    top:calc(var(--cube1-top) - 2%);
+}
+
+100%{
+        top:var(--cube1-top);
+}
+}
+
+
+
+.bluebox-cube2{
+    position: absolute;
+    top:var(--cube2-top);
+    left:var(--cube2-left);
+    width:5%;
+    animation-name: cube2flight;
+    animation-duration: 3.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes cube2flight {
+    0%{
+        top:var(--cube2-top);
+    }
+    
+    50%{
+        top:calc(var(--cube2-top) - 2%);
+    }
+    
+    100%{
+            top:var(--cube2-top);
+    }
+    }
+
+.bluebox-cube3{
+    position: absolute;
+    top:var(--cube3-top);
+    left:var(--cube3-left);
+    width:15%;
+    animation-name: cube3flight;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes cube3flight {
+    0%{
+        top:var(--cube3-top);
+    }
+    
+    50%{
+        top:calc(var(--cube3-top) - 2%);
+    }
+    
+    100%{
+            top:var(--cube3-top);
+    }
+    }

@@ -10,6 +10,7 @@
 @import '../components/button-default.css';
 @import '../components/carousel.css';
 @import '../components/navigation.css';
+@import '../components/hero-img-animation.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -96,74 +97,7 @@
     }
 }
 
-.bluebox {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 150px;
-    background-repeat: no-repeat;
-    height: 570px;
-    position: relative;
-}
 
-.bluebox-img{
-    position: absolute;
-    top: 0;
-    left:0;
-    width:100%;
-}
-
-:root{
-    --cube1-top:42%;
-    --cube1-left:86%;
-    --cube2-top:31%;
-    --cube2-left:77%;
-    --cube3-top:6%;
-    --cube3-left:44%;
-}
-
-.bluebox-cube1{
-    position: absolute;
-    top:var(--cube1-top);
-    left:var(--cube1-left);
-    width:5%;
-    animation-name: cube1flight;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function:ease-in-out;
-}
-
-/* @keyframes cube1flight {
-0%{
-    top:var(--cube1-top);
-    left:var(--cube1-left); 
-}
-
-50%{
-    top:calc(var(--cube1-top) - 1%);
-    left:calc(var(--cube1-left - 0.5%); 
-}
-
-100%{
-        top:var(--cube1-top);
-        left:var(--cube1-left); 
-}
-} */
-
-
-
-.bluebox-cube2{
-    position: absolute;
-    top:var(--cube2-top);
-    left:var(--cube2-left);
-    width:5%;
-}
-
-.bluebox-cube3{
-    position: absolute;
-    top:var(--cube3-top);
-    left:var(--cube3-left);
-    width:15%;
-}
 
 .ausys {
     width: 100%;
