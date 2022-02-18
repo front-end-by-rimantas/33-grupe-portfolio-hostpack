@@ -48,6 +48,20 @@
     background-color: transparent;
 }
 
+@media(max-width:475px){
+    .spananimation { 
+        width: 265px;
+        height: 150px;
+    }  
+}
+
+/* @media(max-width:475px){
+    .hostingfreedom {
+        font-size: 50px;
+    }
+
+} */
+
 .spanmoney {
     font-size: 60px;
     position: relative;
