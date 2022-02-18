@@ -1,13 +1,13 @@
 const counters = document.querySelectorAll('.counter');
 const speed = 15;
 let a = 2500;
-let width = screen.width;
+let height = window.innerHeight;
 
-if (width > 950){
-a = 2500;
+if (height > 950){
+a = 2800;
 }
-if(width < 950){
-a = 3000;    
+if(height < 950){
+a = 2500;    
 }
 console.log(a);
 const myInterval = setInterval(runWhenClose,1000)
