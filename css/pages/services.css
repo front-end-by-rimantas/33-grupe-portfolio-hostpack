@@ -26,7 +26,6 @@
     background-color: rgba(0, 0, 0, 0.11);
 }
 
-
 .top-srvHeader a {
     font-size: 13px;
     line-height: 1.2em;
@@ -64,34 +63,48 @@
         margin-top: 10px;
     }
 }
+/* ----- */
 
-
-
-
-
+.container .bk2-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 5% 5px 5%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
 
 .content-srvHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-srv {
-    height: 80px;
+    height: 75px;
 }
 
-.main-nav-srv {
+.main-nav-srv,
+.btn-srv {
     display: flex;
-    gap: 20px;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    gap: 2.5em;
 }
 
-.main-nav-srv a {
+.main-nav-srv a,
+.btn-srv {
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.content-srvHeader .btn-srv {
-    color: var(--secondary-color);
-    text-decoration: none;
+.main-nav-srv a:not(.no-fa)::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    margin-left: 5px;
+}
+
+.no-fa {
+    text-transform: uppercase;
 }
 
 
