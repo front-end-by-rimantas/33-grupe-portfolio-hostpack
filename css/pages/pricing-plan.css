@@ -101,7 +101,7 @@
 .burgeris{
     display: none;
     width: 42%;
-    padding-right: 27px;
+    font-size: 30px;
     align-self: center;
     justify-content: end;
 
@@ -131,6 +131,11 @@ button:hover{
         display: flex;
     }
 }
+@media (max-width:574px){
+    .burgeris{
+        padding-right: 10px;
+    }
+}
 input{
     visibility: hidden;
 }
@@ -141,9 +146,26 @@ input{
 .navis {
     display: none;
 }
-/* .linkiukai{
-    line-height: 30px;
-} */
+.linkiukai a{
+    display: flex;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+}
+.linkiukai a::after{
+    content: "\f107";
+    font-family: fontawesome;
+    color: #000;
+    font-size: 30px;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+}
+.linkiukai a:hover::after{
+    color: var(--color-bluelight)
+}
+.linkiukai a:hover{
+    color: var(--color-bluelight)
+}
+
 .arr1 {
     width: 100%;
     background-color: #fff;
@@ -156,12 +178,9 @@ input{
 }
 
 #hamburger-menu:checked ~ .navis {
-    position: absolute;
-
-    top: 32%;
+    position: fixed;
+    top: 100%;
     left:10%;
-    transform: translateX(400%);
-    transform: translateY(100%);
     display:flex;
     flex-direction: column;
     align-self: center;
@@ -171,6 +190,7 @@ input{
     list-style-type: none;
     min-height: 200px;
 }
+
 
 @media(max-width:767px){
     #hamburger-menu:checked ~ .navis {
@@ -193,26 +213,6 @@ input{
         margin-top: -233px;
     }
 }
-@media(max-width:575px){
-    #hamburger-menu:checked ~ .navis {
-        top:42%;
-    }
-}
-/* ul{
-    margin-top: 20px;
-}
-li{
-    width: 100%;
-    list-style-type: none;
-    padding-bottom: 20px;
-}
-li a{
-    text-decoration: none;
-    color: #000;
-    line-height: 15px;
-    font-size: 15px;
-
-} */
 
 
 
