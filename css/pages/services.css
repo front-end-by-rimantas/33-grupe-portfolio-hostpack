@@ -19,10 +19,62 @@
 .container-srvHero {
     background-color: var(--primary-color);
     background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 358px;
+    background-position: center bottom;
+    padding-top: 220px;
+    padding-bottom: 100px;
 }
+
+.content-srvHero {
+    text-align: center;
+}
+
+.title-srvHero {
+    font-size: 55px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+
+.txt-srvHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-srvHero,
+.txt-srvHero > a {
+    font-size: 17px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.txt-srvHero > a > .fa {
+    font-size: 17px;
+    line-height: 1.2em;
+}
+
+.txt-srvHero > p::before {
+    content: ">";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.txt-srvHero > a {
+    text-decoration: none;
+}
+
+.txt-srvHero > a:hover {
+    color: var(--color-bluelight);
+    transition: 0.6s;
+}
+
+
 /* hero pabaiga */
 
 /* our best konteineris startas */
