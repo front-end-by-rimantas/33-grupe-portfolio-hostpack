@@ -12,10 +12,14 @@
 @import '../components/topline.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+body{
+    background: rgb(24,43,171);
+    background: linear-gradient(130deg, rgba(24,43,171,1) 0%, rgba(9,138,223,1) 100%);  
+}
 
 .wholepage {
     background-image: url(../../img/pages/pagenotfound/404_bg.png);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0px;
 }
@@ -45,6 +49,12 @@
 
 .contentcontainer > img{
     max-width: 100vw;
+}
+
+@media(max-height:750px){
+    .contentcontainer > img{
+        max-width: 50vw;
+    }  
 }
 
 .contentcontainer > h1{
