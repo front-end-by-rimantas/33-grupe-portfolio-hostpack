@@ -101,7 +101,7 @@
 .burgeris{
     display: none;
     width: 42%;
-    padding-right: 27px;
+    font-size: 30px;
     align-self: center;
     justify-content: end;
 
@@ -130,7 +130,88 @@ button:hover{
     .burgeris{
         display: flex;
     }
+}
+@media (max-width:574px){
+    .burgeris{
+        padding-right: 10px;
+    }
+}
+input{
+    visibility: hidden;
+}
+#hamburger-menu{
+    display: none;
+    /* position: relative; */
+}
+.navis {
+    display: none;
+}
+.linkiukai a{
+    display: flex;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+}
+.linkiukai a::after{
+    content: "\f107";
+    font-family: fontawesome;
+    color: #000;
+    font-size: 30px;
+    margin-right: 20px;
+    transition: .3s ease-in-out;
+}
+.linkiukai a:hover::after{
+    color: var(--color-bluelight)
+}
+.linkiukai a:hover{
+    color: var(--color-bluelight)
+}
 
+.arr1 {
+    width: 100%;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    line-height: 50px;
+    font-size: 17px;
+    font-family: open sans;
+    padding-left: 10px;
+}
+
+#hamburger-menu:checked ~ .navis {
+    position: fixed;
+    top: 100%;
+    left:10%;
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80vw;
+    justify-content: space-evenly;
+    background-color: #fff;
+    list-style-type: none;
+    min-height: 200px;
+}
+
+
+@media(max-width:767px){
+    #hamburger-menu:checked ~ .navis {
+        width: 70vw;
+        left:15%
+    }
+}
+@media(max-width:991px){
+    #hamburger-menu:checked ~ .navis {
+        width: 70vw;
+        left:15%
+    }
+}
+@media(max-width:580px){
+    #hamburger-menu:checked ~ .navis {
+        width: 90vw;
+        left:5%
+    }
+    .headeris {
+        margin-top: -233px;
+    }
 }
 
 
@@ -187,6 +268,24 @@ button:hover{
     align-items: center;
     vertical-align: middle;
     margin-top: -200px;
+}
+@media(max-width:575px){
+    
+    .headeris {
+        margin-top: -205px;
+    }
+}
+@media(max-width:574px){
+    
+    .headeris {
+        margin-top: -233px;
+    }
+}
+@media(max-width:572px){
+    
+    .headeris {
+        margin-top: -233px;
+    }
 }
 .fa {
     color: #fff;
