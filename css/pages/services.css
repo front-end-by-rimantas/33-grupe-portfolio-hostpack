@@ -23,7 +23,7 @@
     display: inline-block;
     width: 100%;
     padding: 15px 5% 15px 5%;
-    background-color: rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.199);
 }
 
 .top-srvHeader a {
@@ -35,9 +35,14 @@
     text-decoration: none;
 }
 
+.right-srv a {
+    text-transform: uppercase;
+}
+
 .top-srvHeader a > .fa {
     font-size: 13px;
     line-height: 1.2em;
+    margin-right: 5px;
 }
 
 .left-srv {
@@ -63,8 +68,8 @@
         margin-top: 10px;
     }
 }
-/* ----- */
 
+/* ----- */
 .container .bk2-srvHeader {
     display: inline-block;
     width: 100%;
@@ -82,13 +87,12 @@
     height: 75px;
 }
 
-.main-nav-srv,
-.btn-srv {
+.main-nav-srv {
     display: flex;
     font-size: 17px;
     font-family: Open Sans, sans-serif;
     font-weight: 600;
-    gap: 2.5em;
+    gap: 1.5em;
 }
 
 .main-nav-srv a,
@@ -107,7 +111,45 @@
     text-transform: uppercase;
 }
 
+.hamburger-srv {
+    display: flex;
+    justify-content: right;
+    flex-grow: 2;
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
 
+.btn-srv {
+    background-color: transparent;
+    display: flex;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
+.btn-srv:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-bluelight);
+    transition: 0.5s;
+}
+
+@media (min-width: 991px) and (max-width: 1120px) {
+    .main-nav-srv {
+        font-size: 15px;
+        font-weight: 500;
+        gap: 1.5em;
+    }
+    .content-srvHeader > .btn-srv {
+        font-size: 12px;
+        line-height: 1em;
+        padding: 13px 20px;
+    }
+}
 /* header pabaiga */
 
 /* hero startas */
@@ -118,8 +160,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 400px;
-    padding-bottom: 100px;
+    padding: 250px 0 100px;
 }
 
 .content-srvHero {
@@ -168,6 +209,10 @@
 .txt-srvHero > a:hover {
     color: var(--color-bluelight);
     transition: 0.6s;
+}
+
+.txt-srvHero > p {
+    text-transform: capitalize;
 }
 
 
