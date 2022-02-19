@@ -13,16 +13,99 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header startas */
+.container-srvHeader {
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+.bk-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 5% 15px 5%;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+
+.top-srvHeader a {
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.top-srvHeader a > .fa {
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+.left-srv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.right-srv {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+@media (max-width: 575px) {
+    .left-srv,
+    .right-srv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .right-srv {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+.content-srvHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-srv {
+    height: 80px;
+}
+
+.main-nav-srv {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav-srv a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.content-srvHeader .btn-srv {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
 /* header pabaiga */
 
 /* hero startas */
 .container-srvHero {
+    position: relative;
     background-color: var(--primary-color);
     background-image: url(../../pages/services/img/hero/page-title-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 220px;
+    padding-top: 400px;
     padding-bottom: 100px;
 }
 
