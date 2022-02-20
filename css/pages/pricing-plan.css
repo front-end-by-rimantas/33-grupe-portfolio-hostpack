@@ -429,3 +429,103 @@ input{
     line-height: 1.5;
     text-align: center;
 }
+
+
+/* Shared hosting start */
+.faq-row  .faq{
+    color: var(--color-bluelight);
+    font-family: Lato;
+    font-size: 16px;
+    margin: -2px 0px 29px
+}
+.shared h5{
+    font-family: lato;
+    font-size: 48px;
+    margin: -9px 0px 29px
+}
+.shared p {
+    font-size: 16px;
+    font-family: open sans;
+    color: #666;
+    margin: 0px 0px 42px
+
+}
+.hosting-btn button:hover{
+    color: #fff
+}
+.hosting-btn{
+    justify-content: start;
+}
+.checkbox-row input{
+    visibility: hidden; 
+    
+}
+.shared h5{
+    display: block;
+}
+.checkbox-row h1,h2,h3,h4,h5{
+   display: none;
+}
+#sharing1:checked ~ h1{
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+}
+#sharing2:checked ~ h2{
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+    display: flex;
+}
+#sharing3:checked ~ h3{
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+}
+#sharing4:checked ~ h4{
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+}
+#sharing5:checked ~ h5{
+    color: #666;
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: open sans;
+}
+.checkbox-row .border{
+    margin-top: 0;
+    border-bottom: 1px solid rgba(16,69,219,.07); 
+}
+.checkbox-row label{
+    font-family: lato;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 25px 0;
+    padding-right: 30px;
+    font-size: 21px;
+    
+    color: #212529;
+    cursor: pointer;
+}
+.checkbox-row label::after{
+    content: "\2b";
+    font-family: fontawesome;
+}
+.checkbox-row label{
+    display: flex;
+    justify-content: space-between;
+}
+.atsistumimas{
+    margin-bottom: 15px;
+}
+/* Shared hosting end */
