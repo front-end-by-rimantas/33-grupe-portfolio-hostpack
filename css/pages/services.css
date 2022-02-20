@@ -73,7 +73,7 @@
 .container .bk2-srvHeader {
     display: inline-block;
     width: 100%;
-    padding: 5px 5% 5px 5%;
+    padding: 0px 5% 0px 5%;
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
@@ -89,19 +89,22 @@
 
 .main-nav-srv {
     display: flex;
+    align-items: center;
     font-size: 17px;
+    line-height: 20px;
     font-family: Open Sans, sans-serif;
     font-weight: 600;
     gap: 1.5em;
 }
 
-.main-nav-srv a,
+.main-nav-srv > a,
 .btn-srv {
     color: var(--secondary-color);
     text-decoration: none;
 }
 
-.main-nav-srv a:not(.no-fa)::after {
+.main-nav-srv > a:not(.no-fa)::after,
+.main-nav-srv .label-srv::after {
     font-family: FontAwesome;
     content: "\f107";
     margin-left: 5px;
@@ -117,6 +120,7 @@
     flex-grow: 2;
     margin-right: 10px;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .btn-srv {
@@ -138,8 +142,60 @@
     transition: 0.5s;
 }
 
+
+.bottom-srvHeader .dropdown-srv {
+    position: relative;
+    cursor: pointer;
+}
+.bottom-srvHeader .dropdown-srv > .label-srv {
+    line-height: 80px;
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+.bottom-srvHeader .dropdown-srv > .list-srv {
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: var(--secondary-color);
+    padding-bottom: 15px;
+    box-shadow: 0 5px 10px #3a3a3a54;
+    gap: 15px;
+}
+.bottom-srvHeader .dropdown-srv:hover > .list-srv {
+    display: flex;
+    transform: translateX(55%) translateY(100%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.bottom-srvHeader .list-srv > a {
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: var(--color-dark);
+    text-decoration: none;
+    border-top: 1.2px solid rgba(55, 225, 255, 0.158);
+    border-width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-transform: capitalize;
+}
+
+.bottom-srvHeader .list-srv > a:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
 @media (min-width: 991px) and (max-width: 1120px) {
-    .main-nav-srv {
+    .main-nav-srv a,
+    .main-nav-srv  > .dropdown-srv > .label-srv,
+    .main-nav-srv  > .dropdown-srv > .list-srv a {
         font-size: 15px;
         font-weight: 500;
         gap: 1.5em;
@@ -191,30 +247,34 @@
     color: var(--secondary-color);
 }
 
-.txt-srvHero > a > .fa {
-    font-size: 17px;
-    line-height: 1.2em;
+.txt-srvHero > .fa {
+    padding-right: 5px;
+    padding-top: 2px;
 }
 
 .txt-srvHero > p::before {
     content: ">";
     margin-left: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .txt-srvHero > a {
     text-decoration: none;
 }
 
-.txt-srvHero > a:hover {
-    color: var(--color-bluelight);
-    transition: 0.6s;
-}
-
 .txt-srvHero > p {
     text-transform: capitalize;
 }
 
+.txt-srvHero:hover > a {
+    color: var(--color-bluelight);
+    transition: 0.6s;
+}
+
+.txt-srvHero:hover > i {
+    color: var(--color-bluelight);
+    transition: 2s;
+}
 
 /* hero pabaiga */
 
