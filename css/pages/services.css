@@ -189,11 +189,12 @@
     font-weight: 400;
     color: var(--color-dark);
     text-decoration: none;
-    border-top: 1px solid rgba(48, 47, 47, 0.1);
+    border-top: 1.2px solid rgba(55, 225, 255, 0.158);
     border-width: 100%;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
+    text-transform: capitalize;
 }
 
 .bottom-srvHeader .list-srv > a:hover {
