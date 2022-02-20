@@ -103,7 +103,8 @@
     text-decoration: none;
 }
 
-.main-nav-srv > a:not(.no-fa)::after {
+.main-nav-srv > a:not(.no-fa)::after,
+.main-nav-srv .label-srv::after {
     font-family: FontAwesome;
     content: "\f107";
     margin-left: 5px;
@@ -119,6 +120,7 @@
     flex-grow: 2;
     margin-right: 10px;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .btn-srv {
@@ -140,18 +142,6 @@
     transition: 0.5s;
 }
 
-@media (min-width: 991px) and (max-width: 1120px) {
-    .main-nav-srv {
-        font-size: 15px;
-        font-weight: 500;
-        gap: 1.5em;
-    }
-    .content-srvHeader > .btn-srv {
-        font-size: 12px;
-        line-height: 1em;
-        padding: 13px 20px;
-    }
-}
 
 .bottom-srvHeader .dropdown-srv {
     position: relative;
@@ -202,6 +192,20 @@
     transition: 0.4s;
 }
 
+@media (min-width: 991px) and (max-width: 1120px) {
+    .main-nav-srv a,
+    .main-nav-srv  > .dropdown-srv > .label-srv,
+    .main-nav-srv  > .dropdown-srv > .list-srv a {
+        font-size: 15px;
+        font-weight: 500;
+        gap: 1.5em;
+    }
+    .content-srvHeader > .btn-srv {
+        font-size: 12px;
+        line-height: 1em;
+        padding: 13px 20px;
+    }
+}
 /* header pabaiga */
 
 /* hero startas */
