@@ -13,16 +13,209 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header startas */
+.container-srvHeader {
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+.bk-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 5% 15px 5%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.top-srvHeader a {
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.right-srv a {
+    text-transform: uppercase;
+}
+
+.top-srvHeader a > .fa {
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-right: 5px;
+}
+
+.left-srv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.right-srv {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+@media (max-width: 575px) {
+    .left-srv,
+    .right-srv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .right-srv {
+        margin-top: 10px;
+    }
+}
+
+/* ----- */
+.container .bk2-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 5% 5px 5%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.content-srvHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-srv {
+    height: 75px;
+}
+
+.main-nav-srv {
+    display: flex;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    gap: 1.5em;
+}
+
+.main-nav-srv a,
+.btn-srv {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.main-nav-srv a:not(.no-fa)::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    margin-left: 5px;
+}
+
+.no-fa {
+    text-transform: uppercase;
+}
+
+.hamburger-srv {
+    display: flex;
+    justify-content: right;
+    flex-grow: 2;
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.btn-srv {
+    background-color: transparent;
+    display: flex;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
+.btn-srv:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-bluelight);
+    transition: 0.5s;
+}
+
+@media (min-width: 991px) and (max-width: 1120px) {
+    .main-nav-srv {
+        font-size: 15px;
+        font-weight: 500;
+        gap: 1.5em;
+    }
+    .content-srvHeader > .btn-srv {
+        font-size: 12px;
+        line-height: 1em;
+        padding: 13px 20px;
+    }
+}
 /* header pabaiga */
 
 /* hero startas */
 .container-srvHero {
+    position: relative;
     background-color: var(--primary-color);
     background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 358px;
+    background-position: center bottom;
+    padding: 250px 0 100px;
 }
+
+.content-srvHero {
+    text-align: center;
+}
+
+.title-srvHero {
+    font-size: 55px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+
+.txt-srvHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-srvHero,
+.txt-srvHero > a {
+    font-size: 17px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.txt-srvHero > a > .fa {
+    font-size: 17px;
+    line-height: 1.2em;
+}
+
+.txt-srvHero > p::before {
+    content: ">";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.txt-srvHero > a {
+    text-decoration: none;
+}
+
+.txt-srvHero > a:hover {
+    color: var(--color-bluelight);
+    transition: 0.6s;
+}
+
+.txt-srvHero > p {
+    text-transform: capitalize;
+}
+
+
 /* hero pabaiga */
 
 /* our best konteineris startas */
