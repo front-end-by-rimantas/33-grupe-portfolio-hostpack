@@ -191,30 +191,34 @@
     color: var(--secondary-color);
 }
 
-.txt-srvHero > a > .fa {
-    font-size: 17px;
-    line-height: 1.2em;
+.txt-srvHero > .fa {
+    padding-right: 5px;
+    padding-top: 2px;
 }
 
 .txt-srvHero > p::before {
     content: ">";
     margin-left: 10px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .txt-srvHero > a {
     text-decoration: none;
 }
 
-.txt-srvHero > a:hover {
-    color: var(--color-bluelight);
-    transition: 0.6s;
-}
-
 .txt-srvHero > p {
     text-transform: capitalize;
 }
 
+.txt-srvHero:hover > a {
+    color: var(--color-bluelight);
+    transition: 0.6s;
+}
+
+.txt-srvHero:hover > i {
+    color: var(--color-bluelight);
+    transition: 2s;
+}
 
 /* hero pabaiga */
 
