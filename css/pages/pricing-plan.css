@@ -145,11 +145,16 @@ input{
 }
 .navis {
     display: none;
+    
+}
+.linkiukai {
+    background-color: #fff;
 }
 .linkiukai a{
     display: flex;
     justify-content: space-between;
     transition: .3s ease-in-out;
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
 .linkiukai a::after{
     content: "\f107";
@@ -165,16 +170,21 @@ input{
 .linkiukai a:hover{
     color: var(--color-bluelight)
 }
-
+.navis > .linkiukai:last-of-type  {
+    border-radius:0px 0px 20px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-top: none
+}
 .arr1 {
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     text-decoration: none;
     color: #000;
     line-height: 50px;
     font-size: 17px;
     font-family: open sans;
     padding-left: 10px;
+    
 }
 
 #hamburger-menu:checked ~ .navis {
@@ -186,10 +196,12 @@ input{
     align-self: center;
     width: 80vw;
     justify-content: space-evenly;
-    background-color: #fff;
+    /* background-color: #fff; */
     list-style-type: none;
     min-height: 200px;
+    
 }
+
 
 
 @media(max-width:767px){
