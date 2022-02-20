@@ -34,8 +34,8 @@
         />
         <meta name="msapplication-TileColor" content="#1c065e" />
         <meta name="theme-color" content="#1c065e" />
-        <link rel="stylesheet" href="../../../css/pages/faq.css" />
-        <title>FAQ</title>
+        <link rel="stylesheet" href="../../../css/pages/login.css" />
+        <title>Login</title>
     </head>
     <body>
         <!-- Hero start -->
@@ -50,7 +50,7 @@
                 </div>
                 <div class="topmiddle"></div>
                 <div class="topsecond">
-                    <a class="toplogin" href="../login/index.html">Login</a>
+                    <a class="toplogin" href="#">Login</a>
                     <a class="topsupport" href="#">Support</a>
                 </div>
             </div>
@@ -351,32 +351,64 @@
             </div>
             <!--Navigation end  -->
             <div class="hero-title-wrap">
-                <h1>Hostpack FAQs</h1>
+                <h1>Hostpack login</h1>
                 <div class="hero-link-holder">
                     <div class="hero-small-lightbox">
                         <i class="fa fa-home"></i>
                         <a href="../../../index.html">Home</a>
                     </div>
-                    <p>Hostpack FAQs</p>
+                    <p>Hostpack login</p>
                 </div>
             </div>
         </section>
         <!-- hero end -->
-        <!-- Accordion text start -->
-        <section class="container accordion-holder">
-            <h2 class="smallheader">Shared hosting</h2>
-        </section>
-        <!--  Accordion text end -->
         <!-- Form text start -->
-        <section class="container form-holder">
-            <h2 class="smallheader">Ask a question</h2>
-        </section>
+        <form class="container login-form-holder">
+            <div class="row">
+                <label
+                    class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8"
+                    for="email"
+                    >Email address</label
+                >
+                <input
+                    class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8 log"
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                />
+                <label
+                    class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8"
+                    for="password"
+                    >Password</label
+                >
+                <input
+                    class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8 pass"
+                    type="email"
+                    id="email"
+                    placeholder="***********"
+                />
+                <div class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8">
+                    <div class="lastline">
+                        <div>
+                            <label for="remember"></label>
+                            <input id="remember" type="checkbox" />
+                            <p>Remember me</p>
+                        </div>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+                <div class="ml-1 col-10 ml-sm-0 col-sm-12 ml-md-2 col-md-8">
+                    <button type="submit" class = "btn-default-bub">
+                        <p class="btn-textb">Login Now</p>
+                        <div class="kamuolisb"><img
+                        class="streleb"
+                        src="../../../img/svg/btn-arrow.svg"
+                        alt="strele"/></div>
+                    </button>
+                </div>
+            </div>
+        </form>
         <!-- Form text end -->
-        <!-- Carousel start -->
-        <section class="container carousel-holder">
-            <h2 class="smallheader">Our clients say</h2>
-        </section>
-        <!-- Carousel end -->
         <!-- Footer startas -->
         <footer class="container footer-back footer-cont">
             <div class="row">
@@ -385,7 +417,7 @@
                         <div class="logo-hopstack cards">
                             <a href="#" target="_blank"
                                 ><img
-                                    src="./img/logo/logo.png"
+                                    src="../../../img/logo/logo.png"
                                     alt="logo-hopstack"
                             /></a>
                         </div>
@@ -599,5 +631,9 @@
             </div>
         </footer>
         <!-- footer pabaiga -->
+        <a href="#" class="btn-to-top back-to-top fa fa-angle-up" id="top"></a>
+        <!-- scripts -->
+        <script src="./js/components/navigation.js" defer></script>
+        <script src="./js/components/backToTop.js" defer></script>
     </body>
 </html>
