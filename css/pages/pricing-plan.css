@@ -460,22 +460,86 @@ input{
     visibility: hidden; 
     
 }
+
 .shared h5{
     display: block;
 }
 .checkbox-row h1,h2,h3,h4,h5{
    display: none;
+
 }
+.checkbox-row label::before{
+    display: none;
+ 
+ }
+ /* .checkbox-row label::after{
+    display: none;
+ 
+ } */
+ 
+#sharing1:checked ~ label::after{
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/minus.svg);
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+ }
+#sharing2:checked ~ label::after{
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/minus.svg);
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+ }
+#sharing3:checked ~ label::after{
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/minus.svg);
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+ }
+#sharing4:checked ~ label::after{
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/minus.svg);
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+ }
+#sharing5:checked ~ label::after{
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/minus.svg);
+    width: 20px;
+    height: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-repeat: no-repeat;
+ }
+ 
 #sharing1:checked ~ h1{
     color: #666;
     display: flex;
     font-size: 16px;
     font-weight: 400;
+    width: 90%;
     font-family: open sans;
 }
 #sharing2:checked ~ h2{
     color: #666;
     display: flex;
+    width: 90%;
     font-size: 16px;
     font-weight: 400;
     font-family: open sans;
@@ -483,6 +547,7 @@ input{
 }
 #sharing3:checked ~ h3{
     color: #666;
+    width: 90%;
     display: flex;
     font-size: 16px;
     font-weight: 400;
@@ -491,12 +556,14 @@ input{
 #sharing4:checked ~ h4{
     color: #666;
     display: flex;
+    width: 90%;
     font-size: 16px;
     font-weight: 400;
     font-family: open sans;
 }
 #sharing5:checked ~ h5{
     color: #666;
+    width: 90%;
     display: flex;
     font-size: 16px;
     font-weight: 400;
@@ -511,6 +578,7 @@ input{
     font-weight: 700;
     background-color: transparent;
     padding: 25px 0;
+    padding-top: 0px;
     padding-right: 30px;
     font-size: 21px;
     
@@ -518,8 +586,13 @@ input{
     cursor: pointer;
 }
 .checkbox-row label::after{
-    content: "\2b";
-    font-family: fontawesome;
+    content: "";
+    color: var(--color-bluelight);
+    background-image: url(../../pages/pricing-plan/img/shared/plus.svg);
+    width: 22px;
+    height: 20px;
+    
+    background-repeat: no-repeat;
 }
 .checkbox-row label{
     display: flex;
@@ -527,5 +600,8 @@ input{
 }
 .atsistumimas{
     margin-bottom: 15px;
+    transition-delay:  2s;
+    transition: 2s ease-in-out;
 }
+
 /* Shared hosting end */
