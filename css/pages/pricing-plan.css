@@ -42,7 +42,7 @@
 .virsus {
     z-index: 1000000000000;
     position: absolute;
-    transform: translateY(120%);
+    transform: translateY(145%);
 
     gap: 0px;
     background-color: transparent;
@@ -96,6 +96,8 @@
     justify-content: space-between;
 }
 .row.head-main{
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -201,10 +203,11 @@ input{
     align-self: center;
     width: 80vw;
     justify-content: space-evenly;
-    /* background-color: #fff; */
     list-style-type: none;
-    min-height: 200px;
-    
+    min-height: 200px; 
+}
+#hamburger-menu:checked ~ i.fa::before{
+    content: '\00d7';
 }
 
 
@@ -295,13 +298,13 @@ input{
 @media(max-width:574px){
     
     .headeris {
-        margin-top: -233px;
+        margin-top: -237px;
     }
 }
 @media(max-width:572px){
     
     .headeris {
-        margin-top: -233px;
+        margin-top: -237px;
     }
 }
 .fa {
