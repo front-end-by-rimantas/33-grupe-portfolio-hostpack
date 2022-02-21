@@ -454,6 +454,9 @@ input{
     color: #fff
 }
 .hosting-btn{
+    justify-content: center;
+}
+.hosting-btn-start{
     justify-content: start;
 }
 .checkbox-row input{
