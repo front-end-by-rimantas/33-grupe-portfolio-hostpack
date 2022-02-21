@@ -97,7 +97,9 @@
     }
 }
 
-
+.startnowlink{
+    text-decoration: none;
+}
 
 .ausys {
     width: 100%;
