@@ -37,11 +37,98 @@
 
     <body>
         <!-- header startas -->
-        <header class="container container-srv-header">header</header>
+        <header class="container container-srvHeader">
+            <div class="bk-srvHeader">
+                <div class="row top-srvHeader">
+                    <div class="col-12 col-sm-7 left-srv">
+                        <p><a href="tel:555-666-7777"><i class="fa fa-phone"></i>555-666-7777</a></p>
+                        <p><a href="mailto:info@hostpack.com"><i class="fa fa-envelope"></i>info@hostpack.com</a></p>
+                    </div>
+                    <div class="col-12 col-sm-5 right-srv">
+                        <a href="../../html/pages/login/index.html"><i class="fa fa-sign-in"></i>Login</a>
+                        <a href="#"><i class="fa fa-bullseye"></i>Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bk2-srvHeader">
+                <div class="row bottom-srvHeader">
+                    <div class="col-12 content-srvHeader">
+                        <a href="../../index.html"><img class="logo-srv" src="../../img/logo/logo.png" alt="logo"></a>
+                        <nav class="main-nav-srv hidden visible-flex-lg">
+                            <div class="dropdown-srv">
+                                <div class="label-srv">Home</div>
+                                <div class="list-srv">
+                                    <a href="../../index.html">Home V1</a>
+                                    <a href="../../index.html">Home V2</a>
+                                    <a href="../../index.html">Home V3</a>
+                                    <a href="../../index.html">Home V4</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-srv">
+                                <div class="label-srv">Pages</div>
+                                <div class="list-srv">
+                                    <a href="../About-us/index.html">About</a>
+                                    <a href="#">Contact</a>
+                                    <a href="#">Blog</a>
+                                    <a href="#">Blog details</a>
+                                    <a href="#">FAQ</a>
+                                    <a href="#">Terms of service</a>
+                                    <a href="#">Privacy policy</a>
+                                    <a href="#">Login</a>
+                                    <a href="../../html/pages/pagenotfound/">404</a>
+                                </div>
+                            </div>
+                            <a class="no-fa" href="#">Whmcs</a>
+                            <div class="dropdown-srv">
+                                <div class="label-srv">Hosting</div>
+                                <div class="list-srv">
+                                    <a href="#">Shared hosting</a>
+                                    <a href="#">Dedicated hosting</a>
+                                    <a href="#">Reseller hosting</a>
+                                    <a href="#">Private hosting</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-srv">
+                                <div class="label-srv">Services</div>
+                                <div class="list-srv">
+                                    <a href="#">Service one</a>
+                                    <a href="#">Service two</a>
+                                    <a href="#">Service three</a>
+                                    <a href="#">Service details</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-srv">
+                                <div class="label-srv">Pricing</div>
+                                <div class="list-srv">
+                                    <a href="../pricing-plan/index.html">Pricing plan 1</a>
+                                    <a href="../pricing-plan/index.html">Pricing plan 2</a>
+                                    <a href="../pricing-plan/index.html">Pricing plan 3</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="hidden-lg hamburger-srv fa fa-bars"></div>
+                        <a class="col-12 btn-srv hidden visible-flex-sm" href="../pricing-plan/index.html">Free trial</a>
+                    </div>
+                </div>
+            </div>
+        </header>
         <!-- header pabaiga -->
         
         <!-- hero startas -->
-        <section class="container container-srv-hero">hero</section>
+        <section class="container container-srvHero">
+            <div class="row main-srvHero">
+                <div class="col-12 content-srvHero">
+                    <h1 class="title-srvHero">Hostpack service</h1>
+                    <div class="txt-srvHero">
+                        <div class="txt-srvHero">
+                            <i class="fa fa-home"> </i>
+                            <a href="../../index.html">Home</a>
+                        </div>
+                        <p>Hostpack service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- hero pabaiga -->
 
         <!-- our best konteineris startas -->
@@ -136,7 +223,7 @@
                 </div>
             </div>
             <div class="row last-controlPnl">
-                <div class="col-12 col-lg-5 col-xl-6 left-controlPnl">
+                <div class="col-12 col-lg-5 col-xl-5 left-controlPnl">
                     <div class="col-12 column-controlPnl">
                         <img class="img-controlPnl" src="../services/img/controlP/cpi4.png" alt="cpi4">
                         <h3 class="title2-controlPnl">Security & Faster Server
@@ -155,7 +242,7 @@
                         <p class="txt2-controlPnl">Keep your application running smoothly distributing across Droplet includings those running Kubernetes worker nodes.</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7 col-xl-6 right-controlPnl">
+                <div class="col-12 col-lg-7 col-xl-7 right-controlPnl">
                     <img src="../services/img/controlP/control-panel.png" alt="control-panel">
                 </div>
             </div>
@@ -172,32 +259,35 @@
             </div>
             <div class="row last-getLBlog">
                 <div class="col-12 main-getLBlog">
-                    <div class="col-12 column-getLBlog">
+                    <div class="col-12 column-getLBlog one">
                         <img src="../services/img/getLatest/post5.png" alt="post5">
                         <div>
-                            <a href="#">29 May, 2021</a>
-                            <a href="#">Abraum Jonah</a>
+                            <a class="date" href="#">29 May, 2021</a>
+                            <p class="slash">/</p>
+                            <a class="name" href="#">Abraum Jonah</a>
                         </div>
-                        <a href="#">Better time of buying at web hosting ready today.</a>
-                        <a href="#">Read more</a>
+                        <a class="nav-txt" href="#">Better time of buying at web hosting ready today.</a>
+                        <a class="nav-more" href="#"><img src="./img/getLatest/arrow-right.svg" alt="arrow">Read more</a>
                     </div>
-                    <div class="col-12 column-getLBlog">
+                    <div class="col-12 column-getLBlog two">
                         <img src="../services/img/getLatest/post4.png" alt="post4">
                         <div>
-                            <a href="#">25 May, 2021</a>
-                            <a href="#">Abraum Jonah</a>
+                            <a class="date" href="#">25 May, 2021</a>
+                            <p class="slash">/</p>
+                            <a class="name" href="#">Abraum Jonah</a>
                         </div>
-                        <a href="#">Hosting services that will settle your online life</a>
-                        <a href="#">Read more</a>
+                        <a class="nav-txt" href="#">Hosting services that will settle your online life</a>
+                        <a class="nav-more" href="#"> <img src="./img/getLatest/arrow-right.svg" alt="arrow">Read more</a>
                     </div>
-                    <div class="col-12 column-getLBlog">
+                    <div class="col-12 column-getLBlog three">
                         <img src="../services/img/getLatest/post6.png" alt="post6">
                         <div>
-                            <a href="#">29 May, 2021</a>
-                            <a href="#">Abraum Jonah</a>
+                            <a class="date" href="#">29 May, 2021</a>
+                            <p class="slash">/</p>
+                            <a class="name" href="#">Abraum Jonah</a>
                         </div>
-                        <a href="#">Better time of buying at web hosting ready today.</a>
-                        <a href="#">Read more</a>
+                        <a class="nav-txt" href="#">Better time of buying at web hosting ready today.</a>
+                        <a class="nav-more" href="#"> <img src="./img/getLatest/arrow-right.svg" alt="arrow">Read more</a>
                     </div>
                 </div>
             </div>
@@ -210,7 +300,7 @@
                 <div class="col-12 col-sm-6 col-lg-6 col-xl-4">
                     <div class="row-list first-bottom">
                         <div class="logo-hopstack cards">
-                            <a href="#" target="_blank"
+                            <a href="../../index.html"
                                 ><img
                                     src="../../img/logo/logo.png"
                                     alt="logo-hopstack"
@@ -228,7 +318,7 @@
                             >
                         </div>
                         <div class="cards">
-                            <img src="./img/footer/cards.png" alt="" />
+                            <img src="../../img/footer/cards.png" alt="" />
                         </div>
                         <div class="pages">
                             <a
@@ -268,35 +358,35 @@
                         <div class="list-pg">
                             <ul class="no-mark">
                                 <li>
-                                    <a href="#" target="_blank">About us</a>
+                                    <a href="../About-us/index.html" >About us</a>
                                 </li>
-                                <li><a href="#" target="_blank">Login</a></li>
+                                <li><a href="#">Login</a></li>
                                 <li class="circle">
-                                    <a class="try" href="#" target="_blank"
+                                    <a class="try" href="../pricing-plan/index.html"
                                         >Price
                                     </a>
-                                    <a href=""
+                                    <a href="../pricing-plan/index.html"
                                         ><span class="update-try"
                                             >Try me</span
                                         ></a
                                     >
                                 </li>
-                                <li><a href="#">Service</a></li>
+                                <li><a href="./index.html">Service</a></li>
                             </ul>
                             <h3 class="title-second">Hosting</h3>
                             <ul class="no-mark">
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Sharen hosting</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Delicated hosting</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Reseller hosting</a
                                     >
                                 </li>
@@ -310,41 +400,41 @@
                         <div class="list-pg">
                             <ul class="no-mark">
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Terms of servise</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Privacy police</a
                                     >
                                 </li>
                                 <li class="circle">
-                                    <a class="try" href="#" target="_blank"
+                                    <a class="try" href="#"
                                         >FAQ</a
                                     >
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         ><span class="update">Update</span></a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">Contact us</a>
+                                    <a href="#">Contact us</a>
                                 </li>
                             </ul>
                             <h3 class="title-second">Support</h3>
                             <ul class="no-mark">
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Support center</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Status Update</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank"
+                                    <a href="#"
                                         >Knowledgebase</a
                                     >
                                 </li>
@@ -362,10 +452,9 @@
                                         ><a
                                             class="list-date"
                                             href="#"
-                                            target="_blank"
                                             >Vasario 10, 2022</a
                                         ></span
-                                    ><a class="a-title" href="#" target="_blank"
+                                    ><a class="a-title" href="#"
                                         >An artistic Technology turning real
                                         deal here</a
                                     >
@@ -375,10 +464,9 @@
                                         ><a
                                             class="list-date"
                                             href="#"
-                                            target="_blank"
                                             >Vasario 10, 2022</a
                                         ></span
-                                    ><a class="a-title" href="#" target="_blank"
+                                    ><a class="a-title" href="#" 
                                         >Better time for buying a web hosting is
                                         today</a
                                     >
@@ -388,10 +476,9 @@
                                         ><a
                                             class="list-date"
                                             href="#"
-                                            target="_blank"
                                             >Vasario 10, 2022</a
                                         ></span
-                                    ><a class="a-title" href="#" target="_blank"
+                                    ><a class="a-title" href="#" 
                                         >Better time for buying a web hosting is
                                         today</a
                                     >
@@ -408,7 +495,7 @@
                             Offers valid for a limited time only hostpack
                             reflect multi annual discounts. Other terms and
                             conditions may apply.
-                            <a href="#" target="_blank">Click here</a>
+                            <a href="#">Click here</a>
                         </p>
                     </div>
                 </div>
@@ -424,9 +511,7 @@
         <!-- back to top pabaiga -->
 
         <script src="../../js/pages/home.js" defer></script>
-        <script src="../../js/components/carousel.js" defer></script>
         <script src="../../js/components/backToTop.js" defer></script>
-        <script src="../../js/components/counter.js" defer></script>
         <script src="../../js/pages/services.js" defer></script>
     </body>
 </html>

@@ -3,13 +3,11 @@ let passive = 0;
 
 function Next() {
     carPosition++;
-    console.log(carPosition, 'next');
     goRound();
 }
 
 function Previous() {
     carPosition--;
-    console.log(carPosition, 'previous');
     goRound();
 }
 

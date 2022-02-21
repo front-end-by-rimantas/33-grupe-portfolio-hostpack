@@ -10,6 +10,7 @@
 @import '../components/button-default.css';
 @import '../components/carousel.css';
 @import '../components/navigation.css';
+@import '../components/hero-img-animation.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -41,10 +42,26 @@
 }
 
 .spananimation {
+    display:inline-block;
     color: #00c3ff;
-    width: 340px;
+    width: 410px;
     height: 72px;
+    background-color: transparent;
 }
+
+@media(max-width:475px){
+    .spananimation { 
+        width: 265px;
+        height: 150px;
+    }  
+}
+
+/* @media(max-width:475px){
+    .hostingfreedom {
+        font-size: 50px;
+    }
+
+} */
 
 .spanmoney {
     font-size: 60px;
@@ -80,11 +97,7 @@
     }
 }
 
-.blueboximg {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 150px;
-}
+
 
 .ausys {
     width: 100%;
@@ -122,9 +135,9 @@
 
 @media (max-width: 767px) {
     .container-search {
-        width: 540px;
-        margin-left: calc(50% - 270px);
-        margin-right: calc(50% - 270px);
+        width: 520px;
+        margin-left: calc(50% - 260px);
+        margin-right: calc(50% - 260px);
     }
 }
 
@@ -991,7 +1004,7 @@ tfoot a {
 }
 
 .Norway {
-    top: 30%;
+    top: 12%;
     left: 50%;
 }
 
@@ -1006,8 +1019,8 @@ tfoot a {
 }
 
 .Australia {
-    top: 83.5%;
-    left: 94%;
+    top: 68%;
+    left: 82%;
 }
 
 .Indonesia {

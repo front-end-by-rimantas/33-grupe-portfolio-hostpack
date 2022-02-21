@@ -13,9 +13,288 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* header startas */
+.container-srvHeader {
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+.bk-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 5% 15px 5%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.top-srvHeader a {
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.right-srv a {
+    text-transform: uppercase;
+}
+
+.top-srvHeader a > .fa {
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-right: 5px;
+}
+
+.left-srv {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.right-srv {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+@media (max-width: 575px) {
+    .left-srv,
+    .right-srv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .right-srv {
+        margin-top: 10px;
+    }
+}
+
+/* ----- */
+.container .bk2-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 5% 0px 5%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.content-srvHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-srv {
+    height: 75px;
+}
+
+.main-nav-srv {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    gap: 1.5em;
+}
+
+.main-nav-srv > a,
+.btn-srv {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.main-nav-srv > a:not(.no-fa)::after,
+.main-nav-srv .label-srv::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    margin-left: 5px;
+}
+
+.main-nav-srv > .no-fa:hover::before,
+.main-nav-srv .dropdown-srv .label-srv:hover::before {
+    content: " ";
+    background-color: var(--color-bluelight);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    left: 45%;
+    bottom: 0;
+}
+
+.no-fa {
+    text-transform: uppercase;
+    line-height: 80px;
+    position: relative;
+}
+
+.hamburger-srv {
+    display: flex;
+    justify-content: right;
+    flex-grow: 2;
+    margin-right: 10px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.btn-srv {
+    background-color: transparent;
+    display: flex;
+    font-size: 13px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 13px 28px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 30px;
+}
+
+.btn-srv:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-bluelight);
+    transition: 0.5s;
+}
+
+
+.bottom-srvHeader .dropdown-srv {
+    position: relative;
+    cursor: pointer;
+}
+
+.bottom-srvHeader .dropdown-srv > .label-srv {
+    line-height: 80px;
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+.bottom-srvHeader .dropdown-srv > .list-srv {
+    display: none;
+    flex-direction: column;
+    min-width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: var(--secondary-color);
+    padding-bottom: 15px;
+    box-shadow: 0 5px 10px #3a3a3a54;
+    gap: 15px;
+}
+
+.bottom-srvHeader .dropdown-srv:hover > .list-srv {
+    display: flex;
+    transform: translateX(55%) translateY(100%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.bottom-srvHeader .list-srv > a {
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: var(--color-dark);
+    text-decoration: none;
+    border-top: 1.2px solid rgba(55, 225, 255, 0.158);
+    border-width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-transform: capitalize;
+}
+
+.bottom-srvHeader .list-srv > a:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
+@media (min-width: 991px) and (max-width: 1120px) {
+    .main-nav-srv a,
+    .main-nav-srv  > .dropdown-srv > .label-srv,
+    .main-nav-srv  > .dropdown-srv > .list-srv a {
+        font-size: 15px;
+        font-weight: 500;
+        gap: 1.5em;
+    }
+    .content-srvHeader > .btn-srv {
+        font-size: 12px;
+        line-height: 1em;
+        padding: 13px 20px;
+    }
+}
 /* header pabaiga */
 
 /* hero startas */
+.container-srvHero {
+    position: relative;
+    background-color: var(--primary-color);
+    background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 250px 0 100px;
+}
+
+.content-srvHero {
+    text-align: center;
+}
+
+.title-srvHero {
+    font-size: 55px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    color: var(--secondary-color);
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+
+.txt-srvHero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-srvHero,
+.txt-srvHero > a {
+    font-size: 17px;
+    line-height: 1.2em;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.txt-srvHero > .fa {
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+.txt-srvHero > p::before {
+    content: ">";
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.txt-srvHero > a {
+    text-decoration: none;
+}
+
+.txt-srvHero > p {
+    text-transform: capitalize;
+}
+
+.txt-srvHero:hover > a {
+    color: var(--color-bluelight);
+    transition: 0.6s;
+}
+
+.txt-srvHero:hover > i {
+    color: var(--color-bluelight);
+    transition: 2s;
+}
+
 /* hero pabaiga */
 
 /* our best konteineris startas */
@@ -33,6 +312,10 @@
 .bottom-ourBest a {
     color: var(--color-dark);
 }
+.bottom-ourBest a:hover {
+    color: var(--color-bluelight);
+    transition: 0.3s;
+}
 .block-ourBest {
     border-color: rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +323,9 @@
     z-index: -1;
 }
 .block-ourBest:hover > .background-neibor {
-    opacity: 1;
+    opacity: 0.5;
+    animation-duration: 0.4s;
+    box-shadow: 0 0 20px 5px #bdbaba31;
 }
 /* ourBest konteineris pabaiga */
 
@@ -117,7 +402,15 @@
 
 .right-controlPnl img {
     width: 100%;
+    margin-top: -45px;
 }
+
+@media (max-width: 1199px) {
+    .right-controlPnl img {
+        margin-top: 45px;
+    }
+}
+
 /* control panel konteineris pabaiga */
 
 /* get latest blog konteineris startas */
@@ -172,16 +465,84 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+    .main-getLBlog > .three {
+        width: 245px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+@media (min-width: 767px) {
+    .main-getLBlog > .three {
+        width: 330px;
+    }
 }
 
 @media (min-width: 991px) {
     .main-getLBlog {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .main-getLBlog > .three {
+        grid-column: unset;
+        width: auto;
+    }
 }
 
-.column-getLBlog a {
+.column-getLBlog a, .slash {
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
+}
+
+.date,
+.slash,
+.name {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5em;
+    display: inline-block;
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+}
+
+.date:hover,
+.name:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
+.nav-txt {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.nav-txt:hover {
+    color: var(--color-bluelight);
+    transition: 0.3s;
+}
+
+.nav-more {
+    font-size: 13px;
+    line-height: 2.5em;
+    font-weight: 600;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    color: #818181;
+}
+
+.nav-more img {
+    filter: brightness(0) invert(61%) sepia(91%) saturate(1152%) hue-rotate(144deg) brightness(97%) contrast(94%);
+    width: 12px;
+    height: 10px;
+    margin: 11px 8px 0 0;
+}
+
+.nav-more:hover {
+    color: var(--color-bluelight);
+    transition: 0.3s;
 }
 
 /* get latest blog konteineris pabaiga */
