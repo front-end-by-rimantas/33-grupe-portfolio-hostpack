@@ -123,6 +123,18 @@
     bottom: 0;
 }
 
+.main-nav-srv .dropdown-srv .active::before {
+    content: " ";
+    background-color: var(--color-bluelight);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    left: 45%;
+    bottom: 0;
+}
+
 .no-fa {
     text-transform: uppercase;
     line-height: 80px;
@@ -203,6 +215,10 @@
     padding-left: 15px;
     padding-right: 10px;
     text-transform: capitalize;
+}
+
+#activePg {
+    color: var(--color-bluelight);
 }
 
 .bottom-srvHeader .list-srv > a:hover {
@@ -548,6 +564,23 @@
 /* get latest blog konteineris pabaiga */
 
 /* footer startas */
+.title-first {
+    font-size: 28px;
+}
+
+.logo-text,
+.list-pg,
+.bottom-line p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+
+.first-bottom .copy {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
 /* footer pabaiga */
 
 /* back to top startas */
