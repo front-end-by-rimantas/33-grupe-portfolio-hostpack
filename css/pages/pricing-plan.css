@@ -206,8 +206,10 @@ input{
     list-style-type: none;
     min-height: 200px; 
 }
-#hamburger-menu:checked ~ i.fa::before{
+.iksas::before{
     content: '\00d7';
+    font-family: fontawesome;
+    font-size: 35px;
 }
 
 
@@ -232,6 +234,9 @@ input{
     .headeris {
         margin-top: -233px;
     }
+}
+#hamburger-menu:checked #ikona::before{
+    display: none;
 }
 
 
@@ -308,6 +313,12 @@ input{
     }
 }
 .fa {
+    color: #fff;
+}
+
+#ikona2::after{
+    content:'\f0c9';
+    font-family: fontawesome;
     color: #fff;
 }
 .headeris h1 {
