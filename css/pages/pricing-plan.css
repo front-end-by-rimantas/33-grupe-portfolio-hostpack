@@ -63,7 +63,7 @@
     padding-top: 0px;
     margin-top: 0px;
 }
-.phone::before{
+.phone1::before{
     content: '\f095';
     font-family: fontawesome;
     margin-right: 5px;
@@ -258,28 +258,81 @@ input{
 }
 
 .nav.flexas{
-    
+    margin-bottom: -15px;
     vertical-align: middle;
     align-items: baseline;
     margin-left: 20px;
     padding:0
 }
-.nav a {
+.nav a, .nav .plabel {
     text-decoration: none;
     color: #fff;
     line-height: 50px;
     font-size: 17px;
     font-family: open Sans;
 }
-.nav a.arr::after{
+.nav .plabel::after, .nav a.arr::after{
     content: "\f107";
     font-family: fontawesome;
     margin-left: 5px;
 }
-
-/* .header-main {
+/* .pdropdown{padding-bottom: 50px;} */
+.plist{
+    width: 200px;
+    display: none;
+    position: absolute;
     background-color: #fff;
-} */
+    color: #666;
+    border-radius: 0 0 20px 20px;
+    
+    
+}
+.plist a{
+    
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+    width: 100%;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-content: center;
+    font-family: 'Lato';
+    text-decoration: none;
+    color: var(--color-graytext);
+    transition: 0.2s ease-in;
+}
+.plist a:hover {
+    color: var(--color-bluelight);
+}
+
+.plabel{
+    height: 100%;
+    position: relative;
+}
+.pdropdown{
+    height: 100%;
+
+}
+.pdropdown:hover {
+    cursor: pointer;
+}
+#cs::after{
+    content: "";
+}
+.plabel:hover::before, .current-page::before, .whmcs:hover::before{
+    width: 20px;
+    height: 3px;
+    left: 30%;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background-color: var(--color-bluelight)
+}
+.pdropdown:hover .plist{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; 
+}
+
+
 
 .headeris {
     background-image: url(../../pages/pricing-plan/img/header/header-bg.png);
