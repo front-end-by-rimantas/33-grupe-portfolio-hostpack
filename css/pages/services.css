@@ -376,6 +376,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .left-controlPnl {
@@ -409,6 +410,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .img-controlPnl {
@@ -460,6 +462,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .column-getLBlog img {
