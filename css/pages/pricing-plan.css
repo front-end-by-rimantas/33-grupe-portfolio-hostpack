@@ -15,6 +15,11 @@
     vertical-align: middle;
     align-items: baseline;
 }
+@media (max-width: 1030px){
+    .flexas {
+        gap: 25px
+    }
+}
 .end {
     float: unset;
     justify-content: flex-end;
