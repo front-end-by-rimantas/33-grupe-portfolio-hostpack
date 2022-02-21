@@ -232,7 +232,9 @@
     .main-nav-srv  > .dropdown-srv > .list-srv a {
         font-size: 15px;
         font-weight: 500;
-        gap: 1.5em;
+    }
+    .main-nav-srv {
+        gap: 1.2em;
     }
     .content-srvHeader > .btn-srv {
         font-size: 12px;
