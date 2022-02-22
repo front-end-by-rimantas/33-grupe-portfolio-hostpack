@@ -160,6 +160,7 @@ align-self: center;
     border-radius: 0 0 20px 0;
     margin-right: 15px;
     display: none;
+    transition: 0.3s;
 }
 
 .activeslide-1{
