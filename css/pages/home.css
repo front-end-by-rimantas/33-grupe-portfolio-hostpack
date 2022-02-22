@@ -11,6 +11,7 @@
 @import '../components/carousel.css';
 @import '../components/navigation.css';
 @import '../components/hero-img-animation.css';
+@import '../components/video.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -80,6 +81,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 
 .hero-btn-right {
     margin-left: 55px;

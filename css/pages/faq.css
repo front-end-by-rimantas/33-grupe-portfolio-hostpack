@@ -141,10 +141,12 @@ align-self: center;
 
 .carousel-track{
     list-style: none;
-    width: 1100px;
+    width: 1200px;
     height:350px;
     border: 1px solid black;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .slide{
@@ -156,7 +158,25 @@ align-self: center;
     font-family: "Open Sans", sans-serif;
     box-shadow: 20px 20px #00c3ff;
     border-radius: 0 0 20px 0;
+    margin-right: 15px;
+    display: none;
 }
+
+.activeslide-1{
+    display:block;
+    order: 1;
+}
+
+.activeslide-2{
+    display:block;
+    order: 2;
+}
+
+.activeslide-3{
+    display:block;
+    order: 3;
+}
+
 
 .quote{
     width: 100%;
