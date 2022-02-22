@@ -1,13 +1,8 @@
 let counter = 1;
 const arrSlide = ['s1', 's2', 's3', 's4', 's5', 's6', 's7'];
 
-setInterval(goright(), 2000);
+setInterval(slideClientsRight, 5000);
 
-function goright() {
-    counter++;
-    setTimeout(slideClientsRight(), 1000);
-    console.log('ping', counter);
-}
 
 function slideClientsRight() {
     console.log('pong');
@@ -41,12 +36,18 @@ function slideClientsRight() {
     if (b > arrSlide.length) {
         b = 1;
     }
+    const counterText = arrSlide[counter - 1];
+    const aText = arrSlide[a - 1];
+    const bText = arrSlide[b - 1];
 
-    const active1 = document.getElementById(`s${counter}`);
+    console.log(counterText, aText, bText);
+
+    const active1 = document.getElementById(`${counterText}`);
     active1.classList.add('activeslide-1');
-    const active2 = document.getElementById(`s${a}`);
+    const active2 = document.getElementById(`${aText}`);
     active2.classList.add('activeslide-2');
-    const active3 = document.getElementById(`s${b}`);
+    const active3 = document.getElementById(`${bText}`);
     active3.classList.add('activeslide-3');
     console.log('done');
+    counter++;
 }
