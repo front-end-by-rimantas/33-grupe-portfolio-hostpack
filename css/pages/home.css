@@ -83,21 +83,7 @@
 }
 
 
-.hero-btn-right {
-    margin-left: 55px;
-}
 
-.hero-btn-right-link {
-    margin-top: 5px;
-    text-decoration: none;
-}
-
-@media (max-width: 575px) {
-    .hero-btn-right {
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-}
 
 .startnowlink{
     text-decoration: none;
