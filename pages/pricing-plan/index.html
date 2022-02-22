@@ -885,39 +885,10 @@
         <!-- back to top startas -->
         <a href="#" class="btn-to-top back-to-top fa fa-angle-up" id="top"></a>
         <!-- back to top pabaiga -->
-    <section class="youtube-video">
-        <div class="modal">
-            <a href="#" class="btn-video">watch video</a>
-            <div class="video-container">
-                <span class="xxxxx">&#10006;</span>
-                <div id="youtube">
-                </div>
-                
-            </div>
-        </div>
-
-
-</section>
         <script src="../../js/pages/home.js" defer></script>
         <!-- <script src="../../js/components/carousel.js" defer></script> -->
         <script src="../../js/components/backToTop.js" defer></script>
         <!-- <script src="../../js/components/counter.js" defer></script> -->
         <script src="../../js/components/pricing-plan.js" defer></script>
-        <script>
-            const btn = document.querySelector('.btn-video');
-            const videoContainer = document.querySelector('.video-container');
-            const frame = document.getElementById('youtube');
-            const close = document.querySelector('.xxxxx');
-            btn.addEventListener('click', ()=>{
-                videoContainer.classList.add('show');
-                frame.innerHTML= '<iframe  width="560" height="315" src="https://www.youtube.com/embed/f5pCYU3k360" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-            });
-            close.addEventListener('click', ()=>{
-                videoContainer.classList.remove('show');
-                frame.innerHTML= '';
-            })
-
-
-        </script>
     </body>
 </html>
