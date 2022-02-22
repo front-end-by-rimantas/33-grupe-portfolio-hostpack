@@ -11,6 +11,7 @@
 @import '../components/carousel.css';
 @import '../components/navigation.css';
 @import '../components/hero-img-animation.css';
+@import '../components/video.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
@@ -81,21 +82,8 @@
     margin-bottom: 40px;
 }
 
-.hero-btn-right {
-    margin-left: 55px;
-}
 
-.hero-btn-right-link {
-    margin-top: 5px;
-    text-decoration: none;
-}
 
-@media (max-width: 575px) {
-    .hero-btn-right {
-        margin-left: 0px;
-        margin-top: 50px;
-    }
-}
 
 .startnowlink{
     text-decoration: none;
@@ -1049,6 +1037,8 @@ tfoot a {
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .blueribbon > h2 {

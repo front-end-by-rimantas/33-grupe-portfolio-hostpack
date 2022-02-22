@@ -143,79 +143,7 @@
 
 }
 
-/* Play mygtukas */
 
-.btn-hdr {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-}
-
-.btn-hdr-txt {
-   color: var(--secondary-color);
-   font-family: 'Open sans';
-   font-weight: bold;
-   font-size: 16px;
-   margin-left: 13px;
-   width:130px;
-   text-align: left;
-   text-decoration: none;
-}
-
-.play {
-    padding: 1.5em;
-    width: 60px;
-    height:60px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-}
-  
-
-
-.play-container{    
-position:relative;
-z-index: 3;
-}
-
-.play-container::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    right:0px;
-    top:0px;
-   background-color: white;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    animation-name: halo;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-
-
-@keyframes halo{
-
-    0% {
-        background-color: rgba(255, 255, 255, 1);
-        transform: scale(1);
-        opacity: 1;
-      }
-      50% {
-        background-color: rgba(255, 255, 255, 1);
-        transform: scale(1.2);
-        opacity: 0.5;
-      }
-      100% {
-        background-color: rgba(255, 255, 255, 1);
-        transform: scale(1.4);
-        opacity: 0;
-      }
-    }
 
 /* Apvalus mygtukai karuseleje */
 .ball-button{

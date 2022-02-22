@@ -1,0 +1,144 @@
+.video-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999990;
+    background-color: rgba(128, 128, 128, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    pointer-events: none;
+    transition: all 0.3s;
+
+}
+.video-container .xxxxx{
+    position: absolute;
+    top: 10%;
+    right: 15vw;
+    font-weight: lighter;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 9;
+    color: #666666;
+}
+.video-container iframe{
+    width: 90%;
+    max-width: 800px;
+    transform: scale(0);
+    transform: translateX(50%);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2) ;
+    outline: none;
+    transition: all 0.3s;
+
+}
+.video-container.show{
+    pointer-events: all;
+   display: block;
+}
+.video-container.show iframe{
+    transform: scale(1);
+
+}
+
+#youtube{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top:25vh;
+}
+
+/* Play mygtukas */
+
+.btn-hdr {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.btn-hdr-txt {
+   color: var(--secondary-color);
+   font-family: 'Open sans';
+   font-weight: bold;
+   font-size: 16px;
+   margin-left: 13px;
+   width:130px;
+   text-align: left;
+   text-decoration: none;
+}
+
+.play {
+    padding: 1.5em;
+    font-size: 12px;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+  
+
+
+.play-container{    
+position:relative;
+z-index: 3;
+}
+
+.play-container::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    right:0px;
+    top:0px;
+   background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation-name: halo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes halo{
+
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        background-color: rgba(255, 255, 255, 1);
+        transform: scale(1.4);
+        opacity: 0;
+      }
+    }
+
+    .hero-btn-right {
+        margin-left: 55px;
+        text-decoration: none;
+    }
+    
+    .hero-btn-right-link {
+        margin-top: 5px;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 575px) {
+        .hero-btn-right {
+            margin-left: 0px;
+            margin-top: 50px;
+        }
+    }
