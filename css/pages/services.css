@@ -123,6 +123,18 @@
     bottom: 0;
 }
 
+.main-nav-srv .dropdown-srv .active::before {
+    content: " ";
+    background-color: var(--color-bluelight);
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    left: 45%;
+    bottom: 0;
+}
+
 .no-fa {
     text-transform: uppercase;
     line-height: 80px;
@@ -205,6 +217,10 @@
     text-transform: capitalize;
 }
 
+#activePg {
+    color: var(--color-bluelight);
+}
+
 .bottom-srvHeader .list-srv > a:hover {
     color: var(--color-bluelight);
     transition: 0.4s;
@@ -216,7 +232,9 @@
     .main-nav-srv  > .dropdown-srv > .list-srv a {
         font-size: 15px;
         font-weight: 500;
-        gap: 1.5em;
+    }
+    .main-nav-srv {
+        gap: 1.2em;
     }
     .content-srvHeader > .btn-srv {
         font-size: 12px;
@@ -358,6 +376,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .left-controlPnl {
@@ -391,6 +410,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .img-controlPnl {
@@ -442,6 +462,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5em;
+    color: var(--color-graytext);
 }
 
 .column-getLBlog img {
@@ -548,6 +569,23 @@
 /* get latest blog konteineris pabaiga */
 
 /* footer startas */
+.title-first {
+    font-size: 28px;
+}
+
+.logo-text,
+.list-pg,
+.bottom-line p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+
+.first-bottom .copy {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
 /* footer pabaiga */
 
 /* back to top startas */

@@ -16,7 +16,7 @@
 
 .herocontent{
     background-image: url(../../img/pages/faq/page-title-bg.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
 }
 /* Topline added as component */
@@ -119,7 +119,32 @@ font-family: "Lato";
  /* <!-- Carousel start --> */
  .carousel-holder{
     min-height:50vh;
-    background-color:#F7FAFE;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+.carousel-holder > h2{
+    margin-bottom: 25px;
+}
+
+.carousel-holder > p{
+color:#666666;
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+width: 734px;
+align-self: center;
+}
+
+.slide{
+    position:relative;
+    width:332px;
+    height:277px;
+}
+
+
  /* <!-- Carousel end --> */
  /* Footer was imported as component */

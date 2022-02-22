@@ -1,0 +1,306 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+
+/* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+@import '../3rd-party/font.css';
+
+/* components */
+@import '../components/button-default.css';
+@import '../components/carousel.css';
+
+/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+/* header startas */
+ .container-srvHeader {
+    position: absolute;
+    padding: 0;
+    z-index: 1;
+}
+
+.hamburger-srv {
+    display: flex;
+    justify-content: right;
+    flex-grow: 2;
+    margin-right: 10px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.bk-srvHeader {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 5% 15px 5%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+@media (max-width: 575px) {
+    .left-srv,
+    .right-srv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .right-srv {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1120px) {
+    .main-nav-srv a,
+    .main-nav-srv  > .dropdown-srv > .label-srv,
+    .main-nav-srv  > .dropdown-srv > .list-srv a {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .main-nav-srv {
+        gap: 1.2em;
+    }
+    .content-srvHeader > .btn-srv {
+        font-size: 12px;
+        line-height: 1em;
+        padding: 13px 20px;
+    }
+}
+/* header pabaiga */
+
+/* hero startas */
+.container-srvHero {
+    position: relative;
+    background-color: var(--primary-color);
+    background-image: url(../../pages/services/img/hero/page-title-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 250px 0 100px;
+}
+/* hero pabaiga */
+
+/* Meet Hostpack konteineris startas */
+
+.container-srvDMeet {
+    background-color: var(--secondary-color);
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.container-srvDMeet .content-srvDMeet {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 991px) {
+    .container-srvDMeet .content-srvDMeet {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.content-srvDMeet .title-srvDMeet {
+    color: var(--color-dark);
+    font-size: 36px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+    padding: 5px;
+}
+
+@media (min-width: 478px) {
+    .content-srvDMeet .title-srvDMeet {
+        font-size: 48px;
+    }
+}
+
+.txt-srvDMeet {
+    color: var(--color-graytext);
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 5px 10px 5px 10px;
+}
+
+.container-srvDMeet .img-srvDMeet {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 991px) {
+    .container-srvDMeet .img-srvDMeet {
+        margin-bottom: 60px;
+    }
+}
+
+/* Meet Hostpack konteineris pabaiga */
+
+/* Subscribe konteineris startas */
+/* Subscribe konteineris pabaiga */
+
+/* Our client konteineris startas  */
+.container-srvDClient {
+    background-color: var(--secondary-color);
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.container-srvDClient .content-srvDClient {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 991px) {
+    .container-srvDClient .content-srvDClient {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.content-srvDClient .title-srvDClient {
+    color: var(--color-dark);
+    font-size: 36px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+    padding: 5px;
+}
+
+@media (min-width: 478px) {
+    .content-srvDClient .title-srvDClient {
+        font-size: 48px;
+    }
+}
+
+.txt-srvDClient {
+    color: var(--color-graytext);
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 5px 10px 5px 10px;
+}
+
+/* Our client konteineris pabaiga */
+
+/* Hosting plans konteineris startas */
+.container-srvDHosting .bg-srvDHosting {
+    background-color: var(--primary-color);
+    background-image: url(../../pages/service-details/img/Hosting/pricing.png);
+    width: 100%;
+    height: 472px;
+}
+
+.container-srvDHosting {
+    background-color: var(--secondary-color);
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-srvDHosting .bg-srvDHosting .content-srvDHosting {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 991px) {
+    .container-srvDHosting .content-srvDHosting {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.content-srvDHosting .title-srvDHosting {
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+    padding: 5px;
+}
+
+@media (min-width: 478px) {
+    .content-srvDHosting .title-srvDHosting {
+        font-size: 48px;
+    }
+}
+
+.txt-srvDHosting {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding: 5px 10px 5px 10px;
+}
+/*--------------------------*/
+/*--------------------------*/
+.bottom-srvDHosting {
+    background-color: var(--secondary-color);
+    color: var(--color-graytext);
+    text-align: center;
+    font-size: 18px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.nav-srvDHosting {
+    color: var(--color-bluelight);
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav-srvDHosting::before {
+    content: url(../../pages/service-details/img/Hosting/chat.png);
+    line-height: 1.5em;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Hosting plans konteineris pabaiga */
+
+/* footer startas */
+.title-first {
+    font-size: 28px;
+}
+
+.logo-text,
+.list-pg,
+.bottom-line p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+
+.first-bottom .copy {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+/* footer pabaiga */
+
+/* back to top startas */
+.btn-to-top {
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    text-decoration: none;
+}
+/* back to top pabaiga */
