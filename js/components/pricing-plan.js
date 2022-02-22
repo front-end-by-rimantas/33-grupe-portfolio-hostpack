@@ -46,3 +46,26 @@ function xx5(obj) {
         document.getElementById('sharing4').checked = false;
     }
 }
+
+
+// document.addEventListener('click', function handleClick(event) {
+//     event.target.classList.add('bg-yellow');
+//   });
+
+// document.querySelector('#ikona').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     let target = document.querySelector('#ikona');
+//     let target2 = document.querySelector('#ikona2')
+    
+//       target2.classList.toggle('hiddenas')
+      
+    
+    
+//     )
+// }}
+
+
+function myFunction() {
+    let element = document.getElementById("#ikona2");
+    element.classList.toggle("hiddenas");
+  }
