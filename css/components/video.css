@@ -17,11 +17,12 @@
 .video-container .xxxxx{
     position: absolute;
     top: 10%;
-    right: 25px;
+    right: 15vw;
+    font-weight: lighter;
     font-size: 50px;
     cursor: pointer;
-    z-index: 99999;
-    color: red;
+    z-index: 9;
+    color: #666666;
 }
 .video-container iframe{
     width: 90%;
@@ -40,6 +41,14 @@
 .video-container.show iframe{
     transform: scale(1);
 
+}
+
+#youtube{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top:25vh;
 }
 
 /* Play mygtukas */
