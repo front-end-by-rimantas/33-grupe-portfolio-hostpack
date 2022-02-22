@@ -13,6 +13,10 @@
 @import '../components/topline.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+body{
+    overflow-x: hidden;
+}
+
 
 .herocontent{
     background-image: url(../../img/pages/faq/page-title-bg.png);
