@@ -3,6 +3,10 @@ const arrSlide = ['s1', 's2', 's3', 's4', 's5', 's6', 's7'];
 let Ltimeout = null;
 let Rtimeout = null;
 let bumper = 0;
+let posx1 = 0;
+let posx2 = 0;
+let eventTracker = 0;
+const ctrack = document.getElementById('ctrack');
 
 setInterval(clickerdefence, 1200);
 
@@ -31,6 +35,29 @@ function slideRight() {
         bumper = 1;
     }
 }
+
+function mouseDown() {
+    posx1 = event.pageX;
+    eventTracker = 1;
+}
+
+ctrack.onmouseup = function (event) {
+    if ((eventTracker = 1)) {
+        posx2 = event.pageX;
+        if (posx1 > posx2) {
+            slideLeft();
+            eventTracker = 0;
+            console.log('moveleft');
+        }
+    }
+    if ((eventTracker = 1)) {
+        if (posx1 < posx2) {
+            slideRight();
+            eventTracker = 0;
+            console.log('moveright');
+        }
+    }
+};
 
 function slideClient(p) {
     // console.log('pong');

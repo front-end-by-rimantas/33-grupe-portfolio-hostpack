@@ -31,6 +31,7 @@
     justify-content: space-between;
     align-items: flex-end;
     overflow-x: hidden;
+    cursor:grab;
 }
 
 .slide {
@@ -173,5 +174,6 @@
 @media (max-width: 380px) {
     .carousel-track {
         width: 320px;
+        
     }
 }
