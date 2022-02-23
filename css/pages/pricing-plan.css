@@ -147,14 +147,23 @@
 .header-main{
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+ 
+    top: 150px;
+    left: 0;
+    
 }
+
 .row.head-main{
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+   
+    
 }
+
+ 
 .main{
     display: flex;
     justify-content: space-between;
@@ -367,11 +376,12 @@ input{
     background-color: #fff;
     color: #666;
     border-radius: 0 0 20px 20px;
-    
-    
+
 }
+
 .plist a{
-    
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
     border-top: 1px solid rgba(128, 128, 128, 0.5);
     width: 100%;
     padding: 0 0 0 10px;
@@ -385,13 +395,18 @@ input{
 .plist a:hover {
     color: var(--color-bluelight);
 }
+.plist a:last-of-type{
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+
+}
 
 .plabel{
     height: 100%;
     position: relative;
 }
 .pdropdown{
-    height: 100%;
+    height: 103%;
 
 }
 .pdropdown:hover {
@@ -768,3 +783,72 @@ input{
    
 }
 /* Shared hosting end */
+ /* Page content */
+ .contentas {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: -131px;
+    left: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .contentas {
+    padding-top: 102px;
+  }
+
+.sticky {
+    background-color: #fff;
+    animation-name: slidedown;
+animation-duration: 0.5s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+}
+
+@keyframes slidedown {
+0%{
+    top:-200px;
+}
+
+/* 50%{
+    top:-135px;
+} */
+
+100%{
+    top:-131px;
+}
+}
+
+.sticky .row.head-main{
+    margin-top:0px
+}
+.sticky .header-main .nav .pdropdown .plabel{
+    color:#000
+}
+.sticky .row.header-top {
+    display: none;
+}
+.sticky .header-main .whmcs{
+    color: #000;
+}
+.sticky #barsik,
+.sticky .burgerx{
+    color:#000
+}
+.sticky .btn-hdr button{
+    color: var(--color-bluelight);
+    background-color: transparent;
+    border: 1px solid var(--color-bluelight);
+
+}
+.sticky button:hover {
+    background-color: var(--color-bluelight);
+    color: #fff
+}
+.sticky #header .logo{
+    filter: brightness(0) invert(67%) sepia(61%) saturate(2158%) hue-rotate(143deg) brightness(98%) contrast(92%);
+}
