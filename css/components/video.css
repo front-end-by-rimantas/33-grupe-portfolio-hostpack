@@ -71,6 +71,7 @@ margin-top:25vh;
    width:130px;
    text-align: left;
    text-decoration: none;
+   white-space: nowrap;
 }
 
 .play {
