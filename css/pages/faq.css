@@ -13,6 +13,10 @@
 @import '../components/topline.css';
 
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
+body{
+    overflow-x: hidden;
+}
+
 
 .herocontent{
     background-image: url(../../img/pages/faq/page-title-bg.png);
@@ -141,17 +145,19 @@ align-self: center;
 
 .carousel-track{
     list-style: none;
-    width: 1200px;
-    height:350px;
-    border: 1px solid black;
+    width: 1150px;
+    height:380px;
+    /* border: 1px black solid; */
     padding: 15px;
     display: flex;
+    position: relative;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .slide{
     position:relative;
-    width:332px;
+    width:320px;
     height:277px;
     border: rgb(0, 0, 0, 0.03) 1px;
     border-style: groove;
@@ -160,23 +166,82 @@ align-self: center;
     border-radius: 0 0 20px 0;
     margin-right: 15px;
     display: none;
+    transition: 2s;
 }
+
+.activeslide-0{
+    display:block;
+    position: absolute;
+    left: 0px;
+    width:30px;
+    opacity: 0;
+    overflow: hidden;
+    /* order: 1; */
+}
+
+/* .activeslide-0 >i,
+.activeslide-0 >h4,
+.activeslide-0 >p{
+    font-size: 2px;
+} */
 
 .activeslide-1{
     display:block;
-    order: 1;
+    position: absolute;
+    left:20px;
+    /* order: 2; */
 }
+
 
 .activeslide-2{
     display:block;
-    order: 2;
+    position: absolute;
+    left: 380px;
+    /* order: 3; */
 }
 
 .activeslide-3{
     display:block;
-    order: 3;
+    position: absolute;
+    left: 760px;
+    /* order: 3; */
 }
 
+.activeslide-4{
+    display:block;
+    position: absolute;
+    left: 1050px;
+    width:300px;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.activeslide-4 >i,
+.activeslide-4 >h4,
+.activeslide-4 >p{
+    font-size: 1px;
+}
+
+.carousel-block-1{
+    position:absolute;
+    height:400px;
+    z-index: 2;
+    width: 20px;
+    left: 0px;
+    top:-20px;
+    background-color: white;
+}
+
+.carousel-block-2{
+    position:absolute;
+    height:400px;
+    z-index: 2;
+    width: 300px;
+    right: -270px;
+    top:-20px;
+    background-color: white;
+}
 
 .quote{
     width: 100%;
@@ -210,7 +275,27 @@ align-self: center;
 
 .slide-opinion{
     color: #666666;
-    font-size: 16px;  
+    font-size: 14px;
+    padding: 0 5px;  
+}
+
+
+.slideround{
+position:absolute;
+bottom:-50px;
+width:10px;
+height: 10px;
+background-color: rgb(0, 0, 255, 0.3);
+border-radius: 50%;
+transform: translateX(-50%);
+}
+
+.slide-left{
+    left:calc(50% - 15px);
+}
+
+.slide-right{
+    left:calc(50% + 15px);
 }
 
 
