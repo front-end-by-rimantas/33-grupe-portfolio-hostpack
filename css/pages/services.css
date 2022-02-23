@@ -151,6 +151,7 @@
     display: flex;
     justify-content: right;
     flex-grow: 2;
+    font-size: 25px;
     margin-right: 10px;
     color: var(--secondary-color);
     cursor: pointer;
@@ -209,6 +210,7 @@
     padding-bottom: 15px;
     box-shadow: 0 5px 10px #3a3a3a54;
     gap: 15px;
+    text-transform: capitalize;
 }
 
 .bottom-srvHeader .dropdown-srv:hover > .list-srv {
@@ -238,6 +240,9 @@
     text-transform: uppercase;
 }
 
+#no2-fa::after {
+    content: none;
+}
 #activePg {
     color: var(--color-bluelight);
 }
