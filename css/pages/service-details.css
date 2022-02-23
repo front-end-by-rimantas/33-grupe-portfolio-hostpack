@@ -279,6 +279,7 @@
     border: none;
     text-align: left;
     background-color: transparent;
+    text-transform: capitalize;
 }
 
 .plan-srv {
