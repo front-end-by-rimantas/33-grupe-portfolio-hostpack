@@ -141,7 +141,7 @@
     position: relative;
 }
 
-.list2-srv a::after {
+.list2-srv div::after {
     font-family: FontAwesome;
     content: "\f107";
     margin-left: auto;
@@ -235,7 +235,7 @@
 }
 
 .bottom-srvHeader .list-srv > a,
-.bottom-srvHeader .list2-srv a {
+.bottom-srvHeader .list2-srv div {
     display: flex;
     align-items: flex-start;
     font-size: 17px;
@@ -262,7 +262,7 @@
 }
 
 .bottom-srvHeader .list-srv > a:hover,
-.bottom-srvHeader .list2-srv a:hover {
+.bottom-srvHeader .list2-srv div:hover {
     color: var(--color-bluelight);
     transition: 0.4s;
 }
@@ -270,7 +270,7 @@
 @media (min-width: 991px) and (max-width: 1120px) {
     .main-nav-srv a,
     .main-nav-srv  > .dropdown-srv > .label-srv,
-    .main-nav-srv  > .dropdown-srv > .list-srv a {
+    .main-nav-srv  > .dropdown-srv > .list-srv div {
         font-size: 15px;
         font-weight: 500;
     }
