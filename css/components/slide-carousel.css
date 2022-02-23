@@ -1,5 +1,4 @@
 .carousel-holder {
-    min-height: 50vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -117,7 +116,7 @@
 
 .slideround-btn {
     position: absolute;
-    bottom: 50px;
+    bottom: -7%;
     width: 7px;
     height: 7px;
     background-color: #00c3ff4d;
@@ -130,7 +129,7 @@
 .active-slideround-btn {
     width: 12px;
     height: 12px;
-    bottom: 47.5px;
+    bottom: calc(-7% - 2px);
     background-color: #00c3ff;
 }
 

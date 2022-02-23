@@ -2,21 +2,34 @@ let counter = 0;
 const arrSlide = ['s1', 's2', 's3', 's4', 's5', 's6', 's7'];
 let Ltimeout = null;
 let Rtimeout = null;
+let bumper = 0;
+
+setInterval(clickerdefence, 1200);
+
+function clickerdefence() {
+    bumper = 0;
+}
 
 setTimeout(slideClient, 0, 1);
 
 function slideLeft() {
-counter++;
-clearTimeout(Ltimeout);
-clearTimeout(Rtimeout);
-Ltimeout = setTimeout(slideClient, 0, 1);
+    if (bumper === 0) {
+        counter++;
+        clearTimeout(Ltimeout);
+        clearTimeout(Rtimeout);
+        Ltimeout = setTimeout(slideClient, 0, 1);
+        bumper = 1;
+    }
 }
 
 function slideRight() {
-    counter--;
-    clearTimeout(Ltimeout);
-    clearTimeout(Rtimeout);
-Rtimeout = setTimeout(slideClient, 0, 0);
+    if (bumper === 0) {
+        counter--;
+        clearTimeout(Ltimeout);
+        clearTimeout(Rtimeout);
+        Rtimeout = setTimeout(slideClient, 0, 0);
+        bumper = 1;
+    }
 }
 
 function slideClient(p) {
@@ -75,7 +88,6 @@ function slideClient(p) {
     const bText = arrSlide[b];
     const cText = arrSlide[c];
     const dText = arrSlide[d];
-
 
     const active0 = document.getElementById(`${counterText}`);
     active0.classList.add('activeslide-0');
