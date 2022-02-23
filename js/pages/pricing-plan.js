@@ -32,5 +32,32 @@ link5.addEventListener('click', () => {
     hiddenlinks5.classList.toggle('show');
     link5.classList.toggle('home5');
     link5.classList.toggle('home55');
-    
 });
+
+const label = document.getElementById('label');
+const burgerx = document.getElementById('burgerx');
+const bars = document.getElementById('barsik');
+const nav = document.getElementById('nav');
+label.addEventListener('click', () => {
+    bars.classList.toggle('hiddenas');
+    burgerx.classList.toggle('hiddenas');
+    burgerx.classList.toggle('show');
+    nav.classList.toggle('show');
+
+});
+
+// const checkbox = document.getElementById('hamburger-menu');
+
+// checkbox.addEventListener('change', (e) => {
+//     if ((e.target.checked )) {
+//         burgerx.classList.add('show');
+//         bars.classList.add('hiddenas');
+//     } 
+// });
+
+// heckbox.addEventListener('change', (e) => {
+//     if ((e.target.checked === false )) {
+//         burgerx.classList.remove('show');
+//         bars.classList.remove('hiddenas');
+//     } 
+// });

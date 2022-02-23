@@ -204,6 +204,15 @@ input{
     display: none;
     /* position: relative; */
 }
+.hamburger-menu{
+    display:flex;
+    align-items: baseline;
+}
+.burgerx{
+    transform: rotate(45deg) translateY(-5px);
+    color: #fff;
+    font-size: 48px;
+}
 
 .navis {
     overflow-y: auto;
@@ -243,10 +252,7 @@ input{
     display: none;
     
 }
-.show {
-    display: block;
-   
-}
+
 .label-mob-link {
     width: 100%;
     text-decoration: none;
@@ -268,11 +274,11 @@ input{
     
 }
 
-#hamburger-menu:checked ~ .navis {
+.navis {
     position: fixed;
     top: 100%;
     left:10%;
-    display:block;
+    display:none;
     flex-direction: column;
     align-self: center;
     width: 80vw;
@@ -756,4 +762,9 @@ input{
     transition: 2s ease-in-out;
 }
 
+
+.show {
+    display: block;
+   
+}
 /* Shared hosting end */
