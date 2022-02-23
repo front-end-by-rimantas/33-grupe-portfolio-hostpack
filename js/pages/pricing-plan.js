@@ -10,19 +10,27 @@ const hiddenlinks4 = document.getElementById('links4');
 const hiddenlinks5 = document.getElementById('links5');
 link1.addEventListener('click', () => {
     hiddenlinks1.classList.toggle('show');
+    link1.classList.toggle('home1');
+    link1.classList.toggle('home11');
 });
 link2.addEventListener('click', () => {
     hiddenlinks2.classList.toggle('show');
+    link2.classList.toggle('home2');
+    link2.classList.toggle('home22');
 });
 link3.addEventListener('click', () => {
     hiddenlinks3.classList.toggle('show');
+    link3.classList.toggle('home3');
+    link3.classList.toggle('home33');
 });
 link4.addEventListener('click', () => {
     hiddenlinks4.classList.toggle('show');
+    link4.classList.toggle('home4');
+    link4.classList.toggle('home44');
 });
 link5.addEventListener('click', () => {
     hiddenlinks5.classList.toggle('show');
     link5.classList.toggle('home5');
-    link5.classList.remove.toggle('home55');
+    link5.classList.toggle('home55');
     
 });
