@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 575px) {
+    .freetrial {
+        display: none;
+    }
     .header-top {
         align-content: center;
     }
