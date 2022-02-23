@@ -22,6 +22,7 @@
 .hamburger-srv {
     display: flex;
     justify-content: right;
+    font-size: 25px;
     flex-grow: 2;
     margin-right: 10px;
     color: var(--secondary-color);
@@ -192,8 +193,10 @@
 .container-srvDHosting .bg-srvDHosting {
     background-color: var(--primary-color);
     background-image: url(../../pages/service-details/img/Hosting/pricing.png);
+    background-size: cover;
     width: 100%;
     height: 472px;
+    position: absolute;
 }
 
 .container-srvDHosting {
@@ -243,6 +246,116 @@
     padding: 5px 10px 5px 10px;
 }
 /*--------------------------*/
+.middle-srvDHosting {
+    position: relative;
+    background-color: transparent;
+    padding-top: 320px;
+}
+
+.scroll-srvDHosting {
+    overflow-x: auto;
+}
+
+.scroll-srvDHosting > table th .table-top-srv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#none-srv {
+    background-color: transparent;
+    border: none;
+}
+
+.table-top-srv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left-srvD {
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+    color: var(--color-graytext);
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+.plan-srv {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-dark);
+}
+
+.price-srv {
+    font-size: 48px;
+    line-height: 1.2em;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    color: var(--color-bluelight);
+}
+
+.price-srv sup,
+.price-srv > span {
+    font-size: 18px;
+    position: relative;
+    font-weight: 600;
+    font-family: Open Sans, sans-serif;
+}
+
+.price-srv sup {
+    top: -10px;
+    right: 5px;
+}
+
+.price-srv > span {
+    bottom: -10px;
+    left: 5px;
+}
+
+@media (max-width: 991px) {
+    .plan-srv {
+        font-size: 17px;
+    }
+    .price-srv {
+        font-size: 28px;
+    }
+    .price-srv sup {
+        top: -3px;
+        right: 4px;
+    }
+    .price-srv > span {
+        bottom: -4.5px;
+        left: 4px;
+    }
+}
+
+.middle-srvDHosting td {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    color: var(--color-graytext);
+}
+
+.middle-srvDHosting a {
+    text-decoration: none;
+}
+
+.btn-size-srv{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Lato, sans-serif;
+    width: 160px;
+    cursor: pointer;
+}
+
+.btn-size-srv:hover {
+    transition: 0.6s;
+}
 /*--------------------------*/
 .bottom-srvDHosting {
     background-color: var(--secondary-color);
