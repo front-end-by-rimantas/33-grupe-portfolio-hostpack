@@ -1,11 +1,26 @@
 let counter = 0;
 const arrSlide = ['s1', 's2', 's3', 's4', 's5', 's6', 's7'];
+let Ltimeout = null;
+let Rtimeout = null;
 
-setInterval(slideClientsRight, 5000);
+setTimeout(slideClient, 0, 1);
 
+function slideLeft() {
+counter++;
+clearTimeout(Ltimeout);
+clearTimeout(Rtimeout);
+Ltimeout = setTimeout(slideClient, 0, 1);
+}
 
-function slideClientsRight() {
-    console.log('pong');
+function slideRight() {
+    counter--;
+    clearTimeout(Ltimeout);
+    clearTimeout(Rtimeout);
+Rtimeout = setTimeout(slideClient, 0, 0);
+}
+
+function slideClient(p) {
+    // console.log('pong');
     for (let i = 0; i < arrSlide.length; i++) {
         const passive = document.getElementById(`${arrSlide[i]}`);
         passive.classList.remove('activeslide-0');
@@ -13,13 +28,13 @@ function slideClientsRight() {
         passive.classList.remove('activeslide-2');
         passive.classList.remove('activeslide-3');
         passive.classList.remove('activeslide-4');
-        console.log(arrSlide[i]);
+        // console.log(arrSlide[i]);
     }
 
     if (counter < 0) {
         counter = 6;
     }
-    if (counter > arrSlide.length-1) {
+    if (counter > arrSlide.length - 1) {
         counter = 0;
     }
 
@@ -27,7 +42,7 @@ function slideClientsRight() {
     if (a < 0) {
         a = 6;
     }
-    if (a > arrSlide.length-1) {
+    if (a > arrSlide.length - 1) {
         a = 0;
     }
 
@@ -35,7 +50,7 @@ function slideClientsRight() {
     if (b < 0) {
         b = 6;
     }
-    if (b > arrSlide.length-1) {
+    if (b > arrSlide.length - 1) {
         b = 0;
     }
 
@@ -43,7 +58,7 @@ function slideClientsRight() {
     if (c < 0) {
         c = 6;
     }
-    if (c > arrSlide.length-1) {
+    if (c > arrSlide.length - 1) {
         c = 0;
     }
 
@@ -51,7 +66,7 @@ function slideClientsRight() {
     if (d < 0) {
         d = 6;
     }
-    if (d > arrSlide.length-1) {
+    if (d > arrSlide.length - 1) {
         d = 0;
     }
 
@@ -61,8 +76,6 @@ function slideClientsRight() {
     const cText = arrSlide[c];
     const dText = arrSlide[d];
 
-
-    console.log(counterText, aText, bText, cText, dText);
 
     const active0 = document.getElementById(`${counterText}`);
     active0.classList.add('activeslide-0');
@@ -75,5 +88,18 @@ function slideClientsRight() {
     const active4 = document.getElementById(`${dText}`);
     active4.classList.add('activeslide-4');
 
-    counter++;
+    const sbnl = document.getElementById(`sbl`);
+    const sbnr = document.getElementById(`sbr`);
+
+    if (p === 1) {
+        sbnl.classList.add('active-slideround-btn');
+        sbnr.classList.remove('active-slideround-btn');
+        // console.log("go left");
+        Ltimeout = setTimeout(slideLeft, 5000);
+    } else {
+        sbnl.classList.remove('active-slideround-btn');
+        sbnr.classList.add('active-slideround-btn');
+        // console.log("go right");
+        Rtimeout = setTimeout(slideRight, 5000);
+    }
 }
