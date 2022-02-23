@@ -22,6 +22,7 @@
 .hamburger-srv {
     display: flex;
     justify-content: right;
+    font-size: 25px;
     flex-grow: 2;
     margin-right: 10px;
     color: var(--secondary-color);
@@ -243,6 +244,11 @@
     padding: 5px 10px 5px 10px;
 }
 /*--------------------------*/
+
+
+
+
+
 /*--------------------------*/
 .bottom-srvDHosting {
     background-color: var(--secondary-color);
