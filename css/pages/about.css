@@ -78,6 +78,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    background-color: var(--secondary-color);
 }
 .header-nav {
     display: flex;
@@ -97,13 +98,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    /* left: 0; */
     z-index: 99;
 }
-/* .sticky + .content {
-    padding-top: 102px;
-  } */
-  
+
 .header-nav img {
     width: 230px;
 }
@@ -331,7 +328,6 @@
 
 .nav-btn {
     display: flex;
-    flex-wrap: nowrap;
     border: 1px;
     color: var(--secondary-color);
     text-decoration: none;
@@ -571,6 +567,7 @@
     line-height: 1.5em;
     font-size: 16px;
     font-family: 'Lato';
+    cursor: pointer;
 }
 @media (max-witdh:575px) {
     .cards8 {
@@ -765,12 +762,59 @@ margin-top: -120px;
 .logo img:hover {
     transform: translateZ(10px);
 }
-
-
-
 .visible0{
     visibility: hidden;
 }
 .visible{
     visibility: visible;
+}
+.sticky .label {
+    color: var(--color-dark);
+}
+/* //////////// sticky header ////////////////// */
+
+.sticky.header-bottom{
+border-bottom: 1px solid rgba(255,255,255,.3);
+box-shadow: 0 0 15px 5px #9d9d9d21;
+background-color: var(--secondary-color);
+animation-name: goesDown;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+}
+@keyframes goesDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sticky .nav-btn {
+    border: 1px;
+    color: var(--color-bluelight);
+    text-decoration: none;
+    border: 2px solid var(--color-bluelight);
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: "Lato";
+    font-size: 12px;
+}
+.sticky .nav-btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--color-bluelight);
+}
+.sticky .without {
+    color: var(--color-dark);
+}
+.sticky .burger,
+.sticky .burger::after,
+.sticky .burger::before {
+background-color: var(--color-bluelight);
+}
+.sticky .nav-logo {
+    filter: brightness(0) invert(67%) sepia(61%) saturate(2158%) hue-rotate(143deg) brightness(98%) contrast(92%);
 }

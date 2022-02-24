@@ -47,16 +47,8 @@ window.onscroll = function () {
 };
 const headeris = document.getElementById('myHead');
 const topas = document.getElementById('topas');
-console.log(headeris);
-// const stand = headeris.offsetTop;
-// console.log(stand);
-// function scrollas() {
-//     if (window.pageYOffset > 300) {
-//         headeris.classList.add('sticky');
-//     } else {
-//         headeris.classList.remove('sticky');
-//     }
-// }
+
+
 
 function scrollas() {
     if (window.pageYOffset > 300) {
@@ -70,4 +62,4 @@ function scrollas() {
     }
 }
 
- 
+ console.log(window.pageYOffset);
