@@ -852,3 +852,6 @@ animation-timing-function: linear;
 .sticky #header .logo{
     filter: brightness(0) invert(67%) sepia(61%) saturate(2158%) hue-rotate(143deg) brightness(98%) contrast(92%);
 }
+.shared-hosting button p {
+    margin-left: 15px;
+}
