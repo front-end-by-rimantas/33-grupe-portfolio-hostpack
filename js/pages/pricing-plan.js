@@ -91,7 +91,7 @@ const header = document.getElementById('myHeader');
 const contacts = document.getElementById('contacts');
 const topas = document.getElementById('topas');
 // Get the offset position of the navbar
-const sticky = header.offsetTop;
+// const sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
