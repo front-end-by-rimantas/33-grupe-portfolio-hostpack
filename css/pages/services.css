@@ -731,3 +731,9 @@
     color: var(--secondary-color);
     transition: 0.5s;
 }
+
+.sticky .no-fa:hover::before,
+.sticky .dropdown-srv .label-srv:hover::before,
+.sticky .dropdown-srv .active::before {
+    content: none;
+}
