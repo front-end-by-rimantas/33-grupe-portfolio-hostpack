@@ -54,6 +54,12 @@ animation-timing-function: linear;
 }
 }
 
+.headerscreenfixed  .linkthree,
+.headerscreenfixed  .linkthree:visited,
+.headerscreenfixed  .linkthree:hover
+{
+    color: #000;
+}
 
 .headerscreenfixed > .freetriallink >.freetrial {
     text-transform: uppercase;
@@ -95,8 +101,9 @@ padding: 0;
     color: var(--secondary-color);
     border: var(--secondary-color) solid 1px;
     border-radius: 30px;
-    width: 160px;
-    font-size: 16px;
+    width: 150px;
+    font-family: "Open Sans";
+    font-size: 13px;
     margin-top: -10px;
     font-weight: 600;
     text-align: center;
@@ -122,6 +129,9 @@ padding: 0;
 .linkname {
     display: inline;
     text-transform: capitalize;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 17px;
     padding: 0 15px;
     position: relative;
 }
@@ -152,6 +162,13 @@ padding: 0;
 
 .linkthree {
     text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkthree:visited,
+.linkthree:hover{
+color:#ffffff
 }
 
 .linkthree:after {
@@ -238,7 +255,7 @@ display:none;
     transform: translateX(0);
     width:60vw;
     z-index:4;
-    height:43.2vh;
+    height:38.7vh;
     overflow-y: auto;
 }
 
@@ -275,7 +292,8 @@ display:none;
 
 /* mobile navigation */
 
-.menu-link-box > p{
+.menu-link-box > p
+{
     font-size: 22px;
     color: #000;
     padding: 10px;
@@ -300,6 +318,20 @@ display:none;
     font-size: 20px;
 }
 
+.menu-link-box-a,
+.menu-link-box-a:visited{
+    font-size: 22px;
+    color: #000;
+    padding: 10px;
+    display:inline;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+.menu-link-box-a:hover{
+    color: #00c3ff;
+}
 
 .menu-link-box > a:hover{
     color: #00c3ff;
