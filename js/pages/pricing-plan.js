@@ -12,46 +12,90 @@ link1.addEventListener('click', () => {
     hiddenlinks1.classList.toggle('show');
     link1.classList.toggle('home1');
     link1.classList.toggle('home11');
-    hiddenlinks2.classList.remove('show')
-    hiddenlinks3.classList.remove('show')
-    hiddenlinks4.classList.remove('show')
-    hiddenlinks5.classList.remove('show')
+
+    hiddenlinks2.classList.remove('show');
+    link2.classList.add('home22');
+    link2.classList.remove('home2');
+
+    hiddenlinks3.classList.remove('show');
+    link3.classList.add('home33');
+    link3.classList.remove('home3');
+
+    hiddenlinks4.classList.remove('show');
+    link4.classList.add('home44');
+    link4.classList.remove('home4');
+
+    hiddenlinks5.classList.remove('show');
+    link5.classList.add('home55');
+    link5.classList.remove('home5');
 });
 link2.addEventListener('click', () => {
     hiddenlinks2.classList.toggle('show');
     link2.classList.toggle('home2');
     link2.classList.toggle('home22');
-    hiddenlinks1.classList.remove('show')
-    hiddenlinks3.classList.remove('show')
-    hiddenlinks4.classList.remove('show')
-    hiddenlinks5.classList.remove('show')
+    hiddenlinks1.classList.remove('show');
+    link1.classList.add('home11');
+    link1.classList.remove('home1');
+    hiddenlinks3.classList.remove('show');
+    link3.classList.add('home33');
+    link3.classList.remove('home3');
+    hiddenlinks4.classList.remove('show');
+    link4.classList.add('home44');
+    link4.classList.remove('home4');
+    hiddenlinks5.classList.remove('show');
+    link5.classList.add('home55');
+    link5.classList.remove('home5');
 });
 link3.addEventListener('click', () => {
     hiddenlinks3.classList.toggle('show');
     link3.classList.toggle('home3');
     link3.classList.toggle('home33');
-    hiddenlinks1.classList.remove('show')
-    hiddenlinks2.classList.remove('show')
-    hiddenlinks4.classList.remove('show')
-    hiddenlinks5.classList.remove('show')
+    hiddenlinks1.classList.remove('show');
+    link1.classList.add('home11');
+    link1.classList.remove('home1');
+    hiddenlinks2.classList.remove('show');
+    link2.classList.add('home22');
+    link2.classList.remove('home2');
+    hiddenlinks4.classList.remove('show');
+    link4.classList.add('home44');
+    link4.classList.remove('home4');
+    hiddenlinks5.classList.remove('show');
+    link5.classList.add('home55');
+    link5.classList.remove('home5');
 });
 link4.addEventListener('click', () => {
     hiddenlinks4.classList.toggle('show');
     link4.classList.toggle('home4');
     link4.classList.toggle('home44');
-    hiddenlinks1.classList.remove('show')
-    hiddenlinks2.classList.remove('show')
-    hiddenlinks3.classList.remove('show')
-    hiddenlinks5.classList.remove('show')
+    hiddenlinks1.classList.remove('show');
+    link1.classList.add('home11');
+    link1.classList.remove('home1');
+    hiddenlinks3.classList.remove('show');
+    link3.classList.add('home33');
+    link3.classList.remove('home3');
+    hiddenlinks2.classList.remove('show');
+    link2.classList.add('home22');
+    link2.classList.remove('home2');
+    hiddenlinks5.classList.remove('show');
+    link5.classList.add('home55');
+    link5.classList.remove('home5');
 });
 link5.addEventListener('click', () => {
     hiddenlinks5.classList.toggle('show');
     link5.classList.toggle('home5');
     link5.classList.toggle('home55');
-    hiddenlinks1.classList.remove('show')
-    hiddenlinks2.classList.remove('show')
-    hiddenlinks3.classList.remove('show')
-    hiddenlinks4.classList.remove('show')
+    hiddenlinks1.classList.remove('show');
+    link1.classList.add('home11');
+    link1.classList.remove('home1');
+    hiddenlinks3.classList.remove('show');
+    link3.classList.add('home33');
+    link3.classList.remove('home3');
+    hiddenlinks2.classList.remove('show');
+    link2.classList.add('home22');
+    link2.classList.remove('home2');
+    hiddenlinks4.classList.remove('show');
+    link4.classList.add('home44');
+    link4.classList.remove('home4');
 });
 
 const label = document.getElementById('label');
@@ -65,35 +109,12 @@ label.addEventListener('click', () => {
     nav.classList.toggle('show');
 });
 
-// const checkbox = document.getElementById('hamburger-menu');
-
-// checkbox.addEventListener('change', (e) => {
-//     if ((e.target.checked )) {
-//         burgerx.classList.add('show');
-//         bars.classList.add('hiddenas');
-//     }
-// });
-
-// heckbox.addEventListener('change', (e) => {
-//     if ((e.target.checked === false )) {
-//         burgerx.classList.remove('show');
-//         bars.classList.remove('hiddenas');
-//     }
-// });
-
-// When the user scrolls the page, execute myFunction
 window.onscroll = function () {
     myFunction();
 };
-
-// Get the header
 const header = document.getElementById('myHeader');
 const contacts = document.getElementById('contacts');
 const topas = document.getElementById('topas');
-// Get the offset position of the navbar
-// const sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
     if (window.pageYOffset > 300) {
         header.classList.add('sticky');
@@ -107,4 +128,3 @@ function myFunction() {
         topas.classList.add('visible0');
     }
 }
-
