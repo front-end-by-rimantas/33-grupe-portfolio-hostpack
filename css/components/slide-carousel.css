@@ -24,7 +24,7 @@
     list-style: none;
     width: 1140px;
     height: 380px;
-    /* border: 1px black solid;  */
+    /* border: 1px black solid;     */
     padding: 15px;
     display: flex;
     position: relative;
@@ -53,6 +53,7 @@
     display: block;
     position: absolute;
     left: -375px;
+    opacity: 0;
 }
 
 .activeslide-1 {
@@ -77,6 +78,7 @@
     display: block;
     position: absolute;
     left: 1145px;
+    opacity: 0;
 }
 
 .quote {
@@ -146,6 +148,10 @@
     .activeslide-4 {
         display: none;
     }
+    .activeslide-3 {
+    opacity:0;
+    }
+
     .carousel-track {
         width: 760px;
     }
@@ -158,6 +164,11 @@
     .activeslide-3 {
         display: none;
     }
+
+    .activeslide-2 {
+        opacity:0;
+    }
+
     .carousel-track {
         width: 380px;
     }
