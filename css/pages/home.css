@@ -1219,7 +1219,7 @@ tfoot a {
 }
 .row-list > .title-first {
     color: var(--secondary-color);
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 25px;
     font-family: 'Lato';
 }
@@ -1333,6 +1333,21 @@ tfoot a {
     background-position: top;
     background-size: cover;
 }
+
+.logo-text,
+.list-pg,
+.bottom-line p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+
+.first-bottom .copy {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Open Sans, sans-serif;
+}
+
 @media (max-width: 991px) {
     .last-line {
         display: flex;
