@@ -1,0 +1,151 @@
+/* base */
+@import '../base/base.css';
+@import '../base/layout.css';
+@import '../pages/home.css';
+
+/* 3rd-party */
+@import '../3rd-party/font-awesome.min.css';
+@import '../3rd-party/font.css';
+
+/* components */
+@import '../components/back-to-top.css';
+@import '../components/button-default.css';
+@import '../components/navigation.css';
+@import '../components/footer.css';
+@import '../components/topline.css';
+
+/* CUSTOM STYLE BELOW THIS COMMENT LINE */
+
+.herocontent{
+    background-image: url(../../img/pages/resellerhosting/reseller-hosting-bg.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.herotext{
+color: white;
+padding-bottom: 50px;
+}
+
+.herotext > h4{
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.herotext > h1{
+    font-family: "Lato", sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    margin-bottom: 42px;
+    text-transform: capitalize;
+}
+
+.herotext > p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+
+.herotext > a,
+.herotext > a:visited{
+    text-decoration: none;
+}
+
+/* Topline added as component */
+/* Navigation added as component */
+.hp-holder{
+   height:100px;
+   border-bottom: 1px solid rgb(173, 216, 230, 0.2); 
+}
+
+.headerc-r{
+    margin-bottom: 0;
+}
+/* Navigation applied to page */
+
+/* main section below */
+
+/* <!-- Why choose us startas --> */
+.container.choose-us {
+    background-color: var(--color-light);
+}
+.kortele {
+    box-shadow: #666;
+    text-align: center;
+    background-color: #fff;
+    padding: 60px 15px 57px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 10px;
+}
+.choose-us p {
+    line-height: 1.5;
+    font-weight: 400;
+}
+.choose-us.icon {
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.choose-us img {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+}
+.choose-us .pirmas h1 {
+    background-color: var(--color-light);
+    font-weight: 900;
+}
+.choose-us .pirmas {
+    background-color: #fff;
+    font-weight: 700;
+}
+.choose-title {
+    background-color: #fff;
+}
+.para.antras {
+    background-color: #fff;
+    max-width: 264px;
+}
+.choose-us-content {
+    background-color: #fff;
+    max-width: 264px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+}
+.pirmas {
+    color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+}
+.choose-us .antras {
+    color: #666;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+/* <!-- Why choose us pabaiga --> */
+/* <!-- Hosting plan startas --> */
+.small-btn {
+    width: 150px;
+    white-space: nowrap;
+    display: inline-flex;
+    font-size: 12px;
+}
+/* <!-- Hosting plan pabaiga --> */
+/* <!-- Our best services startas --> */
+/* <!-- Our best services pabaiga --> */
+/* <!-- Get latest blog startas --> */
+/* <!-- Get latest blog pabaiga --> */
+
+
+ /* Footer was imported as component */
