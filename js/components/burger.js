@@ -10,3 +10,12 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+//////////// neužbaigta mintiis , reikia udaryti nav, paspaudus per kur ant lango//////////
+// const closeNav = document.querySelector('section');
+// closeNav.addEventListener('click', () => {
+//   if (document.body.classList.contains('nav-open')) {
+//     document.getElementById("1").style.visibility = "hidden";
+//   }
+//   else {
+//   }
+// });

@@ -75,8 +75,9 @@
     height: 60vh;
     padding: 0;
     padding-top: 50px;
-    /* margin-top: 0;
-    padding-top: 0; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 }
 .header-nav {
     display: flex;
@@ -237,7 +238,7 @@
 .two .list-hidden {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 15px;
     position: absolute;
     background-color: var(--secondary-color);
@@ -245,7 +246,7 @@
     border-radius: 0  0 10px 10px;
     bottom: 0;
     transform: translateY(100%);
-    min-width: 150px;
+    min-width: 200px;
     bottom: -37px;
     right: 35%;
     
@@ -253,32 +254,69 @@
 .two .nav {
     display: flex;
     flex-direction: column;
+
 }
+
 .two .list a {
     font-family: 'Lato';
     text-decoration: none;
     color: var(--color-graytext);
-    border-top: 1.5px solid rgba(55, 225, 255, 0.4);
+    border-bottom: 1.5px solid rgba(55, 225, 255, 0.4);
     width: 100%;
     padding: 10px 10px 0 10px;
     display: flex;
+    align-content: center;
     justify-content: space-between;
+    font-size: 16px;
+    padding-left: 35px;
+    padding-bottom: 10px;
 }
+.dropdown .label-price {
+    padding-bottom: 15px;
+}
+.dropdown.drop-btm  a:last-child {
+    border-bottom: none;
+}
+
 .two .list a:hover {
     color: var(--color-bluelight);
     transition: 0.5s;
 }
-
-.two .list > a:last-child{
-    padding-bottom: 15px;
+.scrollon {
+    max-height: 420px;
+    overflow: auto;    
 }
-.two .list a::after {
+
+.dropdown .label-af::after {
     font-family: FontAwesome;
     content: "\f107";
 }
-.two .list .none::after {
-    content: none;
+.dropdown .change::after {
+    font-family: FontAwesome;
+    content: "\f106";
 }
+
+
+.label.none,
+.dropdown .label {
+    width: 270px;
+    font-family: "Lato";
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    color: var(--color-dark);
+    text-decoration: none;
+}
+.label.none:hover,
+.dropdown .label:hover {
+    color: var(--color-bluelight);
+    transition: 0.5s;
+}
+
+
 .nav-btn {
     display: flex;
     flex-wrap: nowrap;
@@ -312,7 +350,7 @@
 .header-nav .burger {
     display: none;
 }
-.nav .list {
+.nav .list-hidden {
     display: none;
 }
 }
@@ -320,6 +358,21 @@
     .header-nav img {
         width: 190px;
     }
+}
+/* /////////////////////////// */
+.list-host,
+.list-ser,
+.list-price,
+.list-pages,
+.list-home {
+    display: none;
+}
+.label-host,
+.label-ser,
+.label-price,
+.label-pages,
+.label-home {
+    cursor: pointer;
 }
 
 /* ///////////////// */
