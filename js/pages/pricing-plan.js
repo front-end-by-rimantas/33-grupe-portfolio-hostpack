@@ -12,26 +12,46 @@ link1.addEventListener('click', () => {
     hiddenlinks1.classList.toggle('show');
     link1.classList.toggle('home1');
     link1.classList.toggle('home11');
+    hiddenlinks2.classList.remove('show')
+    hiddenlinks3.classList.remove('show')
+    hiddenlinks4.classList.remove('show')
+    hiddenlinks5.classList.remove('show')
 });
 link2.addEventListener('click', () => {
     hiddenlinks2.classList.toggle('show');
     link2.classList.toggle('home2');
     link2.classList.toggle('home22');
+    hiddenlinks1.classList.remove('show')
+    hiddenlinks3.classList.remove('show')
+    hiddenlinks4.classList.remove('show')
+    hiddenlinks5.classList.remove('show')
 });
 link3.addEventListener('click', () => {
     hiddenlinks3.classList.toggle('show');
     link3.classList.toggle('home3');
     link3.classList.toggle('home33');
+    hiddenlinks1.classList.remove('show')
+    hiddenlinks2.classList.remove('show')
+    hiddenlinks4.classList.remove('show')
+    hiddenlinks5.classList.remove('show')
 });
 link4.addEventListener('click', () => {
     hiddenlinks4.classList.toggle('show');
     link4.classList.toggle('home4');
     link4.classList.toggle('home44');
+    hiddenlinks1.classList.remove('show')
+    hiddenlinks2.classList.remove('show')
+    hiddenlinks3.classList.remove('show')
+    hiddenlinks5.classList.remove('show')
 });
 link5.addEventListener('click', () => {
     hiddenlinks5.classList.toggle('show');
     link5.classList.toggle('home5');
     link5.classList.toggle('home55');
+    hiddenlinks1.classList.remove('show')
+    hiddenlinks2.classList.remove('show')
+    hiddenlinks3.classList.remove('show')
+    hiddenlinks4.classList.remove('show')
 });
 
 const label = document.getElementById('label');
@@ -69,6 +89,7 @@ window.onscroll = function () {
 // Get the header
 const header = document.getElementById('myHeader');
 const contacts = document.getElementById('contacts');
+const topas = document.getElementById('topas');
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
 
@@ -76,9 +97,14 @@ const sticky = header.offsetTop;
 function myFunction() {
     if (window.pageYOffset > 300) {
         header.classList.add('sticky');
+        topas.classList.add('visible');
+        topas.classList.remove('visible0');
         contacts.classList.add('hiddenas');
     } else {
         header.classList.remove('sticky');
+        topas.classList.remove('visible');
         contacts.classList.remove('hiddenas');
+        topas.classList.add('visible0');
     }
 }
+
