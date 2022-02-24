@@ -146,6 +146,9 @@
     content: "\f107";
     margin-left: auto;
 }
+
+
+
 /*!!!!!!!!!!!!!!!*/
 .hamburger-srv {
     display: flex;
@@ -377,6 +380,7 @@
 }
 .block-ourBest {
     border-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
 }
 .background-neibor {
     z-index: -1;
@@ -429,8 +433,8 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
-        'icon title'
-        'icon txt';
+    'icon title'
+    'icon txt';
     gap: 10px;
     padding: 5px;
 }
@@ -630,12 +634,106 @@
 /* footer pabaiga */
 
 /* back to top startas */
-.btn-to-top {
+/* #topikas {
     line-height: 35px;
     font-size: 16px;
     color: #fff;
     font-weight: 1000;
     text-align: center;
     text-decoration: none;
+} */
+
+.btn-to-top {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--color-bluelight);
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 0 0 15px 5px #9d9d9d21;
+    text-decoration: none;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+.btn-to-top:hover {
+    opacity: 50%;
+}
+
+.back-to-top {
+    right: 2rem;
+    bottom: 4rem;
+}
+
+#top {
+    visibility: hidden;
 }
 /* back to top pabaiga */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    box-shadow: 0 5px 10px #0d91fd17;
+    z-index: 1;
+    animation-name: down;
+    animation-duration: 0.9s;
+    transition: 1.5s;
+}
+
+@keyframes down {
+    from {
+        top:-200px;
+        opacity:0
+    } 
+    to {
+        top:0;
+        opacity:1
+    }
+}
+
+.sticky .content-srvHeader,
+.sticky  #headerSrvW {
+    border-bottom: none;
+}
+
+.sticky .logo-srv {
+    filter: brightness(0) invert(61%) sepia(91%) saturate(1152%) hue-rotate(144deg) brightness(97%) contrast(94%);
+}
+
+.sticky .no-fa,
+.sticky .dropdown-srv .label-srv {
+    color: var(--color-graytext);
+    font-weight: 400;
+}
+
+.sticky .no-fa:hover,
+.sticky .dropdown-srv .label-srv:hover,
+.sticky .hamburger-srv {
+    color: var(--color-bluelight);
+}
+
+.sticky .btn-srv {
+    border: 1px solid var(--color-bluelight);
+    color: var(--color-bluelight);
+}
+
+.sticky .btn-srv:hover {
+    background-color: var(--color-bluelight);
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+
+.sticky .no-fa:hover::before,
+.sticky .dropdown-srv .label-srv:hover::before,
+.sticky .dropdown-srv .active::before {
+    content: none;
+}

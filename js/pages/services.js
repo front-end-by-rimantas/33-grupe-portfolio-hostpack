@@ -9,7 +9,24 @@ const menuS = document.querySelector(`#menuSrv`);
 hamburgerS.addEventListener('click', () => {
     menuS.classList.toggle(`list2-srv`);
 });
+/*-----------------*/
+window.onscroll = function () {
+    topukas();
+    stickyHeader();
+};
 
+const header2 = document.getElementById('headerSrvW');
+const topHeader = document.getElementById('headerSrvTop');
+
+function stickyHeader() {
+    if (window.pageYOffset > 180) {
+        header2.classList.add('sticky');
+        topHeader.classList.add('hidden');
+    } else {
+        header2.classList.remove('sticky');
+        topHeader.classList.remove('hidden');
+    }
+}
 /* header pabaiga */
 
 /* hero startas */
