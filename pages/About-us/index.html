@@ -72,12 +72,12 @@
                         <div class="label">Pages</div>
                         <div class="list">
                             <a class="active" href="../About-us/index.html">About</a>
-                            <a href="#">Contact</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Blog details</a>
+                            <a href="../../html/pages/pagenotfound/index.html">Contact</a>
+                            <a href="../../html/pages/pagenotfound/index.html">Blog</a>
+                            <a href="../../html/pages/pagenotfound/index.html">Blog details</a>
                             <a href="../../html/pages/faq/index.html">FAQ</a>
-                            <a href="#">Terms of service</a>
-                            <a href="#">Privacy policy</a>
+                            <a href="../../html/pages/pagenotfound/index.html">Terms of service</a>
+                            <a href="../../html/pages/pagenotfound/index.html">Privacy policy</a>
                             <a href="../../html/pages/login/">Login</a>
                             <a href="../../html/pages/pagenotfound/">404</a>
                         </div>
@@ -115,13 +115,57 @@
                         <button class="nav-x">
                             <span class="burger"></span>
                         </button>
-                        <div id="1" class="list close list-hidden">
-                            <a href="../../index.html">Home</a>
-                            <a href="../../index.html">Pages</a>
-                            <a class="none" href="../../index.html">WHMCS</a>
-                            <a href="../../index.html">Hosting</a>
-                            <a href="../../pages/services/index.html">Services</a>
-                            <a href="../../pages/pricing-plan/index.html">Pricing</a>
+                        <div id="1" class=" close list-hidden scrollon">
+                            <div class="dropdown">
+                                <div class="label label-af label-home">Home</div>
+                                <div class="list list-home">
+                                    <a href="../../index.html">Home V1</a>
+                                    <a href="../../index.html">Home V2</a>
+                                    <a href="../../index.html">Home V3</a>
+                                    <a href="../../index.html">Home V4</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <div class="label label-af label-pages">Pages</div>
+                                <div class="list list-pages">
+                                    <a href="../About-us/index.html">About</a>
+                                    <a href="../../html/pages/pagenotfound/index.html">Contact</a>
+                                    <a href="../../html/pages/pagenotfound/index.html">Blog</a>
+                                    <a href="../../html/pages/pagenotfound/index.html">Blog details</a>
+                                    <a href="../../html/pages/faq/index.html">FAQ</a>
+                                    <a href="../../html/pages/pagenotfound/index.html">Terms of service</a>
+                                    <a href="../../html/pages/pagenotfound/index.html">Privacy policy</a>
+                                    <a href="../../html/pages/login/">Login</a>
+                                    <a href="../../html/pages/pagenotfound/">404</a>
+                                </div>
+                            </div>
+                            <a class="label none" href="../../index.html">WHMCS</a>
+                            <div class="dropdown">
+                                <div class="label label-af label-host">Hosting</div>
+                                <div class="list list-host">
+                                    <a href="../../index.html">Shared hosting</a>
+                                    <a href="../../index.html">Dedicated hosting</a>
+                                    <a href="../../index.html">Reseller hosting</a>
+                                    <a href="../../index.html">Private hosting</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <div class="label label-af label-ser">Services</div>
+                                <div class="list list-ser">
+                                    <a href="../../pages/services/index.html">Service one</a>
+                                    <a href="../../pages/services/index.html">Service two</a>
+                                    <a href="../../pages/services/index.html">Service three</a>
+                                    <a href="../../pages/services/index.html">Service details</a>
+                                </div>
+                            </div>
+                            <div class="dropdown drop-btm">
+                                <div class="label label-af label-price">Pricing</div>
+                                <div class="list list-price">
+                                    <a href="../pricing-plan/index.html">Pricing plan 1</a>
+                                    <a href="../pricing-plan/index.html">Pricing plan 2</a>
+                                    <a class="btm" href="../pricing-plan/index.html">Pricing plan 3</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="nav-btn " href="#">Free trial</a> 
@@ -138,7 +182,7 @@
     </header>
     <!-- header pabaiga -->
     <!-- baltas conteiner pradzia -->
-    <section class="container">
+    <section class="container closenav">
         <div class="row meet">
                 <div class=" col-12 meet-content">
                     <h2 class="meet-title">Meet Hostpack</h2>
@@ -565,7 +609,8 @@
     <!-- back to top startas -->
     <a href="#" class="btn-to-top back-to-top fa fa-angle-up" id="top"></a>
     <!-- back to top pabaiga -->
-    <script src="../../js/components/burger.js"></script>
+    <script src="../../js/components/aboutnav.js" defer></script>
+    <script src="../../js/components/burger.js" defer></script>
     <script src="../../js/pages/home.js" defer></script>
     <script src="../../js/components/carousel.js" defer></script>
     <script src="../../js/components/backToTop.js" defer></script>
