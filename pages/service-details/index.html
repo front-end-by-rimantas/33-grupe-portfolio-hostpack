@@ -40,7 +40,7 @@
     <body>
         <!-- Header startas -->
         <header class="container container-srvHeader">
-            <div class="bk-srvHeader">
+            <div id="headerSrvTop" class="bk-srvHeader">
                 <div class="row top-srvHeader">
                     <div class="col-12 col-sm-7 left-srv">
                         <p><a href="tel:555-666-7777"><i class="fa fa-phone"></i>555-666-7777</a></p>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bk2-srvHeader">
+            <div id="headerSrvW" class="bk2-srvHeader">
                 <div class="row bottom-srvHeader">
                     <div class="col-12 content-srvHeader">
                         <a href="../../index.html"><img class="logo-srv" src="../../img/logo/logo.png" alt="logo"></a>
@@ -109,16 +109,16 @@
                             </div>
                         </nav>
                         <div class="hidden-lg hamburger-srv fa fa-bars">
-                            <div class="dropdown2-srv">
-                                <div class="list2-srv">
-                                    <a href="#">Home</a>
-                                    <a href="#">Pages</a>
-                                    <a id="no2-fa" href="#">Whmcs</a>
-                                    <a href="#">Hosting</a>
-                                    <a id="activePg" href="#">Services</a>
-                                    <a href="#">Pricing</a>
-                                </div>
+                        <div class="dropdown2-srv">
+                            <div id="menuSrv" class="list2-srv visible-menuSrv">
+                                <div class="menu1" href="#">Home</div>
+                                <div class="menu2" href="#">Pages</div>
+                                <div id="no2-fa" href="#">Whmcs</div>
+                                <div class="menu3" href="#">Hosting</div>
+                                <div class="menu4" id="activePg" href="#">Services</div>
+                                <div class="dropdown-srv" href="#">Pricing</div>
                             </div>
+                        </div>
                         </div>
                         <a class="col-12 btn-srv hidden visible-flex-sm" href="../pricing-plan/index.html">Free trial</a>
                     </div>
