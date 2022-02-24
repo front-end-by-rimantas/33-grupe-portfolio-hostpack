@@ -1,3 +1,4 @@
+
 const navOpen = document.querySelector(".label-home");
 const navList = document.querySelector('.list-home');
 
@@ -40,3 +41,20 @@ navPrices.addEventListener('click', () => {
     navPrices.classList.toggle('label-af');
     navPrices.classList.toggle('change');
 });
+
+////////////////////////////////////////////////
+window.onscroll = function() {
+    scrollas();
+};
+const headeris = document.getElementById('myHead');
+console.log(headeris);
+const stand = headeris.offsetTop;
+console.log(stand);
+function scrollas() {
+    if (window.pageYOffset > stand) {
+      headeris.classList.add('sticky');
+    } else {
+      headeris.classList.remove('sticky');
+    }
+};
+console.log(headeris);
