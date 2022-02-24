@@ -3,6 +3,13 @@
 // CODE EXECUTION BELOW THIS COMMENT LINE
 
 /* header startas */
+const hamburgerS = document.querySelector(`.hamburger-srv`);
+const menuS = document.querySelector(`#menuSrv`);
+
+hamburgerS.addEventListener('click', () => {
+    menuS.classList.toggle(`list2-srv`);
+});
+
 /* header pabaiga */
 
 /* hero startas */
