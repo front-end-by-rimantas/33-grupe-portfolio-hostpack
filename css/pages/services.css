@@ -141,29 +141,45 @@
     position: relative;
 }
 
-.list2-srv a::after {
+.list2-srv div::after {
     font-family: FontAwesome;
     content: "\f107";
     margin-left: auto;
 }
-
+/*!!!!!!!!!!!!!!!*/
 .hamburger-srv {
     display: flex;
     justify-content: right;
     flex-grow: 2;
+    font-size: 25px;
     margin-right: 10px;
     color: var(--secondary-color);
     cursor: pointer;
-    margin-top: 30px;
-    padding-bottom: 30px;
 }
-
-.hamburger-srv:hover > .dropdown2-srv .list2-srv {
+/*!!!!!!!!!!!!!!!*/
+.hamburger-srv > .dropdown2-srv .list2-srv {
     display: flex;
-    transform: translateX(-8%) translateY(100%);
-    width: 85%;
+    width: 80%;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    margin-right: 10%;
+}
+
+.bottom-srvHeader .dropdown2-srv > .list2-srv {
+    flex-direction: column;
+    min-width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: var(--secondary-color);
+    padding-bottom: 15px;
+    box-shadow: 0 5px 10px #3a3a3a54;
+    gap: 15px;
+    text-transform: capitalize;
+}
+.visible-menuSrv {
+    display: none;
 }
 
 .btn-srv {
@@ -195,9 +211,8 @@
     font-size: 17px;
     color: var(--secondary-color);
 }
-
-.bottom-srvHeader .dropdown-srv > .list-srv,
-.bottom-srvHeader .dropdown2-srv > .list2-srv {
+/*!!!!!!!!!!!!!!!*/
+.bottom-srvHeader .dropdown-srv > .list-srv {
     display: none;
     flex-direction: column;
     min-width: 200px;
@@ -209,6 +224,7 @@
     padding-bottom: 15px;
     box-shadow: 0 5px 10px #3a3a3a54;
     gap: 15px;
+    text-transform: capitalize;
 }
 
 .bottom-srvHeader .dropdown-srv:hover > .list-srv {
@@ -219,7 +235,7 @@
 }
 
 .bottom-srvHeader .list-srv > a,
-.bottom-srvHeader .list2-srv a {
+.bottom-srvHeader .list2-srv div {
     display: flex;
     align-items: flex-start;
     font-size: 17px;
@@ -238,12 +254,15 @@
     text-transform: uppercase;
 }
 
+#no2-fa::after {
+    content: none;
+}
 #activePg {
     color: var(--color-bluelight);
 }
 
 .bottom-srvHeader .list-srv > a:hover,
-.bottom-srvHeader .list2-srv a:hover {
+.bottom-srvHeader .list2-srv div:hover {
     color: var(--color-bluelight);
     transition: 0.4s;
 }
@@ -251,7 +270,7 @@
 @media (min-width: 991px) and (max-width: 1120px) {
     .main-nav-srv a,
     .main-nav-srv  > .dropdown-srv > .label-srv,
-    .main-nav-srv  > .dropdown-srv > .list-srv a {
+    .main-nav-srv  > .dropdown-srv > .list-srv div {
         font-size: 15px;
         font-weight: 500;
     }

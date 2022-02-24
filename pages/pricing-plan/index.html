@@ -41,9 +41,9 @@
 
     <body>
         <!-- header start -->
-        <section class="container virsus">
-            <div class="container contacts-bg">
-                <div class="row header-top no-margin contacts">
+        <section id="myHeader" class="container virsus">
+            <div  class="container contacts-bg">
+                <div id="contacts" class="row header-top no-margin contacts">
                     <div class="col-sm-7 flexas contacts">
                         <div class="tel">
                             <a class="phone phone1" href="tel:8884014678"
@@ -58,12 +58,12 @@
                     </div>
                     <div class="col-sm-5 flexas end contacts">
                         <a class="login" href="../../html/pages/login/index.html">LOGIN</a>
-                        <a class="support" href="#">SUPPORT</a>
+                        <a class="support" href="../../html/pages/pagenotfound/index.html">SUPPORT</a>
                     </div>
                 </div>
             </div>
             <div class="container header-main">
-                <div class="row head-main">
+                <div id="header" class="row head-main">
                     <div class="col-12 main">
                         <a class="logo" href="../../index.html"
                             ><svg
@@ -200,24 +200,24 @@
                                 <div class="plabel ">Pages</div>
                                 <div class="plist">
                                     <a class="" href="../About-us/index.html">About</a>
-                                    <a class="" href="#">Contact</a>
-                                    <a class="" href="#">Blog</a>
-                                    <a class="" href="#">Blog Details</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Contact</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Blog</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Blog Details</a>
                                     <a class="" href="../../html/pages/faq/index.html">FAQ</a>
-                                    <a class="" href="#">Terms of Service</a>
-                                    <a class="" href="#">Privacy Policy</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Terms of Service</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Privacy Policy</a>
                                     <a class="" href="../../html/pages/login/index.html">Login</a>
                                     <a class="" href="../../html/pages/pagenotfound/index.html">404</a>
                                 </div>
                             </div>
-                            <a id="cs" class="whmcs plabel"href="#">WHMCS</a>
+                            <a id="cs" class="whmcs plabel" href="../../html/pages/pagenotfound/index.html">WHMCS</a>
                             <div class="pdropdown">
                                 <div class="plabel">Hosting</div>
                                 <div class="plist">
-                                    <a class="" href="#">Shared Hosting</a>
-                                    <a class="" href="#">Dedicated Hosting</a>
-                                    <a class="" href="#">Reseller Hosting</a>
-                                    <a class="" href="#">Private Hosting</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Shared Hosting</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Dedicated Hosting</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Reseller Hosting</a>
+                                    <a class="" href="../../html/pages/pagenotfound/index.html">Private Hosting</a>
                                 </div>
                             </div>
                             <div class="pdropdown">
@@ -238,18 +238,60 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="burgeris main"><input type="checkbox" id="hamburger-menu" />
-                            <label for="hamburger-menu"
-                                ><i id="ikona" class="fa fa-bars "></i
-                            ></label>
+                        <div class="burgeris main"><input type="button" id="hamburger-menu" />
+                            <label id="label" for="hamburger-menu"
+                                ><i id="barsik" class="fa fa-bars"></i>
+                              <div id="burgerx"class="burgerx hiddenas">+</div></label>
                             
-                            <div class="navis col-12">
-                                <div class="linkiukai"><a class="arr1" href="#">Home </a></div>
-                                <div class="linkiukai"><a class="arr1" href="#">Pages</a></div>
-                                <div class="linkiukai"><a class="arr1" href="#">WHMCS</a></div>
-                                <div class="linkiukai"><a class="arr1" href="#">Hosting</a></div>
-                                <div class="linkiukai"><a class="arr1" href="#">Services</a></div>
-                                <div class="linkiukai"><a class="arr1" href="#">Pricing</a></div>
+                            <div id="nav"class="navis col-12 overflow">
+                                <div class="linkiukai">
+                                    <div  id="home1" class="label-mob home11 arr1">Home</div>
+                                    <div id="links1"class="label-container">
+                                    <a href="#" class="label-mob-link">Home V1</a>
+                                    <a href="#" class="label-mob-link">Home V2</a>
+                                    <a href="#" class="label-mob-link">Home V3</a>
+                                    <a href="#" class="label-mob-link">Home V4</a>
+                                </div>
+                                </div>
+                                <div  class="linkiukai"> 
+                                    <div id="home2"class="label-mob home22 arr1">Pages</div>
+                                    <div id="links2" class="label-container ">
+                                    <a href="#" class="label-mob-link">About</a>
+                                    <a href="#" class="label-mob-link">Contact</a>
+                                    <a href="#" class="label-mob-link">Blog</a>
+                                    <a href="#" class="label-mob-link">Blog Details</a>
+                                    <a href="#" class="label-mob-link">FAQ</a>
+                                    <a href="#" class="label-mob-link">Terms of Service</a>
+                                    <a href="#" class="label-mob-link">Privacy Policy</a>
+                                    </div>
+                                </div>
+                                <div  class="linkiukai"><a id="no-after"class="arr1" href="#">WHMCS</a></div>
+                                <div class="linkiukai"> 
+                                    <div id="home3"class="label-mob home33 arr1">Hosting</div>
+                                    <div id="links3" class="label-container">
+                                        <a href="#" class="label-mob-link">Shared Hosting</a>
+                                        <a href="#" class="label-mob-link">Dedicated Hosting</a>
+                                        <a href="#" class="label-mob-link">Reseller Hosting</a>
+                                        <a href="#" class="label-mob-link">Private Hosting</a>
+                                    </div>
+                                </div>
+                                <div class="linkiukai"> 
+                                    <div id="home4"class="label-mob home44 arr1">Services</div>
+                                    <div id="links4"class="label-container">
+                                        <a href="#" class="label-mob-link">Service One</a>
+                                        <a href="#" class="label-mob-link">Service Two</a>
+                                        <a href="#" class="label-mob-link">Service Three</a>
+                                        <a href="#" class="label-mob-link">Service Details</a>
+                                    </div>
+                                </div>
+                                <div class="linkiukai"> 
+                                    <a href="#" id="home5"class="label-mob home55 arr1">Pricing</a>
+                                    <div id="links5" class="label-container ">
+                                        <a href="#" class="label-mob-link">Pricing Plan 1</a>
+                                        <a href="#" class="label-mob-link">Pricing Plan 2</a>
+                                        <a href="#" class="label-mob-link">Pricing Plan 3</a>
+                                    </div>
+                                </div>
                             </div>
                             
                         </div>
@@ -622,7 +664,7 @@
                                 <p
                                     class="btn-textb"
                                 >
-                                    Buy now
+                                    CONTACT US
                                 </p>
                                 <div
                                     class="kamuolisb"
@@ -889,6 +931,6 @@
         <!-- <script src="../../js/components/carousel.js" defer></script> -->
         <script src="../../js/components/backToTop.js" defer></script>
         <!-- <script src="../../js/components/counter.js" defer></script> -->
-        <script src="../../js/components/pricing-plan.js" defer></script>
+        <script src="../../js/pages/pricing-plan.js" defer></script>
     </body>
 </html>
