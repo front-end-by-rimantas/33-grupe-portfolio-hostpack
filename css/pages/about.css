@@ -93,12 +93,12 @@
     
     
 }
-.sticky .header-bottom {
+.sticky  {
     position: fixed;
     top: 0;
     width: 100%;
-    left: 0;
-    z-index: 999999999;
+    /* left: 0; */
+    z-index: 99;
 }
 /* .sticky + .content {
     padding-top: 102px;
@@ -764,4 +764,13 @@ margin-top: -120px;
 }
 .logo img:hover {
     transform: translateZ(10px);
+}
+
+
+
+.visible0{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
 }
