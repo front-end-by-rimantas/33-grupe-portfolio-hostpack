@@ -69,6 +69,7 @@ window.onscroll = function () {
 // Get the header
 const header = document.getElementById('myHeader');
 const contacts = document.getElementById('contacts');
+const topas = document.getElementById('topas');
 // Get the offset position of the navbar
 const sticky = header.offsetTop;
 
@@ -76,9 +77,14 @@ const sticky = header.offsetTop;
 function myFunction() {
     if (window.pageYOffset > 300) {
         header.classList.add('sticky');
+        topas.classList.add('visible');
+        topas.classList.remove('visible0');
         contacts.classList.add('hiddenas');
     } else {
         header.classList.remove('sticky');
+        topas.classList.remove('visible');
         contacts.classList.remove('hiddenas');
+        topas.classList.add('visible0');
     }
 }
+

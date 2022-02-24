@@ -1,5 +1,6 @@
 @import '../pages/home.css';
 @import '../base/layout.css';
+
 :root{
     --afteris5: "\f106"
 }
@@ -854,4 +855,13 @@ animation-timing-function: linear;
 }
 .shared-hosting button p {
     margin-left: 15px;
+}
+.freetrial button{
+    margin-left: 15px;
+}
+.visible0{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
 }
