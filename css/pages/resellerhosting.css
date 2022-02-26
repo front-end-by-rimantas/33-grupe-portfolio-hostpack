@@ -1,6 +1,7 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+@import '../pages/home.css';
 
 /* 3rd-party */
 @import '../3rd-party/font-awesome.min.css';
@@ -68,12 +69,215 @@ padding-bottom: 50px;
 /* main section below */
 
 /* <!-- Why choose us startas --> */
+.container.choose-us {
+    background-color: var(--color-light);
+}
+.kortele {
+    box-shadow: #666;
+    text-align: center;
+    background-color: #fff;
+    padding: 60px 15px 57px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 10px;
+}
+.choose-us p {
+    line-height: 1.5;
+    font-weight: 400;
+}
+.choose-us.icon {
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.choose-us img {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+}
+.choose-us .pirmas h1 {
+    background-color: var(--color-light);
+    font-weight: 900;
+}
+.choose-us .pirmas {
+    background-color: #fff;
+    font-weight: 700;
+}
+.choose-title {
+    background-color: #fff;
+}
+.para.antras {
+    background-color: #fff;
+    max-width: 264px;
+}
+.choose-us-content {
+    background-color: #fff;
+    max-width: 264px;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+}
+.pirmas {
+    color: #111;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+}
+.choose-us .antras {
+    color: #666;
+    font-family: Open Sans, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
 /* <!-- Why choose us pabaiga --> */
 /* <!-- Hosting plan startas --> */
+.small-btn {
+    width: 150px;
+    white-space: nowrap;
+    display: inline-flex;
+    font-size: 12px;
+}
 /* <!-- Hosting plan pabaiga --> */
 /* <!-- Our best services startas --> */
 /* <!-- Our best services pabaiga --> */
 /* <!-- Get latest blog startas --> */
+
+.container-getLBlog {
+    background-color: var(--secondary-color);
+}
+.top-getLBlog {
+    text-align: center;
+}
+
+.title-getLBlog {
+    background-color: transparent;
+    margin: -9px 0px 25px;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+@media (min-width: 498px) {
+    .title-getLBlog {
+        font-size: 48px; 
+    }
+}
+
+.txt-getLBlog {
+    background-color: transparent;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--color-graytext);
+}
+
+.column-getLBlog img {
+    width: 100%;
+}
+
+.last-getLBlog {
+    display: grid;
+    gap: 30px;
+}
+
+.main-getLBlog {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+@media (min-width: 575px) {
+    .main-getLBlog {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+    .main-getLBlog > .three {
+        width: 245px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+}
+@media (min-width: 767px) {
+    .main-getLBlog > .three {
+        width: 330px;
+    }
+}
+
+@media (min-width: 991px) {
+    .main-getLBlog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main-getLBlog > .three {
+        grid-column: unset;
+        width: auto;
+    }
+}
+
+.column-getLBlog a, .slash {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.date,
+.slash,
+.name {
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.5em;
+    display: inline-block;
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+}
+
+.date:hover,
+.name:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
+.nav-txt {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.nav-txt:hover {
+    color: var(--color-bluelight);
+    transition: 0.3s;
+}
+
+.nav-more {
+    font-size: 13px;
+    line-height: 2.5em;
+    font-weight: 600;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    color: #818181;
+}
+
+.nav-more img {
+    filter: brightness(0) invert(61%) sepia(91%) saturate(1152%) hue-rotate(144deg) brightness(97%) contrast(94%);
+    width: 12px;
+    height: 10px;
+    margin: 11px 8px 0 0;
+}
+
+.nav-more:hover {
+    color: var(--color-bluelight);
+    transition: 0.3s;
+}
+
 /* <!-- Get latest blog pabaiga --> */
 
 
