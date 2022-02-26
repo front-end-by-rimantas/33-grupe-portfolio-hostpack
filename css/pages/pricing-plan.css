@@ -838,8 +838,18 @@ animation-timing-function: linear;
 }
 .sticky #barsik,
 .sticky .burgerx{
-    color:#000
+    color: var(--color-bluelight);
+    
 }
+.burgerx.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
 .sticky .btn-hdr button{
     color: var(--color-bluelight);
     background-color: transparent;
