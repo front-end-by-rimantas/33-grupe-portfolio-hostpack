@@ -638,7 +638,7 @@ input{
 .shared h5{
     display: block;
 }
-.checkbox-row h1,h2,h3,h4,h5{
+.checkbox-row h1{
    display: none;
 
 }
@@ -710,7 +710,7 @@ input{
     width: 90%;
     font-family: open sans;
 }
-#sharing2:checked ~ h2{
+#sharing2:checked ~ h1{
     color: #666;
     display: flex;
     width: 90%;
@@ -719,7 +719,7 @@ input{
     font-family: open sans;
     display: flex;
 }
-#sharing3:checked ~ h3{
+#sharing3:checked ~ h1{
     color: #666;
     width: 90%;
     display: flex;
@@ -727,7 +727,7 @@ input{
     font-weight: 400;
     font-family: open sans;
 }
-#sharing4:checked ~ h4{
+#sharing4:checked ~ h1{
     color: #666;
     display: flex;
     width: 90%;
@@ -735,7 +735,7 @@ input{
     font-weight: 400;
     font-family: open sans;
 }
-#sharing5:checked ~ h5{
+#sharing5:checked ~ h1{
     color: #666;
     width: 90%;
     display: flex;
@@ -838,8 +838,18 @@ animation-timing-function: linear;
 }
 .sticky #barsik,
 .sticky .burgerx{
-    color:#000
+    color: var(--color-bluelight);
+    
 }
+.burgerx.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
 .sticky .btn-hdr button{
     color: var(--color-bluelight);
     background-color: transparent;
