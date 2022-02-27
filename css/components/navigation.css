@@ -80,7 +80,9 @@ animation-timing-function: linear;
     color: var(--secondary-color);
 }
 
-.headerscreenfixed > .toplogolink{
+.headerscreenfixed > .toplogolink,
+.headerscreenfixed .burgeropen,
+.headerscreenfixed .burgerclose{
     filter: brightness(0) invert(67%) sepia(61%) saturate(2158%) hue-rotate(143deg) brightness(98%) contrast(92%);
 }
 
