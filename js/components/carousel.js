@@ -1,17 +1,23 @@
 let carPosition = 2;
 let passive = 0;
 
+let mycarouselInterval = setInterval(alarm, 5000);
+
 function Next() {
     carPosition++;
     goRound();
+    clearInterval(mycarouselInterval);
+    console.log('ping');
+    mycarouselInterval = setInterval(alarm, 5000);
 }
 
 function Previous() {
     carPosition--;
     goRound();
+    clearInterval(mycarouselInterval);
+    console.log('ping');
+    mycarouselInterval = setInterval(alarm, 5000);
 }
-
-setInterval(alarm, 8000);
 
 function alarm() {
     carPosition++;
