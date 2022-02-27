@@ -4,10 +4,10 @@ let a = 2500;
 let height = window.innerHeight;
 
 if (height > 950){
-a = 2800;
+a =2300;
 }
 if(height < 950){
-a = 2500;    
+a = 1800;    
 }
 
 const myInterval = setInterval(runWhenClose,1000)

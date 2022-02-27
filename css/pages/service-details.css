@@ -188,13 +188,6 @@
 }
 /*---------------------------*/
 
-.testimonials-srvDClient img {
-    height: 70px;
-    width: 70px;
-    border: 4px solid var(--primary-color);
-    border-radius: 50%;
-}
-
 /* Our client konteineris pabaiga */
 
 /* Hosting plans konteineris startas */
