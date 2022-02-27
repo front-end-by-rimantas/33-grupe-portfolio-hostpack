@@ -141,15 +141,12 @@
     position: relative;
 }
 
-.list2-srv div::after {
+.list2-srv .groupSrv::after {
     font-family: FontAwesome;
     content: "\f107";
     margin-left: auto;
 }
 
-
-
-/*!!!!!!!!!!!!!!!*/
 .hamburger-srv {
     display: flex;
     justify-content: right;
@@ -157,9 +154,12 @@
     font-size: 25px;
     margin-right: 10px;
     color: var(--secondary-color);
+}
+
+.burger-bar {
     cursor: pointer;
 }
-/*!!!!!!!!!!!!!!!*/
+
 .hamburger-srv > .dropdown2-srv .list2-srv {
     display: flex;
     width: 80%;
@@ -169,6 +169,7 @@
 }
 
 .bottom-srvHeader .dropdown2-srv > .list2-srv {
+    cursor: pointer;
     flex-direction: column;
     min-width: 200px;
     position: absolute;
@@ -181,8 +182,39 @@
     gap: 15px;
     text-transform: capitalize;
 }
-.visible-menuSrv {
+
+.visible-menuSrv,
+.visible-1,
+.visible-2,
+.visible-3,
+.visible-4,
+.visible-5 {
     display: none;
+}
+
+.linkA > a {
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: var(--color-graytext);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.linkA > a:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
+.overfl {
+    overflow-y: auto;
+    max-height: 480px;
 }
 
 .btn-srv {
@@ -214,7 +246,7 @@
     font-size: 17px;
     color: var(--secondary-color);
 }
-/*!!!!!!!!!!!!!!!*/
+
 .bottom-srvHeader .dropdown-srv > .list-srv {
     display: none;
     flex-direction: column;
@@ -238,7 +270,7 @@
 }
 
 .bottom-srvHeader .list-srv > a,
-.bottom-srvHeader .list2-srv div {
+.bottom-srvHeader .list2-srv .groupSrv {
     display: flex;
     align-items: flex-start;
     font-size: 17px;
@@ -255,6 +287,11 @@
 
 #no2-fa {
     text-transform: uppercase;
+}
+
+#no2-fa:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
 }
 
 #no2-fa::after {
