@@ -289,6 +289,11 @@
     text-transform: uppercase;
 }
 
+#no2-fa:hover {
+    color: var(--color-bluelight);
+    transition: 0.4s;
+}
+
 #no2-fa::after {
     content: none;
 }
