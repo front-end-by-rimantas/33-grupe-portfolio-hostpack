@@ -107,19 +107,176 @@ display: inline;
 .smallheader{
 font-size: 48px;
 color: black;
-font-family: "Lato";
+font-family: "Lato", sans-serif;
+text-transform: capitalize;
+font-weight: bold;
+}
+
+.smallheader > span{
+  text-transform: lowercase;  
 }
 
 /* Accordion text start */
 .accordion-holder{
-    min-height:50vh
 }
+
+.accordion-card{
+    border-bottom: 1px solid rgb(133, 132, 132,0.3);
+    padding: 20px 0px;
+}
+
+.accordion-btn{
+    width:100%;
+    border: none;
+    background-color: white;
+}
+
+.accordion-big-text{
+    font-family: "Lato", sans-serif;
+    color: #212529;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.accordion-big-text::after{
+    content: '\0002B';
+    float: right; 
+    filter:brightness(0) saturate(100%) invert(58%) sepia(77%) saturate(1985%) hue-rotate(156deg) brightness(100%) contrast(105%);
+    font-size: 40px; 
+    font-weight: lighter;
+    animation-name: plusround;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes plusround {
+    0%{
+        transform: rotate(90deg);  
+    }
+
+    50%{
+        transform: rotate(45deg);
+
+    }
+
+    100%{
+        transform: rotate(0deg);  
+    }
+}     
+
+
+.accordion-bt-active{
+    font-family: "Lato", sans-serif;
+    color: #212529;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.accordion-bt-active::after{
+    content: '\02212';
+    float: right; 
+    filter:brightness(0) saturate(100%) invert(58%) sepia(77%) saturate(1985%) hue-rotate(156deg) brightness(100%) contrast(105%);
+    font-size: 40px; 
+    font-weight: lighter;
+    animation-name: minusround;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+}
+
+@keyframes minusround {
+    0%{
+        transform: rotate(90deg);  
+    }
+
+    50%{
+        transform: rotate(45deg);
+
+    }
+
+    100%{
+        transform: rotate(0deg);  
+    }
+}
+
+
+.accordion-text-show{
+  font-family: "Open Sans", sans-serif; 
+  font-size: 16px;
+  color: #666666;
+  padding: 0px 60px 0px 0px;
+  line-height: 1.5em; 
+  overflow: hidden;
+  max-height: 0px; 
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-text-show-open{
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px;
+    color: #666666;
+    padding: 0px 60px 0px 0px;
+    line-height: 1.5em; 
+    max-height: 300px;
+    transition: max-height 0.5s ease-out;
+}
+
+
  /* Accordion text end */
  /* Form text start */
  .form-holder{
-    min-height:50vh;
     background-color:#F7FAFE;
 }
+
+.blue-text{
+   font-family: "Lato", sans-serif;
+   font-size: 16px;
+   margin-bottom: 29px;
+   color: #00c3ff;
+   text-transform: uppercase;
+}
+
+.walloftext{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 29px;
+    margin-bottom: 30px;
+}
+
+.logf{
+    padding: 10px 15px;
+    margin-bottom: 30px;
+    border-color: rgb(0, 0, 0,0.1);
+    padding: 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: blue;
+    width:100%;
+}
+
+.logf::placeholder{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 3em;
+    text-transform: capitalize;
+}
+
+.textformlog{
+resize: none;
+line-height: 2em;
+}
+
+.textformlog::placeholder{
+    line-height: 2em;
+    }
+
+
  /* <!-- Form text end --> */
  /* <!-- Carousel start --> */
  
