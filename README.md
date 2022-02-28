@@ -27,8 +27,8 @@ Design: https://www.themelooks.biz/demo/hostpack/html/preview/index.html
 
 Aleksas Neniškis: [Github](https://github.com/aneniskis)
 
-Anton Sokolkin: [Github](https://github.com/ASreiros)
+Anton Sokolkin: [Github](https://github.com/ASreiros), [LinkedIn](https://www.linkedin.com/in/anton-sokolkin-109746111)
 
-Bogdan Bylinski: [Github](https://github.com/BogdanBylinski)
+Bogdan Bylinski: [Github](https://github.com/BogdanBylinski), [LinkedIn](https://www.linkedin.com/in/bogdan-bylinski-17a233233/)
 
-Karolina Šalnaitė: [Github](https://github.com/SaKarolina)
+Karolina Šalnaitė: [Github](https://github.com/SaKarolina), [LinkedIn](https://www.linkedin.com/in/karolina-%C5%A1alnait%C4%97-83b208233/)
