@@ -10,7 +10,7 @@
     border-width: 3px;
 }
 
-@media (max-width: 1570px) {
+@media (max-width: 1575px) {
     .carousel {
         width: 500px;
     }
